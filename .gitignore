@@ -1,0 +1,11 @@
+.cache
+.DS_Store
+.idea
+.vscode
+package-lock.json
+node_modules
+test/coverage
+dist/
+lib/
+es/
+vetur/

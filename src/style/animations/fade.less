@@ -1,0 +1,28 @@
+
+@keyframes QFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes QFadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-enter-active {
+  animation: QFadeIn 0.3s;
+}
+
+.fade-leave-active {
+  animation: QFadeOut 0.3s;
+}

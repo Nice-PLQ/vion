@@ -1,0 +1,19 @@
+@import './var.less';
+
+.@{prefix}-radio-group {
+  .@{prefix}-radio {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  &_vertical {
+    .@{prefix}-radio {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

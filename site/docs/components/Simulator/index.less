@@ -1,0 +1,145 @@
+.simulator {
+  position: fixed;
+  right: 16px;
+  top: 80px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 2px #eee;
+}
+
+.simulator-header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top: 24px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  background: #fff;
+  text-align: center;
+
+  .address-bar {
+    position: relative;
+  }
+
+  input {
+    width: 90%;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    background-color: #a2a2a2;
+    border-radius: 4px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    border: none;
+    outline: none;
+    margin: 5px auto 0;
+    padding: 0 5px;
+  }
+
+  .theme-icon {
+    position: absolute;
+    right: 18px;
+    cursor: pointer;
+  }
+
+  .theme-list {
+    position: absolute;
+    right: 18px;
+    top: 30px;
+    display: flex;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 1px #d7d9e0;
+
+    >div {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+
+      &.on,
+      &:not(.on):hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.iframe-footer {
+  margin-top: -4px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 14px;
+  background: #fff;
+  position: relative;
+
+  .qrcode {
+    position: absolute;
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px #eee;
+    border-radius: 8px;
+    top: 0px;
+    right: 56px;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+}
+
+.theme-enter-active {
+  animation: moveRight 0.3s;
+}
+
+.theme-leave-active {
+  animation: moveLeft 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+  .simulator {
+    box-shadow: rgba(0, 0, 0, 0.26) 2px 0px 8px;
+  }
+
+  .simulator-header {
+    .theme-list {
+      background-color: #393939;
+      box-shadow: rgba(0, 0, 0, 0.26) 2px 0px 8px;
+    }
+  }
+
+  .simulator-header,
+  .iframe-footer {
+    background: #3a3a3a;
+    color: #fff;
+  }
+
+  .iframe-footer {
+    .qrcode {
+      background-color: #393939;
+      box-shadow: rgba(0, 0, 0, 0.26) 2px 0px 8px;
+    }
+  }
+}

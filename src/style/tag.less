@@ -1,0 +1,142 @@
+@import './var.less';
+
+.@{prefix}-tag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  height: 25px;
+  padding: 0 8px;
+  border-radius: 6px;
+  background-color: var(--black-3);
+  color: var(--text-secondary);
+  vertical-align: middle;
+
+  &&_small {
+    font-size: 10px;
+    border-radius: 4px;
+    padding: 0 6px;
+    height: 18px;
+  }
+
+  &&_large {
+    border-radius: 6px;
+    font-size: 14px;
+    height: 36px;
+    padding: 0 16px;
+  }
+
+  &&_blue {
+    color: var(--blue-6);
+    background-color: var(--blue-1);
+    border-color: var(--blue-6) !important;
+  }
+
+  &&_dark-blue {
+    color: var(--dark-blue-6);
+    background-color: var(--dark-blue-1);
+    border-color: var(--dark-blue-6) !important;
+  }
+
+  &&_indigo {
+    color: var(--indigo-6);
+    background-color: var(--indigo-1);
+    border-color: var(--indigo-6) !important;
+  }
+
+  &&_green {
+    color: var(--green-6);
+    background-color: var(--green-1);
+    border-color: var(--green-6) !important;
+  }
+
+  &&_pink {
+    color: var(--pink-6);
+    background-color: var(--pink-1);
+    border-color: var(--pink-6) !important;
+  }
+
+  &&_red {
+    color: var(--red-6);
+    background-color: var(--red-1);
+    border-color: var(--red-6) !important;
+  }
+
+  &&_orange {
+    color: var(--orange-6);
+    background-color: var(--orange-1);
+    border-color: var(--orange-6) !important;
+  }
+
+  &&_yellow {
+    color: var(--yellow-6);
+    background-color: var(--yellow-1);
+    border-color: var(--yellow-6) !important;
+  }
+
+  &&_outline {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: var(--text_primary);
+  }
+}
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+  .@{prefix}-tag {
+    background-color: var(--black-12);
+
+    &&_blue {
+      color: var(--blue-6);
+      background-color: var(--blue-10);
+      border-color: var(--blue-6) !important;
+    }
+
+    &&_dark-blue {
+      color: var(--dark-blue-6);
+      background-color: var(--dark-blue-10);
+      border-color: var(--dark-blue-6) !important;
+    }
+
+    &&_indigo {
+      color: var(--indigo-6);
+      background-color: var(--indigo-10);
+      border-color: var(--indigo-6) !important;
+    }
+
+    &&_green {
+      color: var(--green-6);
+      background-color: var(--green-10);
+      border-color: var(--green-6) !important;
+    }
+
+    &&_pink {
+      color: var(--pink-6);
+      background-color: var(--pink-10);
+      border-color: var(--pink-6) !important;
+    }
+
+    &&_red {
+      color: var(--red-6);
+      background-color: var(--red-10);
+      border-color: var(--red-6) !important;
+    }
+
+    &&_orange {
+      color: var(--orange-6);
+      background-color: var(--orange-10);
+      border-color: var(--orange-6) !important;
+    }
+
+    &&_yellow {
+      color: var(--yellow-6);
+      background-color: var(--yellow-10);
+      border-color: var(--yellow-6) !important;
+    }
+
+    &&_outline {
+      background-color: transparent;
+      border-color: #3d3d3d;
+    }
+  }
+}

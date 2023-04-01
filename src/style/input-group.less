@@ -1,0 +1,22 @@
+@import './var.less';
+
+.@{prefix}-input {
+  position: relative;
+
+  &-group&_circle {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &-group&_border &:not(:first-of-type)::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 16px;
+    left: 16px;
+    z-index: 1;
+    border-top: 1px solid var(--border-standard);
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+  }
+}

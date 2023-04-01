@@ -1,0 +1,337 @@
+.main {
+  color: var(--text-primary);
+  padding: 80px 416px 24px 285px;
+
+  &.in-iframe {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  .code-wrapper {
+    display: flex;
+
+    .line-numbers-wrapper {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      flex-shrink: 0;
+      width: 36px;
+      background-color: #f6f6f6;
+      color: #c4c4c6;
+      border-right: 1px solid #e7e6e6;
+      line-height: 1.6rem;
+      padding: 1.2em 0;
+      margin: 13px 0;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: normal;
+      user-select: none;
+    }
+
+    > pre {
+      flex: 1;
+    }
+  }
+
+  .markdown-body {
+    a {
+      text-decoration: none;
+      color: #1989fa;
+
+      &:visited {
+        color: #1989fa;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    h2 a {
+      color: #000;
+
+      &:visited {
+        color: #000;
+      }
+    }
+
+    & > pre:last-of-type {
+      margin-bottom: 44px;
+    }
+
+    img[src*="#design"] {
+      width: 60vw;
+    }
+
+    img[src*="#demo"] {
+      width: 375px;
+    }
+
+    img[src*="#unite"] {
+      width: 500px;
+    }
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: #eaecef;
+  }
+
+  p,
+  li {
+    color: #4f4f4f;
+    font-size: 14px;
+
+    code {
+      color: #1989fa;
+      margin: 0 2px;
+      padding: 2px 4px;
+    }
+  }
+
+  li {
+    line-height: 1.8;
+  }
+
+  pre {
+    border-radius: 4px;
+    position: relative;
+    background-color: #f8f8f8 !important;
+  }
+
+  pre code {
+    overflow-x: auto;
+    color: #525252 !important;
+    white-space: pre;
+    padding: 1.2em 1.4em;
+    font-size: 0.85rem;
+    line-height: 1.6rem;
+    display: block;
+  }
+
+  pre code .hljs-tag,
+  pre code .hljs-tag pre code .hljs-title,
+  pre code .hljs-change,
+  pre code .hljs-winutils,
+  pre code .hljs-flow,
+  pre code .hljs-tex pre code .hljs-special {
+    color: #2973b7;
+  }
+
+  pre code .hljs-symbol,
+  pre code .hljs-symbol pre code .hljs-string,
+  pre code .hljs-value,
+  pre code .hljs-regexp,
+  pre code .hljs-string,
+  pre code .hljs-subst,
+  pre code .hljs-haskell pre code .hljs-type,
+  pre code .hljs-preprocessor,
+  pre code .hljs-ruby pre code .hljs-class pre code .hljs-parent,
+  pre code .hljs-built_in,
+  pre code .hljs-django pre code .hljs-template_tag,
+  pre code .hljs-django pre code .hljs-variable,
+  pre code .hljs-smalltalk pre code .hljs-class,
+  pre code .hljs-django pre code .hljs-filter pre code .hljs-argument,
+  pre code .hljs-smalltalk pre code .hljs-localvars,
+  pre code .hljs-smalltalk pre code .hljs-array,
+  pre code .hljs-attr_selector,
+  pre code .hljs-pseudo,
+  pre code .hljs-addition,
+  pre code .hljs-stream,
+  pre code .hljs-envvar,
+  pre code .hljs-tex pre code .hljs-command,
+  pre code .hljs-prompt {
+    color: #42b983;
+  }
+
+  pre code .hljs-function pre code .hljs-keyword,
+  pre code .hljs-constant {
+    color: #0092db;
+  }
+
+  pre code .hljs-keyword,
+  pre code .hljs-attribute {
+    color: #d63200;
+  }
+
+  pre code .hljs-number,
+  pre code .hljs-literal {
+    color: #a32eff;
+  }
+
+  pre code .hljs-class pre code .hljs-title {
+    color: #fff;
+  }
+
+  pre code .hljs-title {
+    color: #a6e22e;
+  }
+
+  pre code .hljs-tag pre code .hljs-value,
+  pre code .hljs-comment,
+  pre code .hljs-template_comment,
+  pre code .hljs-pi,
+  pre code .hljs-doctype,
+  pre code .hljs-deletion,
+  pre code .hljs-shebang,
+  pre code .hljs-apache pre code .hljs-sqbracket,
+  pre code .hljs-tex pre code .hljs-formula {
+    color: #707070;
+  }
+
+  pre code .hljs-javascript pre code .hljs-xml,
+  pre code .hljs-tex pre code .hljs-formula,
+  pre code .hljs-xml pre code .hljs-javascript,
+  pre code .hljs-xml pre code .hljs-css,
+  pre code .hljs-xml pre code .hljs-cdata {
+    opacity: 0.5;
+  }
+
+  pre code.hljs.html::before,
+  pre code.hljs.js::before,
+  pre code.hljs.css::before,
+  pre code.hljs.json::before,
+  pre code.hljs.less::before {
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ccc;
+    text-align: right;
+    font-size: 12px;
+    padding: 5px 10px 0;
+    line-height: 15px;
+    height: 15px;
+    font-weight: 600;
+  }
+
+  pre code.hljs.html::before {
+    content: "HTML";
+  }
+
+  pre code.hljs.js::before {
+    content: "JS";
+  }
+
+  pre code.hljs.css::before {
+    content: "CSS";
+  }
+
+  pre code.hljs.json::before {
+    content: "JSON";
+  }
+
+  pre code.hljs.less::before {
+    content: "LESS";
+  }
+
+  table {
+    display: table;
+    width: 100%;
+    margin-top: 12px;
+    color: #34495e;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 6px;
+    border-collapse: collapse;
+
+    th {
+      padding: 8px 10px;
+      font-weight: 500;
+      text-align: left;
+      border: none;
+      background-color: #eee;
+    }
+
+    tr {
+      border: none;
+
+      &:nth-child(2n) {
+        background-color: transparent;
+      }
+    }
+
+    td {
+      padding: 16px 8px;
+      border: none;
+      border-top: 1px solid #f1f4f8;
+
+      em {
+        color: #a7419e;
+        font-size: 12px;
+        font-family: 'Source Code Pro', 'Monaco', 'Inconsolata', monospace;
+        font-style: normal;
+      }
+    }
+
+    code {
+      display: inline;
+      margin: 2px 3px;
+      padding: 2px 5px;
+      background-color: #f0f2f5;
+      box-shadow: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main .markdown {
+    padding: 6vw 0 0 4.2666666667vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .simulator {
+    display: none;
+  }
+
+  .main .markdown {
+    width: 100vw;
+    padding: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .main {
+    p,li {
+      color: #a3a3a3;
+    }
+    hr {
+      background: #4B4B4B;
+    }
+
+    pre {
+      background-color: #2e2e2e !important;
+      code {
+        color: #bababa !important;
+      }
+    }
+
+    .line-numbers-wrapper {
+      background-color: #2e2e2e !important;
+      border-right-color: #4B4B4B !important;
+    }
+
+    table {
+      color: #a3a3a3;
+      th {
+        background-color: #3a3a3a;
+        color: #fff;
+      }
+
+      td {
+        border-top-color: #4B4B4B;
+      }
+
+      code {
+        background-color: transparent;
+      }
+    }
+  }
+}
+

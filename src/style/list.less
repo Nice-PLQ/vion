@@ -1,0 +1,78 @@
+@import './var.less';
+
+:root {}
+
+.@{prefix}-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  min-height: 56px;
+  color: var(--text-primary);
+  background-color: var(--background-list);
+  box-sizing: border-box;
+
+  &&_multiple {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &_click {
+    &:active {
+      background-color: var(--background-list-pressed);
+    }
+  }
+
+  &__title-wrap {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__title-txt {
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__desc-txt {
+    margin-top: 4px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  &__desc-txt_multiple {
+    -webkit-line-clamp: 2;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    > i {
+      font-size: 16px;
+      color: var(--icon-secondary);
+      margin-right: -3px;
+    }
+  }
+
+  &__help {
+    font-size: 17px;
+    color: var(--text-secondary);
+    margin-right: 7px;
+  }
+}

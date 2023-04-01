@@ -1,0 +1,106 @@
+@import './var.less';
+@import './popup.less';
+
+.@{prefix}-action-sheet {
+  &__panel {
+    max-width: 600px;
+    margin: 0 auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    background-color: var(--border-light);
+  }
+
+  &__title {
+    position: relative;
+    height: 56px;
+    padding: 0 20px;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    user-select: none;
+    color: var(--text-secondary);
+    background-color: var(--background-dialogue);
+
+    &::before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 1px;
+      border-bottom: 1px solid var(--border-standard);
+      transform-origin: 0 100%;
+      transform: scaleY(0.5);
+    }
+
+    &-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+
+  &__cell {
+    font-size: 17px;
+    text-align: center;
+    padding: 16px 0;
+    color: var(--text-primary);
+    background-color: var(--background-dialogue);
+    user-select: none;
+
+    &:active {
+      background-color: var(--background-dialogue-pressed);
+    }
+
+    &:first-child::before {
+      display: none;
+    }
+
+    &-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0 17px;
+    }
+
+    &-checked {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      margin-top: -8px;
+      color: var(--brand-standard);
+    }
+  }
+
+  &__menu {
+    position: relative;
+
+    &:not(:last-child)::before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 1px;
+      border-bottom: 1px solid var(--border-standard);
+      transform-origin: 0 100%;
+      transform: scaleY(0.5);
+    }
+  }
+
+  &__action {
+    margin-top: 12px;
+  }
+
+  &__safe-area {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+    background-color: var(--background-dialogue);
+  }
+}

@@ -1,0 +1,92 @@
+@import './var.less';
+@import './animations/fade.less';
+
+.@{prefix}-loading {
+  &__icon {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 auto;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    background-image: url(./image/loading-gray.png);
+    background-size: cover;
+
+    &-white {
+      background-image: url(./image/loading-white.png);
+    }
+
+    &-red {
+      background-image: url(./image/loading-red.png);
+    }
+  }
+
+  &_normal,
+  &_normal &__inner {
+    display: inline-block;
+  }
+
+  &_normal &__txt-tips {
+    margin-left: 6px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    vertical-align: middle;
+  }
+
+  &_float {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10002;
+    transform: translate(-50%, -50%);
+  }
+
+  &_float &__inner {
+    padding: 20px 12px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &_float &__icon {
+    display: block;
+    font-size: 24px;
+  }
+
+  &_float &__txt-tips {
+    display: block;
+    text-align: center;
+    color: var(--text-white);
+    font-size: 14px;
+  }
+
+
+  &_circle {
+    color: var(--brand-standard);
+    &-inner {
+      transform-origin: 28px 28px;
+      transform: rotate(-90deg);
+      transition: stroke-dasharray 200ms ease-in;
+    }
+    &-text {
+      text-anchor: middle;
+      dominant-baseline: middle;
+      font-size: 12px;
+      line-height: 1;
+      stroke: #fff;
+    }
+  }
+}
+
+.loading-fade-enter-active {
+  animation: QFadeIn linear 150ms;
+}
+
+.loading-fade-leave-active {
+  animation: QFadeOut linear 150ms;
+}

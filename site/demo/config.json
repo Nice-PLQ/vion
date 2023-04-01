@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Avatar",
+    "label": "头像"
+  },
+  {
+    "name": "ActionSheet",
+    "label": "动作面板"
+  },
+  {
+    "name": "Button",
+    "label": "按钮"
+  },
+  {
+    "name": "BlankPage",
+    "label": "空白页"
+  },
+  {
+    "name": "Badge",
+    "label": "红点"
+  },
+  {
+    "name": "Checkbox",
+    "label": "多选框"
+  },
+  {
+    "name": "Dialog",
+    "label": "对话框"
+  },
+  {
+    "name": "DatetimePicker",
+    "label": "日期选择器"
+  },
+  {
+    "name": "Divider",
+    "label": "分割线"
+  },
+  {
+    "name": "Flex",
+    "component": "Row",
+    "label": "弹性布局"
+  },
+  {
+    "name": "Icon",
+    "label": "图标"
+  },
+  {
+    "name": "InfiniteLoading",
+    "label": "无限滚动"
+  },
+  {
+    "name": "Input",
+    "label": "输入框"
+  },
+  {
+    "name": "Indexes",
+    "label": "索引"
+  },
+  {
+    "name": "Loading",
+    "label": "加载"
+  },
+  {
+    "name": "NoticeBar",
+    "label": "通告栏",
+    "type": 2
+  },
+  {
+    "name": "NavBar",
+    "label": "导航栏"
+  },
+  {
+    "name": "List",
+    "label": "列表"
+  },
+  {
+    "name": "Picker",
+    "label": "选择器"
+  },
+  {
+    "name": "Popup",
+    "label": "弹出层"
+  },
+  {
+    "name": "Progress",
+    "label": "进度条"
+  },
+  {
+    "name": "Radio",
+    "label": "单选框"
+  },
+  {
+    "name": "Switch",
+    "label": "开关"
+  },
+  {
+    "name": "SlipDrawer",
+    "label": "滑动抽屉"
+  },
+  {
+    "name": "SearchBar",
+    "label": "搜索框"
+  },
+  {
+    "name": "Swiper",
+    "label": "轮播"
+  },
+  {
+    "name": "Tab",
+    "label": "页签"
+  },
+  {
+    "name": "Tabbar",
+    "label": "标签栏"
+  },
+  {
+    "name": "Toast",
+    "label": "提示"
+  },
+  {
+    "name": "Tag",
+    "label": "标签"
+  },
+  {
+    "name": "Tooltips",
+    "label": "气泡提示"
+  },
+  {
+    "name": "SharePicture",
+    "label": "图片分享"
+  },
+  {
+    "name": "Area",
+    "label": "地理选择"
+  }
+]

@@ -1,0 +1,190 @@
+[
+  {
+    "label": "开始",
+    "name": "start",
+    "children": [
+      {
+        "name": "intro",
+        "label": "起步",
+        "type": 1
+      },
+      {
+        "name": "color",
+        "label": "色彩",
+        "type": 1
+      },
+      {
+        "name": "i18n",
+        "label": "国际化",
+        "type": 1
+      },
+      {
+        "name": "classnames",
+        "label": "快捷类名",
+        "type": 1
+      },
+      {
+        "name": "contribute",
+        "label": "贡献代码",
+        "type": 1
+      }
+    ]
+  },
+  {
+    "label": "基础组件",
+    "name": "components",
+    "children": [
+      {
+        "name": "Avatar",
+        "label": "头像",
+        "type": 2
+      },
+      {
+        "name": "ActionSheet",
+        "label": "动作面板",
+        "type": 2
+      },
+      {
+        "name": "Button",
+        "label": "按钮",
+        "type": 2
+      },
+      {
+        "name": "Badge",
+        "label": "红点",
+        "type": 2
+      },
+      {
+        "name": "Checkbox",
+        "label": "多选框",
+        "type": 2
+      },
+      {
+        "name": "Dialog",
+        "label": "对话框",
+        "type": 2
+      },
+      {
+        "name": "DatetimePicker",
+        "label": "日期选择器",
+        "type": 2
+      },
+      {
+        "name": "Divider",
+        "label": "分割线",
+        "type": 2
+      },
+      {
+        "name": "Flex",
+        "component": "Row",
+        "label": "弹性布局",
+        "type": 2
+      },
+      {
+        "name": "Icon",
+        "label": "图标",
+        "type": 2
+      },
+      {
+        "name": "InfiniteLoading",
+        "label": "无限滚动",
+        "type": 2
+      },
+      {
+        "name": "Input",
+        "label": "输入框",
+        "type": 2
+      },
+      {
+        "name": "Indexes",
+        "label": "索引",
+        "type": 2
+      },
+      {
+        "name": "Loading",
+        "label": "加载",
+        "type": 2
+      },
+      {
+        "name": "List",
+        "label": "列表",
+        "type": 2
+      },
+      {
+        "name": "NoticeBar",
+        "label": "通告栏",
+        "type": 2
+      },
+      {
+        "name": "NavBar",
+        "label": "导航栏",
+        "type": 2
+      },
+      {
+        "name": "Picker",
+        "label": "选择器",
+        "type": 2
+      },
+      {
+        "name": "Popup",
+        "label": "弹出层",
+        "type": 2
+      },
+      {
+        "name": "Progress",
+        "label": "进度条",
+        "type": 2
+      },
+      {
+        "name": "Radio",
+        "label": "单选框",
+        "type": 2
+      },
+      {
+        "name": "Switch",
+        "label": "开关",
+        "type": 2
+      },
+      {
+        "name": "SlipDrawer",
+        "label": "滑动抽屉",
+        "type": 2
+      },
+      {
+        "name": "SearchBar",
+        "label": "搜索框",
+        "type": 2
+      },
+      {
+        "name": "Swiper",
+        "label": "轮播",
+        "type": 2
+      },
+      {
+        "name": "Tab",
+        "label": "页签",
+        "type": 2
+      },
+      {
+        "name": "Tabbar",
+        "label": "标签栏",
+        "type": 2
+      },
+      {
+        "name": "Toast",
+        "label": "提示",
+        "type": 2
+      },
+      {
+        "name": "Tag",
+        "label": "标签",
+        "type": 2
+      },
+      {
+        "name": "Tooltips",
+        "label": "气泡提示",
+        "type": 2
+      }
+    ]
+  }
+]

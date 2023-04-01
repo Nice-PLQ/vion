@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "standard"
+  ],
+  "plugins": [
+    "vue"
+  ],
+  "ignorePatterns": ["node_modules"],
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "vue/no-multiple-template-root": "off",
+    "semi": ["error", "always"],
+    "eol-last": "off",
+    "space-before-function-paren": "off",
+    "comma-dangle": "off",
+    "no-param-reassign": "off"
+  }
+}

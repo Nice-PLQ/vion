@@ -1,0 +1,14 @@
+@import './var.less';
+
+.generate-col(@i: 1) when (@i =< 24) {
+  .@{prefix}-col_span-@{i} {
+    width: @i / 24 * 100%;
+  }
+
+  .@{prefix}-col_offset-@{i} {
+    margin-left: @i / 24 * 100%;
+  }
+
+  .generate-col((@i + 1));
+}
+.generate-col();

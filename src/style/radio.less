@@ -1,0 +1,99 @@
+@import './var.less';
+
+.@{prefix}-radio {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  font-size: 16px;
+
+  &__icon {
+    font-size: 24px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0;
+    width: 1em;
+    height: $width;
+    border-radius: $width;
+    outline: 0;
+    border: 1px solid var(--icon-tertiary);
+    transition: background-color 0.2s, border-color 0.2s;
+    color: #8e8e8e;
+  }
+
+  &_checked:not(&_disabled) {
+    color: #fff;
+  }
+
+
+  &__icon&_circle_filled {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: var(--icon-white) !important;
+  }
+
+  &_disabled&_circle_filled {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: var(--icon-tertiary) !important;
+  }
+
+  &_checked&_disabled&_circle_filled {
+    border-color: var(--background-dialogue-pressed) !important;
+  }
+
+
+  &__icon&_square {
+    border-radius: 0.15em;
+  }
+
+  &__icon&_checked {
+    background-color: var(--brand-standard);
+    border-color: $background-color;
+  }
+
+  &__icon&_disabled {
+    background-color: var(--background-dialogue-pressed);
+  }
+
+  &_checked&_disabled {
+    background-color: var(--background-dialogue-pressed);
+    border-color: $background-color;
+
+    .@{prefix}-icon,
+    .@{prefix}-radio__number {
+      color: var(--icon-secondary);
+    }
+  }
+
+  &__input {
+    border: none;
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+  }
+
+  &__number {
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-left: 4px;
+    color: var(--text-primary);
+  }
+
+  .@{prefix}-icon {
+    font-size: 0.6em;
+    color: #fff;
+  }
+}

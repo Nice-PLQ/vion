@@ -1,0 +1,33 @@
+.horizon-fade-zoom {
+  &-enter {
+    &-from {
+      transform: translateX(50%) scale(0.8);
+      opacity: 0;
+    }
+
+    &-to {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+
+    &-active {
+      transition: transform 0.4s, opacity 0.2s;
+    }
+  }
+
+  &-leave {
+    &-from {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+
+    &-to {
+      transform: translateX(-50%) scale(0.8);
+      opacity: 0;
+    }
+
+    &-active {
+      transition: transform 0.3s, opacity 0.3s;
+    }
+  }
+}

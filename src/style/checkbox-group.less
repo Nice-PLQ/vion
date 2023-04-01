@@ -1,0 +1,19 @@
+@import './var.less';
+
+.@{prefix}-checkbox-group {
+  .@{prefix}-checkbox {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  &_vertical {
+    .@{prefix}-checkbox {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

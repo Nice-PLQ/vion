@@ -1,0 +1,45 @@
+@import './var.less';
+
+:root {
+  --badge-default-size: 12px;
+  --badge-border-radius: 1em;
+  --badge-bg-color: #F74C30;
+  --badge-text-color: var(--text-white);
+}
+
+@font-face {
+  font-family: 'din-qq';
+  src:
+    url('./fonts/din-qq.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.@{prefix}-badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.33333333em;
+  min-width: 1.33333333em;
+  border-radius: var(--badge-border-radius);
+  background-color: var(--badge-bg-color);
+  color: var(--badge-text-color);
+  font-size: var(--badge-default-size);
+
+  &_dot {
+    width: 0.75em;
+    height: $width;
+    border-radius: $height;
+    min-width: auto;
+  }
+
+  &_capsule {
+    padding: 0 0.255em;
+  }
+
+  &__number {
+    font-family: 'din-qq';
+    transform: scale(0.8);
+  }
+}

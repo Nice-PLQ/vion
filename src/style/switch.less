@@ -1,0 +1,65 @@
+@import './var.less';
+
+:root {}
+
+.@{prefix}-switch {
+  display: inline-block;
+  font-size: 26px;
+  position: relative;
+  height: 1em;
+  width: 1.807692em;
+  border-radius: 26px;
+  background-color: var(--background-dialogue-pressed);
+  transition: background-color 0.3s;
+
+  &_disabled {
+    opacity: 0.5;
+  }
+
+  &:not(&_disabled):active {
+    opacity: 0.8;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.19307em;
+    top: 0.19307em;
+    width: 0.615384em;
+    height: 0.615384em;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+    transition: transform 0.3s;
+  }
+
+  &_checked {
+    border-color: var(--brand-standard);
+    background-color: var(--brand-standard);
+
+    &::after {
+      transform: translateX(0.807692em);
+      transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.27, 1.27);
+    }
+  }
+
+  &_native {
+    height: 1.192308em;
+    width: 1.961538em;
+
+    &&::after {
+      left: 0.076923em;
+      top: 0.076923em;
+      width: 1.038462em;
+      height: 1.038462em;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &_native&_checked {
+    &::after {
+      transform: translateX(0.769231em);
+      transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.27, 1.27);
+    }
+  }
+}

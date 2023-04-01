@@ -1,0 +1,128 @@
+@import './var.less';
+
+.@{prefix}-input {
+
+  &_circle > &__inner{
+    border-radius: 8px;
+  }
+
+  &__inner {
+    display: flex;
+    position: relative;
+    background-color: var(--background-white);
+    padding: 16px 0;
+  }
+
+  &__label {
+    font-size: 17px;
+    margin-left: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    color: var(--text-primary);
+  }
+
+  &__label-textarea {
+    align-items: flex-start;
+  }
+
+  &__wrap {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    position: relative;
+  }
+
+  &__help {
+    display: flex;
+    padding: 4px 16px 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+
+  &__btn-clear {
+    position: relative;
+    z-index: 1;
+    margin-left: 16px;
+    border: none;
+    background-color: transparent;
+    color: var(--icon-secondary);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 8;
+      width: 44px;
+      height: 44px;
+      background-color: transparent;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__textarea {
+    position: relative;
+
+    .@{prefix}-icon-close-o {
+      bottom: 0;
+    }
+  }
+
+  &__textarea &__indicator {
+    position: absolute;
+    right: 12px;
+    bottom: 28px;
+    font-size: 12px;
+  }
+
+  &__indicator {
+    margin-left: auto;
+  }
+
+  &__extra {
+    flex-shrink: 0;
+  }
+
+  input,
+  textarea {
+    flex: 1;
+    min-width: 0;
+    font-size: 17px;
+    border: none;
+    resize: none;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    color: var(--text-primary);
+    caret-color: var(--brand-standard);
+    -webkit-appearance: none;
+
+    &::-webkit-input-placeholder {
+      color: var(--text-tertiary);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type=password] {
+    -webkit-text-security: disc;
+  }
+
+  &_error &__label,
+  &_error &__help-txt,
+  &_error input,
+  &_error textarea{
+    color: var(--feedback-error);
+  }
+}

@@ -1,0 +1,49 @@
+@import './var.less';
+
+.@{prefix}-list {
+  position: relative;
+
+  &-group {
+    border-radius: 8px;
+    overflow: hidden;
+
+    &:not(&_had_extra):not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &-group & {
+    border-radius: 0;
+  }
+
+  &-group &:not(:first-of-type)::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 16px;
+    left: 16px;
+    height: 1px;
+    transform: scaleY(0.5);
+    background-color: var(--border-standard);
+  }
+
+  &-group&_border_none &::before {
+    border: none;
+  }
+
+  &-group_title,
+  &-group_extra {
+    color: var(--text-secondary);
+    font-size: 14px;
+    padding-left: 16px;
+  }
+
+  &-group_title {
+    margin-bottom: 7.5px;
+  }
+
+  &-group_extra {
+    margin-top: 5.5px;
+    margin-bottom: 12px;
+  }
+}

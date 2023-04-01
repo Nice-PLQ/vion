@@ -1,13 +1,14 @@
-# Vion
+# A Vue.js 3.0 UI Components for Mobile Web
+
+![](https://qzonestyle.gtimg.cn/aoi/sola/20200327152824_OfE2S5Nhrc.png#unite)
 
 ## 特性
 
 - 基于 Vue3 构建
-- 90% 的单元测试覆盖
+- 88% 的单元测试覆盖
 - 30 个基础组件
 - 完善的示例和文档说明
 - 支持 tree-shaking
-- 支持主题定制
 - 支持国际化
 - 支持服务端渲染
 
@@ -16,12 +17,12 @@
 ### 1、安装
 
 ```
-tnpm install vion@next --save
+tnpm install vion --save
 ```
 
 ### 2、引用组件
 
-#### 方式一: 自动按需引入组件（推荐）
+##### 方式一: 自动按需引入组件（推荐）
 
 vion 原生支持基于 ES Module 按需引入组件，未使用的组件会自动 Tree Shaking 掉，包括 js 和 css 代码，无需配置任何插件即可实现。
 
@@ -36,21 +37,7 @@ const app = createApp();
 app.use(Button);
 ```
 
-#### 方式二：手动按需引入组件
-
-在不使用插件的情况下，可以手动引入需要的组件
-
-```js
-import { createApp } from "vue";
-
-import Button from "vion/lib/button";
-import "vion/lib/style/button.css";
-
-const app = createApp();
-app.use(Button);
-```
-
-#### 方式三：全量引入
+##### 方式二：全量引入
 
 组件全量引入会将没有使用的组件一同打包到代码里，会导致业务代码体积增加，一般不推荐全量引入
 
@@ -66,10 +53,23 @@ app.use(vion);
 
 通过`app.use`加载的组件，都可以用`<v-xxx />`的标签形式使用，如`<v-button>按钮</v-button>`
 
-## 贡献
+### 3、关于 SVG 图标
 
-我们十分期待你的任何贡献，无论是修复错别字、提 Bug 还是提交一个新的特性。
+vion 的图标库依赖`vion-svg-icon`，你可以单独引入这个图标库来使用，这种方式是支持 tree-shaking 的，按需使用图标，所以优先考虑这种方式使用图标。而 Icon 组件默认依赖了`vion-svg-icon`的全量 svg 图标，该方式会引起 bundle 变大。
 
-如果你使用过程中发现 Bug，请通过 issues 来提交并描述相关的问题，你也可以在这里查看其它的 issue，通过解决这些 issue 来贡献代码
+```js
+// ✅ 建议 ✅
+import { createApp } from "vue";
+import { Mail, Delete } from "vion-svg-icon";
 
-如果你是第一次贡献代码，请阅读 [CONTRIBUTING](./blob/master/CONTRIBUTING.md) 了解我们的贡献流程，并提交 Merge Request 给我们。
+const app = createApp();
+app.use(Mail).use(Delete);
+
+
+// ⚠️ 尽量避免使用全量的Icon组件，除非你确定是真的需要 ⚠️
+import { createApp } from "vue";
+import { Icon } from "vion";
+
+const app = createApp();
+app.use(Icon);
+```

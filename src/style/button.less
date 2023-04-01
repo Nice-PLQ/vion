@@ -1,0 +1,175 @@
+@import './var.less';
+@import './loading.less';
+
+:root {
+  --button-bg-primary-default: var(--brand-standard);
+  --button-bg-primary-pressed: #0078e5;
+  --button-bg-primary-disable: rgba(0, 153, 255, 0.5);
+  --button-bg-secondary-default: transparent;
+  --button-bg-secondary-pressed: rgba(204, 204, 204, 0.3);
+  --button-bg-error-default: transparent;
+  --button-bg-error-pressed: rgba(204, 204, 204, 0.3);
+  --button-bg-ghost-default: transparent;
+  --button-bg-ghost-pressed: rgba(255, 255, 255, 0.2);
+  --button-border-secondary-default: #ccc;
+  --button-border-error-default: #ccc;
+  --button-border-ghost-default: rgba(255, 255, 255, 0.5);
+  --button-text-primary-default: #fff;
+  --button-text-primary-disable: rgba(255, 255, 255, 0.5);
+  --button-text-secondary-default: #000;
+  --button-text-secondary-disable: rgba(0, 0, 0, 0.3);
+  --button-text-error-default: #ff5967;
+  --button-text-error-disable: rgba(255, 87, 101, 0.3);
+  --button-text-ghost-default: #fff;
+  --button-text-ghost-disable: rgba(255, 255, 255, 0.3);
+  --button-radius-01: 4px;
+  --button-radius-02: 4px;
+}
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    .dark;
+  }
+}
+
+.dark {
+  --button-bg-primary-default: #226cdb;
+  --button-bg-primary-pressed: #0057ad;
+  --button-bg-primary-disable: rgba(0, 102, 204, 0.5);
+  --button-bg-secondary-pressed: rgba(61, 61, 61, 0.6);
+  --button-bg-error-pressed: rgba(61, 61, 61, 0.6);
+  --button-bg-ghost-pressed: rgba(61, 61, 61, 0.6);
+  --button-border-secondary-default: #3d3d3d;
+  --button-border-error-default: #3d3d3d;
+  --button-border-ghost-default: #3d3d3d;
+  --button-text-secondary-default: #fff;
+  --button-text-secondary-disable: rgba(255, 255, 255, 0.3);
+
+}
+
+.@{prefix}-button {
+  font-size: 17px;
+  color: var(--button-text-secondary-default);
+  border-radius: var(--button-radius-01);
+  border: 1px solid var(--button-border-secondary-default);
+  line-height: normal;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_large {
+    width: 100%;
+    max-width: 475px;
+    height: 45px;
+  }
+
+  &_medium {
+    min-width: 168px;
+    height: 39px;
+  }
+
+  &_small {
+    font-size: 14px;
+    padding: 0 14px;
+    height: 29px;
+    font-weight: 400;
+    border-radius: var(--button-radius-02);
+  }
+
+  &_default {
+    background-color: var(--button-bg-secondary-default);
+
+    &:disabled:not(.@{prefix}-button_loading) {
+      color: var(--button-text-secondary-disable);
+    }
+
+    &.@{prefix}-button_loading,
+    &:active:not(:disabled) {
+      background-color: var(--button-bg-secondary-pressed);
+    }
+  }
+
+  &_primary {
+    color: var(--button-text-primary-default);
+    background-color: var(--button-bg-primary-default);
+    border-color: transparent;
+
+    &:disabled:not(.@{prefix}-button_loading) {
+      color: var(--button-text-primary-disable);
+      background-color: var(--button-bg-primary-disable);
+    }
+
+    &.@{prefix}-button_loading,
+    &:active:not(:disabled) {
+      background-color: var(--button-bg-primary-pressed);
+      border-color: var(--button-bg-primary-pressed);
+    }
+  }
+
+  &_warning {
+    color: var(--button-text-error-default);
+    background-color: var(--button-bg-error-default);
+
+    &:disabled:not(.@{prefix}-button_loading) {
+      color: var(--button-text-error-disable);
+    }
+
+    &.@{prefix}-button_loading,
+    &:active:not(:disabled) {
+      background-color: var(--button-bg-error-pressed);
+    }
+  }
+
+  &_ghost {
+    color: var(--button-text-ghost-default);
+    background-color: var(--button-bg-ghost-default);
+    border-color: var(--button-border-ghost-default);
+
+    &:disabled:not(.@{prefix}-button_loading) {
+      color: var(--button-text-ghost-disable);
+    }
+
+    &:active:not(:disabled) {
+      background-color: var(--button-bg-ghost-pressed);
+    }
+  }
+
+  &_link {
+    color: var(--brand-standard);
+    background-color: transparent;
+    border: 0;
+    width: auto;
+
+    &:active,
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  &_link&_link_small {
+    font-size: 14px;
+  }
+
+  .@{prefix}-loading {
+    margin-right: 3px;
+    line-height: 1;
+  }
+
+  .@{prefix}-loading__icon {
+    font-size: 14px;
+  }
+
+  &&_small {
+    .@{prefix}-loading__icon {
+      font-size: 12px;
+    }
+  }
+}

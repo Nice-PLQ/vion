@@ -1,0 +1,18 @@
+@import './var.less';
+
+.@{prefix}-button {
+  &-group {
+    display: flex;
+    max-width: 475px;
+
+    & .@{prefix}-button {
+      &:not(:last-child) {
+        margin-right: 7px;
+      }
+
+      &_medium {
+        min-width: auto;
+      }
+    }
+  }
+}

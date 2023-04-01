@@ -1,0 +1,88 @@
+// 边距
+.generate-distance(@i: 1) when (@i =< 64) {
+  .m-t-@{i} {
+    margin-top: @i * 1px !important;
+  }
+
+  .m-r-@{i} {
+    margin-right: @i * 1px !important;
+  }
+
+  .m-b-@{i} {
+    margin-bottom: @i * 1px !important;
+  }
+
+  .m-l-@{i} {
+    margin-left: @i * 1px !important;
+  }
+
+  .m-x-@{i} {
+    margin: 0 @i * 1px !important;
+  }
+
+  .m-y-@{i} {
+    margin: @i * 1px 0 !important;
+  }
+
+  .p-t-@{i} {
+    padding-top: @i * 1px !important;
+  }
+
+  .p-r-@{i} {
+    padding-right: @i * 1px !important;
+  }
+
+  .p-b-@{i} {
+    padding-bottom: @i * 1px !important;
+  }
+
+  .p-l-@{i} {
+    padding-left: @i * 1px !important;
+  }
+
+  .p-x-@{i} {
+    padding: 0 @i * 1px !important;
+  }
+
+  .p-y-@{i} {
+    padding: @i * 1px 0 !important;
+  }
+
+  .generate-distance((@i + 1));
+}
+
+// 字体大小
+.generate-font(@i: 12) when (@i =< 64) {
+  .font-@{i} {
+    font-size: @i * 1px !important;
+  }
+
+  .generate-font((@i + 1));
+}
+
+.generate-distance();
+.generate-font();
+
+.tc {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-middle {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}

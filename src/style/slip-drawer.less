@@ -1,0 +1,46 @@
+@import './var.less';
+
+:root {
+  --slip-drawer-bg-color: var(--background-white);
+  --slip-drawer-action-color: #fff;
+  --slip-drawer-action-padding-x: 16px;
+  --slip-drawer-action-font-size: 14px;
+}
+
+.@{prefix}-slip-drawer {
+  overflow: hidden;
+  background-color: var(--slip-drawer-bg-color);
+
+  &__wrapper,
+  &__content,
+  &__action,
+  &__action-btn {
+    height: 100%;
+  }
+
+  &__action {
+    position: absolute;
+    top: 0;
+  }
+
+  &__action-left {
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  &__action-right {
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  &__action-btn {
+    padding: 0 var(--slip-drawer-action-padding-x);
+    color: var(--slip-drawer-action-color);
+    font-size: var(--slip-drawer-action-font-size);
+    border: none;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
