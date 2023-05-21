@@ -3,37 +3,35 @@
     :name="type === 'float' ? 'loading-fade' : ''"
     @after-leave="afterLeave"
   >
-    <CircleLoading :ratio="ratio" v-if="type === 'circle'" />
-    <template v-else>
-      <div
-        v-if="visible"
-        :class="{
-          [`${name}`]: true,
-          [`${name}_${type}`]: true
-        }"
-      >
-        <div :class="`${name}__inner`">
-          <div :class="[`${name}__icon`, `${name}__icon-${loadingTheme}`]" :style="{fontSize: size}"  />
-          <span :class="`${name}__txt-tips`" v-if="type === 'float'">{{text}}</span>
-          <span :class="`${name}__txt-tips`" v-else-if="$slots.default">
-            <slot></slot>
-          </span>
-        </div>
+    <div
+      v-if="visible"
+      :class="{
+        [`${name}`]: true,
+        [`${name}_${type}`]: true,
+      }"
+      :style="{color}"
+    >
+      <div :class="`${name}__inner`">
+        <div :class="[`${name}__icon`]" :style="{ fontSize: size }"></div>
+        <span :class="`${name}__txt-tips`" v-if="type === 'float'">
+          {{ text }}
+        </span>
+        <span :class="`${name}__txt-tips`" v-else-if="$slots.default">
+          <slot></slot>
+        </span>
       </div>
-    </template>
+    </div>
   </transition>
 </template>
 
 <script>
-import { defineComponent, watch, computed } from 'vue';
-import CircleLoading from './circle-loading.vue';
+import { defineComponent, watch } from 'vue';
 import { prefix } from '../config';
 
 const name = `${prefix}-loading`;
 
 export default defineComponent({
   name,
-  components: { CircleLoading },
   props: {
     /**
      * @description 是否可见
@@ -41,18 +39,18 @@ export default defineComponent({
      */
     visible: {
       type: Boolean,
-      default: true
+      default: true,
     },
     /**
      * @description loading类型
      * @attribute type
-     * @enum ["normal", "float", "circle"]
+     * @enum ["normal", "float"]
      * @default normal
      */
     type: {
       type: String,
       default: 'normal',
-      validator: value => ['normal', 'float', 'circle'].indexOf(value) !== -1
+      validator: (value) => ['normal', 'float'].indexOf(value) !== -1,
     },
     /**
      * @description 文案
@@ -65,14 +63,10 @@ export default defineComponent({
      */
     size: String,
     /**
-     * @description loading样式
-     * @attribute theme
+     * @description loading的颜色
+     * @attribute color
      */
-    theme: {
-      type: String,
-      default: 'gray',
-      validator: value => ['white', 'gray', 'red'].indexOf(value) !== -1
-    },
+    color: String,
     /**
      * @description loading显示时长
      * @attribute duration
@@ -81,15 +75,9 @@ export default defineComponent({
       type: Number,
       default: 0,
     },
-    ratio: {
-      type: Number,
-      default: 0,
-    }
   },
   emits: ['closed', 'close'],
   setup(props, ctx) {
-    const loadingTheme = computed(() => (props.type === 'float' ? 'white' : props.theme));
-
     watch(
       () => props.visible,
       (val) => {
@@ -107,8 +95,7 @@ export default defineComponent({
 
     return {
       name,
-      loadingTheme,
-      afterLeave
+      afterLeave,
     };
   },
 });

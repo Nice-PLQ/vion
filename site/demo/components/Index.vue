@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header :showBackIcon="false">
-      <v-icon name="Qq" color="#fff" size="30px" />vion
+      Vion
     </Header>
     <ul class="comp-list">
       <li class="comp-item" v-for="item in components" :key="item.name">

@@ -27,11 +27,6 @@
         >{{okText || $locale.translate('confirm')}}</button>
       </div>
       <div :class="`${name}__content`" :style="{height: wrapHeight}">
-        <div :class="`${name}__mask`">
-          <div :class="`${name}__mask-top`"></div>
-          <div :class="`${name}__mask-center`"></div>
-          <div :class="`${name}__mask-bottom`"></div>
-        </div>
         <div :class="`${name}__indicator`" />
         <picker-column
           v-for="(column, index) in formatColumns"

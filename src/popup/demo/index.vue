@@ -119,21 +119,10 @@ export default {
 .slide-fade-leave-active {
   animation: slideFadeOut 1.5s;
 }
-.a {
-  position: relative;
-  z-index: 3;
-  background: red;
-  width: 100vw;
-  height: 30vh;
-}
-.b {
-  position: relative;
-  z-index: 1;
-}
 
-// .q-popup__content {
-//   & > div {
-//     background-color: var(--background-dialogue);
-//   }
-// }
+.v-popup__content {
+  & > div {
+    background-color: var(--background-dialogue);
+  }
+}
 </style>

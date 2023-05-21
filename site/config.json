@@ -31,7 +31,7 @@
     ]
   },
   {
-    "label": "基础组件",
+    "label": "组件",
     "name": "components",
     "children": [
       {

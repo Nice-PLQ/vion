@@ -52,30 +52,6 @@
     overflow: hidden;
   }
 
-  &__mask {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-    pointer-events: none;
-
-    &-top {
-      flex: 1;
-      background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.5));
-    }
-
-    &-bottom {
-      flex: 1;
-      background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0.5));
-    }
-
-    &-center {
-      height: 46px;
-    }
-  }
-
   &__indicator {
     position: absolute;
     top: 50%;

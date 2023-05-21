@@ -36,7 +36,7 @@
         @ok="handleOk"
       />
     </demo-doc>
-    <!-- <demo-doc title="每列显示的数量">
+    <demo-doc title="每列显示的数量">
       <v-button @click="visible3 = true" size="large">列展示7个选项</v-button>
       <v-picker
         :show-item-count="7"
@@ -48,7 +48,7 @@
         @change="handleChange"
         @ok="handleOk"
       />
-    </demo-doc> -->
+    </demo-doc>
     <demo-doc title="多级联动">
       <v-button @click="visible4 = true" size="large">级联</v-button>
       <v-picker

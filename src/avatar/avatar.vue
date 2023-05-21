@@ -31,11 +31,6 @@ export default defineComponent({
   name,
   props: {
     /**
-     * @description qq号
-     * @attribute uin
-     */
-    uin: [String, Number, Array],
-    /**
      * @description 头像的url
      * @attribute url
      */
@@ -45,14 +40,6 @@ export default defineComponent({
      * @attribute size
      */
     size: String,
-    /**
-     * @description 是否为群头像
-     * @attribute group
-     */
-    group: {
-      type: Boolean,
-      default: false
-    },
     /**
      * @description 是否为轮播头像
      * @attribute carousel
@@ -65,28 +52,13 @@ export default defineComponent({
   emits: ['click'],
   setup(props, ctx) {
     const count = computed(() => {
-      const { url, uin } = props;
-      if (url) {
-        return Array.isArray(url) ? url.length : 1;
-      }
-
-      return Array.isArray(uin) ? uin.length : 1;
+      const { url } = props;
+      return Array.isArray(url) ? url.length : 1;
     });
 
-    const uin2AvatarUrl = (uin) => {
-      if (!uin) {
-        return 'https://static-res.qq.com/static-res/q-ui/avatar.png';
-      }
-
-      return props.group ? `https://p.qlogo.cn/gh/${uin}/${uin}/100` : `https://q.qlogo.cn/g?b=qq&nk=${uin}&s=100`;
-    };
-
     const avatars = computed(() => {
-      const { url, uin } = props;
-      if (url) {
-        return Array.isArray(url) ? url : [url];
-      }
-      return Array.isArray(uin) ? uin.map(uin2AvatarUrl) : [uin2AvatarUrl(uin)];
+      const { url } = props;
+      return Array.isArray(url) ? url : [url];
     });
 
     const isCarousel = computed(() => (count.value > 1 && props.carousel));
@@ -105,7 +77,7 @@ export default defineComponent({
       if (isCarousel.value) {
         timer.value = setInterval(() => {
           currentIdx.value = (currentIdx.value + 1) % count.value;
-        }, 1400);
+        }, 1500);
       }
     });
     onUnmounted(() => {

@@ -16,12 +16,12 @@
 <v-loading>正在加载</v-loading>
 ```
 
-#### 3、其他颜色的 loading
+#### 3、loading 图标颜色配置，只支持纯色
 
 ```html
-<v-loading theme="whitte" />
-<v-loading theme="gray" />
-<v-loading theme="red" />
+<v-loading color="#67C23A" />
+<v-loading color="#00CAFC" />
+<v-loading color="#FF596A" />
 ```
 
 #### 4、环形进度条

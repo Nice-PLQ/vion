@@ -1,125 +1,45 @@
 <template>
-  <div class="navbar-demo">
-    <demo-document title="一级界面导航">
-      <demo-doc title="消息Tab导航">
-        <v-nav-bar>
-          <template v-slot:left>
-            <div class="left-content">
-              <v-avatar uin="2647439900" size="18px" />
-              <div class="m-l-8">
-                飞翔的企鹅
-                <div class="status online">
-                  4G在线 <v-icon name="ArrowRight" size="12px"></v-icon>
-                </div>
-              </div>
-            </div>
-          </template>
-          <template v-slot:right>
-            <v-icon name="Camera" size="24px" class="m-r-10" />
-            <v-icon name="Add" size="24px" />
-          </template>
-        </v-nav-bar>
-      </demo-doc>
+  <div style="padding-bottom: 16px;">
+    <demo-doc title="基本用法">
+      <v-nav-bar @back="handleBack" @title-click="handleTitleClick">标题</v-nav-bar>
+    </demo-doc>
+    <demo-doc title="设置左右的图标或文本">
+      <v-nav-bar right-text="设置" left-text="返回" @right-click="handleRightClick">导航栏标题长度超出范围</v-nav-bar>
+      <v-nav-bar left-icon="close" right-icon="setting" style="margin-top: 8px;">标题</v-nav-bar>
+    </demo-doc>
+    <demo-doc title="自定义左右区域的内容">
+      <v-nav-bar>
+        标题
+        <template v-slot:left>
+          <button style="display: flex; align-items: center;">
+            <v-icon name="left" size="18px" />
+            <v-badge type="capsule" background-color="rgba(255, 255, 255, .2)">99+</v-badge>
+          </button>
+        </template>
+      </v-nav-bar>
+      <v-nav-bar style="margin-top: 8px;">
+        标题
+        <template v-slot:left>
+          <v-avatar uin="595527134" size="14px" />
+        </template>
+        <template v-slot:right>
+          <button title="分享">
+            <v-icon name="share" size="18px" />
+          </button>
+        </template>
+      </v-nav-bar>
+    </demo-doc>
 
-      <demo-doc title="联系人/动态Tab导航">
-        <v-nav-bar>
-          <template v-slot:left>
-            <div class="left-content">
-              <v-avatar uin="2647439900" size="18px" />
-              <div class="m-l-8" style="font-size: 20px">联系人</div>
-            </div>
-          </template>
-          <template v-slot:right>
-            <v-icon name="Setting" size="24px" />
-          </template>
-        </v-nav-bar>
-      </demo-doc>
-
-      <demo-doc title="C2C聊天导航">
-        <v-nav-bar theme="gray">
-          <template v-slot:left>
-            <div class="left-content">
-              <v-icon name="ArrowLeft" size="24" style="margin-left:-7px"></v-icon>
-              <v-badge type="capsule" size="10px">57</v-badge>
-              <div class="m-l-4">
-                飞翔的企鹅
-                <div class="status online">
-                  4G在线 <v-icon name="ArrowRight" size="12px"></v-icon>
-                </div>
-              </div>
-            </div>
-          </template>
-          <template v-slot:right>
-            <v-icon name="Telephone" size="24px" class="m-r-10" />
-            <v-icon name="ChatSettings" size="24px" />
-          </template>
-        </v-nav-bar>
-      </demo-doc>
-
-      <demo-doc title="群聊导航">
-        <v-nav-bar theme="gray">
-          <template v-slot:left>
-            <div class="left-content">
-              <v-icon name="ArrowLeft" size="24" style="margin-left:-7px"></v-icon>
-              <v-badge type="capsule" size="10px">57</v-badge>
-              <div class="m-l-4">
-                企鹅开发组
-                <div class="status">
-                  24人在线 <v-icon name="ArrowDown" size="12px"></v-icon>
-                </div>
-              </div>
-            </div>
-          </template>
-          <template v-slot:right>
-            <v-icon name="Telephone" size="24px" class="m-r-10" />
-            <v-icon name="ChatSettings" size="24px" />
-          </template>
-        </v-nav-bar>
-      </demo-doc>
-    </demo-document>
-
-    <demo-document title="二级界面导航">
-      <demo-doc title="右侧无操作">
-        <v-nav-bar>设置</v-nav-bar>
-      </demo-doc>
-
-      <demo-doc title="右侧操作为文本描述">
-        <v-nav-bar right-text="文本">导航栏</v-nav-bar>
-      </demo-doc>
-
-      <demo-doc title="右侧操作为图标">
-        <v-nav-bar right-icon="setting">
-          我的资料
-          <template v-slot:right>
-            <v-icon name="Setting" size="24px" />
-          </template>
-        </v-nav-bar>
-      </demo-doc>
-    </demo-document>
-
-    <demo-document title="浮层界面导航" class="p-b-32">
-      <demo-doc title="顶部无操作">
-        <v-nav-bar right-text="取消">
-          选择联系人
-          <template v-slot:left>
-            <div style="width: 52px;height: 24px;"></div>
-          </template>
-        </v-nav-bar>
-      </demo-doc>
-
-      <demo-doc title="顶部有更多操作">
-        <v-nav-bar :show-left-icon="false" left-text="取消" right-text="多选">
-          选择联系人
-        </v-nav-bar>
-      </demo-doc>
-    </demo-document>
+    <demo-doc title="主题">
+      <v-nav-bar theme="black" right-icon="setting">黑色主题</v-nav-bar>
+      <v-nav-bar theme="white" style="margin-top: 8px;" right-icon="scan">白色主题</v-nav-bar>
+      <v-nav-bar theme="gray" style="margin-top: 8px;" right-icon="quit">灰色主题</v-nav-bar>
+    </demo-doc>
   </div>
 </template>
 
 <script>
-import DemoDocument from '../../../site/demo/components/DemoDocument.vue';
 export default {
-  components: { DemoDocument },
   data() {
     return {};
   },
@@ -136,44 +56,3 @@ export default {
   }
 };
 </script>
-
-<style lang="less">
-.navbar-demo {
-  .demo-doc__title {
-    padding-top: 16px;
-    padding-left: 16px;
-  }
-  .demo-doc {
-    padding: 0;
-    margin: 0 -16px;
-  }
-  .left-content {
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: bold;
-
-    .q-badge {
-      color: var(--text-primary);
-      background: transparent;
-      border: 1px solid var(--text-primary);
-      padding: 0 3px;
-    }
-
-    .status {
-      display: flex;
-      align-items: center;
-      font-size: 12px;
-      font-weight: normal;
-      &.online::before {
-        content: '';
-        width: 10px;
-        height: 10px;
-        border-radius: 100%;
-        background: linear-gradient(180deg, #3DF291 0%, #0BD983 100%);
-        margin-right: 4px;
-      }
-    }
-  }
-}
-</style>

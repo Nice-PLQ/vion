@@ -53,7 +53,21 @@ this.$dialog.alert({
 });
 ```
 
-#### 4、组件方式引用
+#### 4、自定义按钮的颜色
+
+```js
+this.$dialog.confirm({
+  title: "提示",
+  content: "这是confirm弹窗",
+  cancelBtnTextColor: "#FF596A",
+  confirmBtnTextColor: "#00cafc",
+  callback: (action) => {
+    console.log(action);
+  },
+});
+```
+
+#### 5、组件方式引用
 
 除了快捷调用外，同时提供了组件方式引用 Dialog 组件
 
@@ -77,32 +91,6 @@ export default {
     };
   },
 };
-```
-
-#### 5、自定义图文内容
-
-```html
-<v-button @click="visible = true" type="primary">显示</v-button>
-<v-dialog
-  title="提示"
-  :visible="visible"
-  @cancel="visible = false"
-  @confirm="visible = false"
->
-  <div class="dialog-content-title">发送给：</div>
-  <div class="user-content">
-    <v-avatar uin="2647439900" />
-    <span class="user-name">安德烈</span>
-  </div>
-  <div class="dialog-content">
-    一起去图书馆吧
-    <v-icon name="ArrowRight" size="14px" />
-  </div>
-  <div class="message-container">
-    <input type="text" placeholder="输入留言" />
-    <v-icon name="Emoji" />
-  </div>
-</v-dialog>
 ```
 
 #### 6、自定义选项按钮

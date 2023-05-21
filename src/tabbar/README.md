@@ -10,21 +10,21 @@
 <v-tabbar>
   <v-tabbar-item>
     <template #icon>
-      <v-icon name="qq" />
+      <v-icon name="home" />
     </template>
-    QQ
+    主页
   </v-tabbar-item>
   <v-tabbar-item>
     <template #icon>
-      <v-icon name="qzone" />
+      <v-icon name="Message" />
     </template>
-    QZone
+    消息
   </v-tabbar-item>
   <v-tabbar-item>
     <template #icon>
-      <v-icon name="wechat" />
+      <v-icon name="Contact" />
     </template>
-    Wechat
+    联系人
   </v-tabbar-item>
 </v-tabbar>
 ```
@@ -35,111 +35,55 @@
 
 ```html
 <v-tabbar>
-  <v-tabbar-item :badge="true">
-    <template #icon>
-      <v-icon name="qq" />
-    </template>
-    QQ
-  </v-tabbar-item>
   <v-tabbar-item>
     <template #icon>
-      <v-icon name="qzone" />
+      <v-icon name="home" />
     </template>
-    QZone
+    主页
   </v-tabbar-item>
   <v-tabbar-item badge="99+">
     <template #icon>
-      <v-icon name="wechat" />
+      <v-icon name="Message" />
     </template>
-    Wechat
+    消息
   </v-tabbar-item>
-</v-tabbar>
-```
-
-#### 3、自定义图标
-
-通过`v-slot:icon`指令自定义标签的图标
-
-```html
-<v-tabbar v-model="current">
-  <v-tabbar-item v-for="(tab, index) in tabs" :key="index" :badge="tab.badge">
+  <v-tabbar-item :badge="true">
     <template #icon>
-      <img :src="current === index ? tab.selected : tab.unselected" />
+      <v-icon name="Mail" />
     </template>
-    {{'{{tab.label\}\}'}}
+    邮件
+  </v-tabbar-item>
+  <v-tabbar-item>
+    <template #icon>
+      <v-icon name="Contact" />
+    </template>
+    联系人
   </v-tabbar-item>
 </v-tabbar>
 ```
 
-```js
-export default {
-  data() {
-    return {
-      current: 0,
-      tabs: [
-        {
-          label: "消息",
-          badge: "30",
-          selected:
-            "https://sola.gtimg.cn/aoi/sola/20200826160924_kYGWbQNOqK.png",
-          unselected:
-            "https://sola.gtimg.cn/aoi/sola/20200826160924_i3k2OEiPYY.png"
-        },
-        {
-          label: "联系人",
-          badge: "新",
-          selected:
-            "https://sola.gtimg.cn/aoi/sola/20200826160924_AZFH5y7dWO.png",
-          unselected:
-            "https://sola.gtimg.cn/aoi/sola/20200826160924_T7Im0EYRu9.png"
-        },
-        {
-          label: "看点",
-          selected:
-            "https://sola.gtimg.cn/aoi/sola/20200826160924_iP8jUrmE4G.png",
-          unselected:
-            "https://sola.gtimg.cn/aoi/sola/20200826160924_uGy1fL9Oso.png"
-        },
-        {
-          label: "动态",
-          selected:
-            "https://sola.gtimg.cn/aoi/sola/20200826160924_JX7rrkBOdq.png",
-          unselected:
-            "https://sola.gtimg.cn/aoi/sola/20200826160924_LyYXOY5zmd.png"
-        }
-      ]
-    };
-  },
-  methods: {
-    change(index) {
-      this.current = index;
-    }
-  }
-};
-```
-
-#### 4、自定义颜色
+#### 3、自定义颜色
 
 ```html
 <!-- 统一设置颜色 -->
 <v-tabbar active-color="#00CAFC" inactive-color="#03081A">
   <v-tabbar-item>
     <template #icon>
-      <v-icon name="qq" />
+      <v-icon name="home" />
     </template>
-    QQ
+    主页
   </v-tabbar-item>
   <v-tabbar-item>
     <template #icon>
-      <v-icon name="qzone" />
+      <v-icon name="Message" />
     </template>
-    QZone
+    消息
   </v-tabbar-item>
   <v-tabbar-item>
     <template #icon>
-      <v-icon name="wechat" />
+      <v-icon name="Contact" />
     </template>
-    Wechat
+    联系人
   </v-tabbar-item>
 </v-tabbar>
 
@@ -147,21 +91,21 @@ export default {
 <v-tabbar>
   <v-tabbar-item active-color="#00CAFC">
     <template #icon>
-      <v-icon name="qq" />
+      <v-icon name="home" />
     </template>
-    QQ
+    主页
   </v-tabbar-item>
   <v-tabbar-item active-color="#FFCD00">
     <template #icon>
-      <v-icon name="qzone" />
+      <v-icon name="Message" />
     </template>
-    QZone
+    消息
   </v-tabbar-item>
   <v-tabbar-item active-color="#67C23A">
     <template #icon>
-      <v-icon name="wechat" />
+      <v-icon name="Contact" />
     </template>
-    Wechat
+    联系人
   </v-tabbar-item>
 </v-tabbar>
 ```

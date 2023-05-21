@@ -2,6 +2,7 @@
 @import './animations/fade.less';
 
 .@{prefix}-loading {
+  color: #999;
   &__icon {
     font-size: 16px;
     display: inline-block;
@@ -9,15 +10,23 @@
     width: 1em;
     height: 1em;
     vertical-align: middle;
-    background-image: url(./image/loading-gray.png);
-    background-size: cover;
+    position: relative;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    animation: VLoading ease 1s infinite;
 
-    &-white {
-      background-image: url(./image/loading-white.png);
-    }
-
-    &-red {
-      background-image: url(./image/loading-red.png);
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 50%;
+      margin-top: -0.125em;
+      margin-left: -0.125em;
+      width: 0.25em;
+      height: 0.25em;
+      background-color: currentColor;
+      border-radius: 50%;
     }
   }
 
@@ -56,6 +65,7 @@
   &_float &__icon {
     display: block;
     font-size: 24px;
+    color: #fff;
   }
 
   &_float &__txt-tips {
@@ -64,29 +74,24 @@
     color: var(--text-white);
     font-size: 14px;
   }
+}
 
+@keyframes VLoading {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
 
-  &_circle {
-    color: var(--brand-standard);
-    &-inner {
-      transform-origin: 28px 28px;
-      transform: rotate(-90deg);
-      transition: stroke-dasharray 200ms ease-in;
-    }
-    &-text {
-      text-anchor: middle;
-      dominant-baseline: middle;
-      font-size: 12px;
-      line-height: 1;
-      stroke: #fff;
-    }
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
   }
 }
 
 .loading-fade-enter-active {
-  animation: QFadeIn linear 150ms;
+  animation: VFadeIn linear 150ms;
 }
 
 .loading-fade-leave-active {
-  animation: QFadeOut linear 150ms;
+  animation: VFadeOut linear 150ms;
 }
+
+

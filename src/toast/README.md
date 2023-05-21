@@ -16,19 +16,19 @@ Toast 组件默认在 vue 实例下挂载`$toast`对象，方便在业务代码�
 export default {
   methods: {
     success() {
-      this.$toast.success('草稿已保存');
+      this.$toast.success("完成类提示");
     },
     error() {
-      this.$toast.error('此账号为高风险账号');
+      this.$toast.error("警示类提示");
     },
     info() {
       this.$toast({
-        type: 'info',
-        message: '今天的任务已经完成了',
-        duration: 3000
+        type: "info",
+        message: "通知类提示",
+        duration: 3000, // 3s后隐藏
       });
-    }
-  }
+    },
+  },
 };
 ```
 
@@ -48,5 +48,5 @@ export default {
 | -------- | ----------------------- | --------- | ---------------------------------- |
 | type     | toast 类型              | _string_  | `success`&#124;`error`&#124;`info` |
 | message  | 提示文案                | _string_  | -                                  |
-| duration | 自动隐藏时长（单位 ms） | _number_  | 1500                               |
-| safe     | 是否适配刘海屏          | _boolean_ | false                              |
+| duration | 自动隐藏时长（单位 ms） | _number_  | `1500`                             |
+| safe     | 是否适配刘海屏          | _boolean_ | `false`                            |

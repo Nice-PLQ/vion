@@ -1,11 +1,8 @@
 <template>
-  <transition name="pop" @after-leave="afterLeave">
+  <transition name="toast" @after-leave="afterLeave">
     <div
       v-show="visible"
-      :class="{
-        [name]: true,
-        [`${name}-safe`]: safe
-      }"
+      :class="name"
     >
       <div :class="`${name}__inner`">
         <component :is="iconType" :class="`${name}-${type}`" size="27.5px" />
@@ -58,14 +55,6 @@ export default defineComponent({
       type: Number,
       default: 1500
     },
-    /**
-     * @description 是否刘海屏适配
-     * @attribute safe
-     */
-    safe: {
-      type: Boolean,
-      default: false
-    }
   },
   emits: ['close', 'closed'],
   setup(props, ctx) {

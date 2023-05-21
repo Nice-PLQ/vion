@@ -1,99 +1,20 @@
 <template>
-  <div class="badge-demo">
-    <demo-doc title="数字红点（强提醒）">
-      <v-list-group>
-        <v-list title="列表标题" desc="描述文本">
-          <template v-slot:left>
-            <v-avatar uin="2647439900" class="m-r-12" />
-          </template>
-          <template v-slot:right>
-            <div class="list-right">
-              <div class="m-b-5">晚上 8:24</div>
-              <v-badge aria-label="56条新消息" class="m-r-4">9</v-badge>
-            </div>
-          </template>
-        </v-list>
-        <v-list title="列表标题" desc="描述文本">
-          <template v-slot:left>
-            <v-avatar uin="2647439900" class="m-r-12" />
-          </template>
-          <template v-slot:right>
-            <div class="list-right">
-              <div class="m-b-5">晚上 8:24</div>
-              <v-badge type="capsule" aria-label="56条新消息" class="m-r-4">56</v-badge>
-            </div>
-          </template>
-        </v-list>
-        <v-list title="列表标题" desc="描述文本">
-          <template v-slot:left>
-            <v-avatar uin="2647439900" class="m-r-12" />
-          </template>
-          <template v-slot:right>
-            <div class="list-right">
-              <div class="m-b-5">晚上 8:24</div>
-              <v-badge type="capsule" aria-label="56条新消息" class="m-r-4">99+</v-badge>
-            </div>
-          </template>
-        </v-list>
-      </v-list-group>
+  <div>
+    <demo-doc title="红点">
+      <v-badge type="dot" aria-label="新消息" />
     </demo-doc>
-    <demo-doc title="数字红点（弱提醒）">
-      <v-list-group>
-        <v-list title="列表标题" desc="描述文本">
-          <template v-slot:left>
-            <v-avatar uin="2647439900" class="m-r-12" />
-          </template>
-          <template v-slot:right>
-            <div class="list-right">
-              <div class="m-b-5">晚上 8:24</div>
-              <v-badge aria-label="56条新消息" class="m-r-4" background-color="#CCCCCC">9</v-badge>
-            </div>
-          </template>
-        </v-list>
-        <v-list title="列表标题" desc="描述文本">
-          <template v-slot:left>
-            <v-avatar uin="2647439900" class="m-r-12" />
-          </template>
-          <template v-slot:right>
-            <div class="list-right">
-              <div class="m-b-5">晚上 8:24</div>
-              <v-badge type="capsule" aria-label="56条新消息" class="m-r-4" background-color="#CCCCCC">56</v-badge>
-            </div>
-          </template>
-        </v-list>
-        <v-list title="列表标题" desc="描述文本">
-          <template v-slot:left>
-            <v-avatar uin="2647439900" class="m-r-12" />
-          </template>
-          <template v-slot:right>
-            <div class="list-right">
-              <div class="m-b-5">晚上 8:24</div>
-              <v-badge type="capsule" aria-label="56条新消息" class="m-r-4" background-color="#CCCCCC">99+</v-badge>
-            </div>
-          </template>
-        </v-list>
-      </v-list-group>
+    <demo-doc title="圆形和胶囊形状">
+      <v-badge type="normal" aria-label="9条新消息">9</v-badge>
+      <v-badge type="capsule" aria-label="99+条新消息">99+</v-badge>
+      <v-badge type="capsule" aria-label="新消息">新</v-badge>
     </demo-doc>
-    <demo-doc title="小红点" class="p-b-16">
-      <v-list title="列表标题" desc="描述文本">
-        <template v-slot:left>
-          <v-avatar uin="2647439900" class="m-r-12" />
-        </template>
-        <template v-slot:right>
-          <v-badge type="dot" />
-          <v-icon name="ArrowRight" />
-        </template>
-      </v-list>
+    <demo-doc title="不同的颜色">
+      <v-badge type="normal" background-color="#67C23A" aria-label="9条新消息">9</v-badge>
+      <v-badge type="capsule" background-color="#B0B3BF" text-color="#000" aria-label="99+条新消息">99+</v-badge>
+    </demo-doc>
+    <demo-doc title="自定义大小">
+      <v-badge type="normal" size="16px" aria-label="9条新消息">9</v-badge>
+      <v-badge type="capsule" size="16px" aria-label="99+条新消息">99+</v-badge>
     </demo-doc>
   </div>
 </template>
-
-<style lang="less">
-  .badge-demo {
-    .list-right {
-      text-align: right;
-      font-size: 12px;
-      color: var(--text-tertiary);
-    }
-  }
-</style>

@@ -4,43 +4,40 @@
       <v-tooltips
         text="气泡提示的内容"
         placement="top-center"
-        :visible="btn1Visible"
-        theme="dark"
+        :visible="visible"
         @visible-change="onVisibleChange"
       >
-        <v-button size="large" @click="btn1Visible = !btn1Visible">top-center</v-button>
+        <v-button size="large" type="primary" @click="visible = !visible">Top-Center</v-button>
       </v-tooltips>
     </demo-doc>
     <demo-doc>
       <v-tooltips
         text="气泡提示的内容"
         placement="top-left"
-        :visible="btn2Visible"
-        theme="dark"
+        :visible="visible1"
         @visible-change="onVisibleChange"
       >
-        <v-button size="large" @click="btn2Visible = !btn2Visible">top-left</v-button>
+        <v-button size="large" type="primary" @click="visible1 = !visible1">Top-Left</v-button>
       </v-tooltips>
     </demo-doc>
     <demo-doc>
       <v-tooltips
         text="气泡提示的内容"
         placement="top-right"
-        :visible="btn3Visible"
-        theme="dark"
+        :visible="visible3"
         @visible-change="onVisibleChange"
       >
-        <v-button size="large" @click="btn3Visible = !btn3Visible">top-right</v-button>
+        <v-button size="large" type="primary" @click="visible3 = !visible3">Top-Right</v-button>
       </v-tooltips>
     </demo-doc>
     <demo-doc>
-      <v-tooltips text="自定义气泡提示的内容" :visible="btn7Visible">
-        <v-button size="large" @click="btn7Visible = !btn7Visible">自定义内容</v-button>
+      <v-tooltips text="自定义气泡提示的内容" :visible="visible4">
+        <v-button size="large" type="primary" @click="visible4 = !visible4">自定义内容</v-button>
         <template v-slot:content>
           <ul class="custom-tooltips">
-            <li>粘贴</li>
-            <li>全屏输入</li>
-            <li>换行</li>
+            <li>全选</li>
+            <li>复制</li>
+            <li>剪切</li>
           </ul>
         </template>
       </v-tooltips>
@@ -49,22 +46,30 @@
       <v-tooltips
         text="气泡提示的内容"
         placement="bottom-center"
-        :visible="btn4Visible"
-        theme="dark"
+        :visible="visible5"
         @visible-change="onVisibleChange"
       >
-        <v-button size="large" @click="btn4Visible = !btn4Visible">bottom-center</v-button>
+        <v-button size="large" type="primary" @click="visible5 = !visible5">Bottom-Center</v-button>
       </v-tooltips>
     </demo-doc>
     <demo-doc>
       <v-tooltips
         text="气泡提示的内容"
         placement="bottom-left"
-        :visible="btn5Visible"
-        theme="dark"
+        :visible="visible6"
         @visible-change="onVisibleChange"
       >
-        <v-button size="large" @click="btn5Visible = !btn5Visible">bottom-left</v-button>
+        <v-button size="large" type="primary" @click="visible6 = !visible6">Bottom-Left</v-button>
+      </v-tooltips>
+    </demo-doc>
+    <demo-doc>
+      <v-tooltips
+        text="气泡提示的内容"
+        placement="bottom-right"
+        :visible="visible7"
+        @visible-change="onVisibleChange"
+      >
+        <v-button size="large" type="primary" @click="visible7 = !visible7">Bottom-Right</v-button>
       </v-tooltips>
     </demo-doc>
   </div>
@@ -74,29 +79,28 @@
 import { defineComponent, ref } from 'vue';
 export default defineComponent({
   setup() {
-    const btn1Visible = ref(true);
-    const btn2Visible = ref(true);
-    const btn3Visible = ref(true);
-    const btn4Visible = ref(true);
-    const btn5Visible = ref(true);
-    const btn6Visible = ref(true);
-    const btn7Visible = ref(true);
+    const visible = ref(true);
+    const visible1 = ref(true);
+    const visible2 = ref(true);
+    const visible3 = ref(true);
+    const visible4 = ref(true);
+    const visible5 = ref(true);
+    const visible6 = ref(true);
+    const visible7 = ref(true);
     const onVisibleChange = (value) => {
       console.log(value);
     };
-    const onTooltipsClick = () => {
-      console.log('click');
-    };
+
     return {
-      btn1Visible,
-      btn2Visible,
-      btn3Visible,
-      btn4Visible,
-      btn5Visible,
-      btn6Visible,
-      btn7Visible,
+      visible,
+      visible1,
+      visible2,
+      visible3,
+      visible4,
+      visible5,
+      visible6,
+      visible7,
       onVisibleChange,
-      onTooltipsClick,
     };
   }
 });
@@ -114,7 +118,7 @@ export default defineComponent({
     li {
       padding: 8px;
       &:not(:last-child) {
-        border-right: 1px solid var(--border-standard);
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
       }
     }
   }

@@ -17,6 +17,9 @@
     <demo-doc title="进度条高度">
       <v-progress :value="val2" height="10px" background="#67C23A" />
     </demo-doc>
+    <demo-doc title="环形进度">
+      <v-progress :value="val2" type="circle" />
+    </demo-doc>
     <v-button-group>
       <v-button size="large" @click="reduce">-</v-button>
       <v-button type="primary" size="large" @click="add">+</v-button>

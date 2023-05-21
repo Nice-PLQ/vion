@@ -20,9 +20,9 @@ export default [
     component: () => import('@docs/classnames.md'),
   },
   {
-    name: 'plugin',
-    label: '编辑器插件',
-    component: () => import('@docs/plugin.md'),
+    name: 'contribute',
+    label: '贡献代码',
+    component: () => import('@docs/contribute.md'),
   },
   {
     name: 'Avatar',

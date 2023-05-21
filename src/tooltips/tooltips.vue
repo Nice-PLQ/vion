@@ -55,17 +55,6 @@ export default defineComponent({
       default: ''
     },
     /**
-     * @description 主题
-     * @attribute theme
-     * @enum ["dark", "light"]
-     * @default dark
-     */
-    theme: {
-      type: String,
-      default: 'dark',
-      validator: val => ['dark', 'light'].indexOf(val) !== -1
-    },
-    /**
      * @description 是否可见
      * @attribute visible
      */
@@ -95,7 +84,7 @@ export default defineComponent({
       if (isCenter.value) position += '-center';
 
       // 追加主题相关class
-      return [name, position, `${name}_theme-${props.theme}`];
+      return [name, position];
     });
 
     const offsetTopHeight = ref(0);

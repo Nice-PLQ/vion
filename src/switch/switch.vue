@@ -4,7 +4,6 @@
       [`${name}`]: true,
       [`${name}_checked`]: currentChecked,
       [`${name}_disabled`]: disabled,
-      [`${name}_native`]: shap === 'native'
     }"
     :style="style"
     role="switch"
@@ -54,15 +53,6 @@ export default defineComponent({
      * @attribute inactive-color
      */
     inactiveColor: String,
-    /**
-     * @description 开关样式
-     * @attribute shap
-     */
-    shap: {
-      type: String,
-      default: 'normal',
-      validator: val => ['normal', 'native'].indexOf(val) !== -1,
-    }
   },
   emits: ['update:modelValue', 'click', 'change'],
   setup(props, ctx) {

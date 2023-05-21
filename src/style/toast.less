@@ -3,9 +3,8 @@
 .@{prefix}-toast {
   position: fixed;
   top: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100vw - 16px);
+  left: 16px;
+  right: 16px;
   max-width: 475px;
   z-index: 10001;
 
@@ -15,10 +14,10 @@
     align-items: center;
     height: 59.5px;
     padding: 0 16px;
-    background-color: var(--background-dialogue);
+    background: rgba(255, 255, 255, 0.24);
     backdrop-filter: blur(20px);
-    box-shadow: 0 3px 20px 0 rgba(3, 8, 26, 0.15);
-    border-radius: 12px;
+    box-shadow: 0 3px 12px 0 rgba(3, 8, 26, 0.15);
+    border-radius: 8px;
   }
 
   &-success {
@@ -43,42 +42,30 @@
   }
 }
 
-.pop-enter-active {
-  animation: popAppearIn 0.3s ease;
-  transform-origin: 50% 0%;
+.toast-enter-active {
+  animation: ToastSlideTopIn 0.3s ease;
 }
 
-.pop-leave-active {
-  animation: popAppearOut 0.3s ease;
-  transform-origin: 50% 0%;
+.toast-leave-active {
+  animation: ToastSlideTopOut 0.3s ease;
 }
 
-@keyframes popAppearIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%) scale(0.3);
+@keyframes ToastSlideTopIn {
+  from {
+    transform: translate3d(0, -100%, 0);
   }
 
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateX(-50%) scale(1);
+  to {
+    transform: translate3d(0, 0, 0);
   }
 }
 
-@keyframes popAppearOut {
-  0% {
-    transform: translateX(-50%) scale(1);
+@keyframes ToastSlideTopOut {
+  from {
+    transform: translate3d(0, 0, 0);
   }
 
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateX(-50%) scale(0.1);
+  to {
+    transform: translate3d(0, calc(-100% - 16px), 0);
   }
 }

@@ -1,46 +1,34 @@
 <template>
   <div>
-    <demo-doc title="通用/有标题">
-      <v-button @click="alert" size="large" class="m-b-16">一个操作</v-button>
-      <v-button @click="confirm" size="large">二个操作</v-button>
+    <demo-doc title="基础用法">
+      <v-button @click="alert" type="primary" size="large">Alert</v-button>
     </demo-doc>
-    <demo-doc title="通用/无标题(1行文字)">
-      <v-button @click="alert1" size="large" class="m-b-16">一个操作</v-button>
-      <v-button @click="confirm1" size="large">二个操作</v-button>
+    <demo-doc title="html片段">
+      <v-button @click="alert2" type="primary" size="large">内容支持html片段</v-button>
     </demo-doc>
-    <demo-doc title="通用/无标题(2行文字)">
-      <v-button @click="alert2" size="large" class="m-b-16">一个操作</v-button>
-      <v-button @click="confirm2" size="large">二个操作</v-button>
+    <demo-doc title="延时关闭">
+      <v-button @click="alert3" type="primary" size="large">手动关闭，延时1s</v-button>
     </demo-doc>
-    <demo-doc title="自定义内容展示">
-      <v-button @click="visible = true" size="large">弹窗转发</v-button>
-      <v-dialog dialogClass="custom-dialog" v-model="visible">
-        <div class="dialog-content-title">发送给：</div>
-        <div class="user-content">
-          <v-avatar uin="2647439900" />
-          <span class="user-name">安德烈</span>
-        </div>
-        <div class="dialog-content">
-          一起去图书馆吧
-          <arrow-right name="ArrowRight" size="16px" color="#989EB4" />
-        </div>
-        <div class="message-container">
-          <input type="text" placeholder="输入留言" />
-          <emoji color="var(--icon_primary)" size="23px" />
-        </div>
+    <demo-doc title="选择对话框">
+      <v-button @click="confirm" type="primary" size="large">Confirm</v-button>
+    </demo-doc>
+    <demo-doc title="设置按钮文本颜色">
+      <v-button @click="confirm2" type="primary" size="large">Confirm</v-button>
+    </demo-doc>
+    <demo-doc title="组件方式引用">
+      <v-button @click="visible = true" type="primary" size="large">显示</v-button>
+      <v-dialog title="提示" v-model="visible">
+        <div>这是组件的弹窗用法</div>
       </v-dialog>
     </demo-doc>
-    <demo-doc title="三个操作按钮">
-      <v-button @click="customButtons" size="large" class="m-b-16">自定义3个按钮</v-button>
+    <demo-doc title="自定义按钮">
+      <v-button @click="customButtons" type="primary" size="large" class="m-b-16">自定义3个按钮</v-button>
     </demo-doc>
   </div>
 </template>
 
 <script>
-import { Emoji, ArrowRight } from 'vion-svg-icon';
-
 export default {
-  components: { Emoji, ArrowRight },
   data() {
     return {
       visible: false,
@@ -53,37 +41,8 @@ export default {
   methods: {
     alert() {
       this.$dialog.alert({
-        title: '下线通知',
-        content: '你的帐号于17:00在一台Android手机登录。如非本人操作，密码可能已经泄露，建议前往 http://110.qq.com/修改密码或者紧急冻结帐号。',
-        confirmBtnText: '我知道了',
-        callback: (action) => {
-          console.log(action);
-        }
-      });
-    },
-    confirm() {
-      this.$dialog.confirm({
-        title: '下线通知',
-        content: '你的帐号于17:00在一台Android手机登录。如非本人操作，密码可能已经泄露，建议前往 http://110.qq.com/修改密码或者紧急冻结帐号。',
-        confirmBtnText: '重新登录',
-        cancelBtnText: '退出',
-        callback: (action) => {
-          console.log(action);
-        }
-      });
-    },
-    alert1() {
-      this.$dialog.alert({
-        content: '文字一行的情况下居中显示',
-        confirmBtnText: '我知道了',
-        callback: (action) => {
-          console.log(action);
-        }
-      });
-    },
-    confirm1() {
-      this.$dialog.confirm({
-        content: '文字一行的情况下居中显示',
+        title: '提示',
+        content: '这是Alert弹窗',
         callback: (action) => {
           console.log(action);
         }
@@ -91,27 +50,50 @@ export default {
     },
     alert2() {
       this.$dialog.alert({
-        content: '在文字超过一行需要换行的情况下，文字居左显示。',
-        confirmBtnText: '我知道了',
-        callback: (action) => {
+        title: '提示',
+        content: '<strong style="color: red;">这是alert弹窗</strong>',
+        dangerouslyUseHTMLString: true,
+        callback: action => {
+          console.log(action);
+        }
+      });
+    },
+    alert3() {
+      this.$dialog.alert({
+        title: '提示',
+        content: '这是alert弹窗',
+        beforeClose: (action, done) => {
+          console.log(action);
+          setTimeout(done, 1000);
+        }
+      });
+    },
+    confirm() {
+      this.$dialog.confirm({
+        title: '提示',
+        content: '这是confirm弹窗',
+        callback: action => {
           console.log(action);
         }
       });
     },
     confirm2() {
       this.$dialog.confirm({
-        content: '在文字超过一行需要换行的情况下，文字居左显示。',
-        callback: (action) => {
+        title: '提示',
+        content: '这是confirm弹窗',
+        cancelBtnTextColor: '#FF596A',
+        confirmBtnTextColor: '#00cafc',
+        callback: action => {
           console.log(action);
         }
       });
     },
     customButtons() {
       this.$dialog.show({
-        title: '是否使用此手机号登录新QQ号',
-        content: '每个手机号只能用于1个QQ号的登录。若选择使用手机号18*****248登录，新QQ号则原QQ号无法再用此手机号登录。',
-        buttons: ['使用', '不使用', '取消'],
-        callback: (index) => {
+        title: '提示',
+        content: '可自定义多个按钮，建议最多3个',
+        buttons: ['使用', '不使用', { text: '取消', color: '#FF596A' }],
+        callback: index => {
           console.log('按钮的索引：', index);
         }
       });

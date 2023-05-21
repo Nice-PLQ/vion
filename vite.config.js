@@ -70,9 +70,9 @@ export default defineConfig({
           return `<pre class="hljs"><code>${str}</code></pre>`;
         }
       },
-      markdownItSetup(md) {
-        md.use(lineNumber);
-      },
+      // markdownItSetup(md) {
+      //   md.use(lineNumber);
+      // },
     }),
   ],
 });

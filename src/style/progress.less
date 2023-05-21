@@ -28,4 +28,21 @@
     font-size: 12px;
     color: #878b99;
   }
+
+  &_circle {
+    color: var(--brand-standard);
+
+    &-stroke {
+      transform-origin: 28px 28px;
+      transform: rotate(-90deg);
+      transition: stroke-dasharray 300ms ease;
+    }
+
+    &-text {
+      text-anchor: middle;
+      dominant-baseline: middle;
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
 }

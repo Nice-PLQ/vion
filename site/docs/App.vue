@@ -1,10 +1,9 @@
 <template>
   <div class="page-content">
-    <header-bar v-if="!isIframe" :navList="navList" :searchVisible="true"></header-bar>
-    <aside-bar v-if="!isIframe" :navList="navList" :current="current" :visible="sideVisible"></aside-bar>
-    <main-content :class="{'in-iframe': isIframe}" />
+    <header-bar :navList="navList" :searchVisible="true"></header-bar>
+    <aside-bar :navList="navList" :current="current" :visible="sideVisible"></aside-bar>
+    <main-content />
     <simulator :url="demoUrl" :label="label" v-show="showSimulator"></simulator>
-    <footer v-if="!isIframe">Copyright © 2019-present QQ-Web</footer>
   </div>
 </template>
 
@@ -40,21 +39,9 @@ export default {
       label: '',
       navList,
       showSimulator: true,
-      isIframe: window !== top
     };
   },
   mounted() {
-    if (this.isIframe) {
-      const main = document.querySelector('.main');
-      const timer = setInterval(() => {
-        if (main.style.height) {
-          clearInterval(timer);
-        } else {
-          this.getOffsetHeight();
-        }
-      }, 100);
-    }
-
     const getName = path => path.split('/').pop();
     const getLabel = name => compList.find(nav => kebabCase(nav.alias || nav.name) === name)?.label;
 

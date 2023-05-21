@@ -14,7 +14,7 @@ app.use(AddFriend).use(Delete);
 ```
 
 ```html
-<v-add-friend color="#FFCD00" size="24px" />
+<v-mail color="#FFCD00" size="24px" />
 <v-delete color="#FFCD00" size="24px" />
 ```
 
@@ -30,7 +30,7 @@ app.use(Icon);
 ```
 
 ```html
-<v-icon name="AddFriend" color="#FFCD00" size="24px" />
+<v-icon name="Mail" color="#FFCD00" size="24px" />
 <v-icon name="Delete" color="#FFCD00" size="24px" />
 ```
 

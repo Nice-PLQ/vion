@@ -47,7 +47,6 @@ export default {
 
 ```html
 <v-checkbox v-model="checked" shape="square">方形多选框</v-checkbox>
-<v-checkbox v-model="checked" shape="circle-filled">有底色的多选框</v-checkbox>
 ```
 
 #### 6、多选框组合
@@ -93,7 +92,7 @@ export default {
 | checked-color   | 选中时的背景色           | _string_  | `#00CAFC` | -                                           |
 | size            | 多选框的大小（单位：px） | _string_  | `16px`    | -                                           |
 | count           | 多选框的数值             | _number_  | -         | -                                           |
-| shape           | 设置形状，支持方形和圆形 | _string_  | `circle`  | `circle`&#124;`circle-filled`&#124;`square` |
+| shape           | 设置形状，支持方形和圆形 | _string_  | `circle`  | `circle`&#124;`square` |
 
 #### Checkbox-Group
 

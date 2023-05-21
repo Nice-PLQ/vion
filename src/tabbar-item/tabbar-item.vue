@@ -43,7 +43,6 @@ export default defineComponent({
   },
   setup(props) {
     const currentValue = inject('currentValue', ref(0));
-    // eslint-disable-next-line no-confusing-arrow
     const color = computed(() => currentValue.value === props.index ? props.activeColor : props.inactiveColor);
 
     return {

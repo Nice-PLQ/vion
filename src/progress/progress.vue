@@ -1,29 +1,36 @@
 <template>
   <div :class="`${name}`">
-    <div :class="`${name}__outer`" :style="{height, borderRadius: height}">
-      <div
-        :class="`${name}__inner`"
-        :style="{
-          width: percent,
-          background,
-          height,
-          borderRadius: height
-        }"
-      ></div>
-    </div>
-    <slot name="text" v-if="showTxt">
-      <div :class="`${name}__text`">{{percent}}</div>
-    </slot>
+    <template v-if="type === 'circle'">
+      <CircleProgress :ratio="percent" />
+    </template>
+    <template v-else>
+      <div :class="`${name}__outer`" :style="{ height, borderRadius: height }">
+        <div
+          :class="`${name}__inner`"
+          :style="{
+            width: `${percent}%`,
+            background,
+            height,
+            borderRadius: height,
+          }"
+        ></div>
+      </div>
+      <slot name="text" v-if="showTxt">
+        <div :class="`${name}__text`">{{ percent }}%</div>
+      </slot>
+    </template>
   </div>
 </template>
 
 <script>
 import { defineComponent, computed } from 'vue';
+import CircleProgress from './circle.vue';
 import { prefix } from '../config';
 
 const name = `${prefix}-progress`;
 export default defineComponent({
   name,
+  components: { CircleProgress },
   props: {
     /**
      * @description 进度条当前值
@@ -31,7 +38,18 @@ export default defineComponent({
      */
     value: {
       type: Number,
-      default: 0
+      default: 0,
+    },
+    /**
+     * @description 进度条类型
+     * @attribute type
+     * @enum ["normal", "circle"]
+     * @default normal
+     */
+    type: {
+      type: String,
+      default: 'normal',
+      validator: (value) => ['normal', 'circle'].indexOf(value) !== -1,
     },
     /**
      * @description 背景色
@@ -44,13 +62,13 @@ export default defineComponent({
      */
     showTxt: {
       type: Boolean,
-      default: true
+      default: true,
     },
     /**
      * @description 进度条高度
      * @attribute height
      */
-    height: String
+    height: String,
   },
   setup(props) {
     const percent = computed(() => {
@@ -60,10 +78,10 @@ export default defineComponent({
       } else if (val < 0) {
         val = 0;
       }
-      return `${Math.round(val * 100)}%`;
+      return Math.round(val * 100);
     });
 
     return { name, percent };
-  }
+  },
 });
 </script>

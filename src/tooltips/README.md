@@ -13,36 +13,22 @@
   placement="top-center"
   @visible-change="onVisibleChange"
 >
-  <v-button type="primary" @click="visible = !visible"> top-center </v-button>
+  <v-button type="primary" @click="visible = !visible"> Top-Center </v-button>
 </v-tooltips>
 ```
 
 ```js
-export default defineComponent({
-  setup() {
-    const visible = ref(true);
-    const onVisibleChange = (value) => {
-      console.log(value);
-    }
-    return {
-      visible,
-      onVisibleChange,
-    };
-  }
-})
-
-// or
 export default {
   data() {
     return {
-      visible: true
+      visible: true,
     };
   },
   methods: {
     onVisibleChange(value) {
       console.log(value);
-    }
-  }
+    },
+  },
 };
 ```
 
@@ -52,14 +38,12 @@ export default {
 
 ```html
 <v-tooltips :visible="visible">
-  <v-button type="primary" @click="visible = !visible"
-    >自定义内容</v-button
-  >
+  <v-button type="primary" @click="visible = !visible">自定义内容</v-button>
   <template v-slot:content>
     <ul class="custom-tooltips">
-      <li>粘贴</li>
-      <li>换行</li>
-      <li>全屏输入</li>
+      <li>全选</li>
+      <li>复制</li>
+      <li>剪切</li>
     </ul>
   </template>
 </v-tooltips>
@@ -67,13 +51,13 @@ export default {
 
 ```css
 .custom-tooltips {
-  color: var(--text-primary);
+  color: var(--text-white);
   display: flex;
   font-size: 14px;
   li {
     padding: 8px;
     &:not(:last-child) {
-      border-right: 1px solid var(--border-standard);
+      border-right: 1px solid rgba(255, 255, 255, 0.4);
     }
   }
 }
@@ -81,13 +65,12 @@ export default {
 
 ## Props
 
-| 属性      | 说明         | 类型      | 默认值          | 可选值                                                                                                    |     |
-| --------- | ------------ | --------- | --------------- | --------------------------------------------------------------------------------------------------------- | --- |
-| visible   | 是否可见     | _boolean_ | `false`         | -                                                                                                         |
-| placement | 气泡位置     | _string_  | `bottom-center` | `bottom-center`&#124;`bottom-right`&#124;`bottom-left`&#124;`top-center`&#124;`top-left`&#124;`top-right` |
-| text      | 提示内容     | _string_  | -               | -                                                                                                         |
-| animation | 是否需要动效 | _boolean_ | `true`          | -                                                                                                         |
-| theme     | 主题         | _string_  | `dark`          | `light`&#124;`dark`                                                                                       |
+| 属性      | 说明         | 类型      | 默认值       | 可选值                                                                                                    |     |
+| --------- | ------------ | --------- | ------------ | --------------------------------------------------------------------------------------------------------- | --- |
+| visible   | 是否可见     | _boolean_ | `false`      | -                                                                                                         |
+| placement | 气泡位置     | _string_  | `top-center` | `top-center`&#124;`top-left`&#124;`top-right`&#124;`bottom-center`&#124;`bottom-right`&#124;`bottom-left` |
+| text      | 提示内容     | _string_  | -            | -                                                                                                         |
+| animation | 是否需要动效 | _boolean_ | `true`       | -                                                                                                         |
 
 ## Event
 

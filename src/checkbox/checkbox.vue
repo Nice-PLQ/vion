@@ -6,7 +6,6 @@
         [`${name}_checked`]: isChecked,
         [`${name}_disabled`]: isDisabled,
         [`${name}_square`]: shape === 'square',
-        [`${name}_circle_filled`]: shape === 'circle-filled',
       }"
       :style="{
         fontSize: size,
@@ -87,7 +86,7 @@ export default defineComponent({
     shape: {
       type: String,
       default: 'circle',
-      validator: val => ['circle', 'circle-filled', 'square'].indexOf(val) !== -1
+      validator: val => ['circle', 'square'].indexOf(val) !== -1
     },
     /**
      * @description 多选框的数值

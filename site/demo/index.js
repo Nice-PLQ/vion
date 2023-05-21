@@ -5,11 +5,10 @@ import DemoDoc from './components/Demo.vue';
 import DemoDocument from './components/DemoDocument.vue';
 import { isWin } from '../util';
 
-// 基础组件
+// 组件
 import vion from '@/index';
 import '@/style/index.less';
 import '@/style/util.less';
-import '@/style/normalize.less';
 
 if (isWin) {
   document.documentElement.classList.add('is-win');

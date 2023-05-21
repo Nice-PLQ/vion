@@ -9,19 +9,18 @@
   --button-bg-secondary-pressed: rgba(204, 204, 204, 0.3);
   --button-bg-error-default: transparent;
   --button-bg-error-pressed: rgba(204, 204, 204, 0.3);
-  --button-bg-ghost-default: transparent;
-  --button-bg-ghost-pressed: rgba(255, 255, 255, 0.2);
+  --button-bg-gray-default: #e7e8ed;
+  --button-bg-gray-pressed: #D4D6DC;
   --button-border-secondary-default: #ccc;
   --button-border-error-default: #ccc;
-  --button-border-ghost-default: rgba(255, 255, 255, 0.5);
   --button-text-primary-default: #fff;
   --button-text-primary-disable: rgba(255, 255, 255, 0.5);
   --button-text-secondary-default: #000;
   --button-text-secondary-disable: rgba(0, 0, 0, 0.3);
   --button-text-error-default: #ff5967;
   --button-text-error-disable: rgba(255, 87, 101, 0.3);
-  --button-text-ghost-default: #fff;
-  --button-text-ghost-disable: rgba(255, 255, 255, 0.3);
+  --button-text-gray-default: #fff;
+  --button-text-gray-disable: rgba(255, 255, 255, 0.3);
   --button-radius-01: 4px;
   --button-radius-02: 4px;
 }
@@ -39,10 +38,9 @@
   --button-bg-primary-disable: rgba(0, 102, 204, 0.5);
   --button-bg-secondary-pressed: rgba(61, 61, 61, 0.6);
   --button-bg-error-pressed: rgba(61, 61, 61, 0.6);
-  --button-bg-ghost-pressed: rgba(61, 61, 61, 0.6);
+  --button-bg-gray-pressed: rgba(61, 61, 61, 0.6);
   --button-border-secondary-default: #3d3d3d;
   --button-border-error-default: #3d3d3d;
-  --button-border-ghost-default: #3d3d3d;
   --button-text-secondary-default: #fff;
   --button-text-secondary-disable: rgba(255, 255, 255, 0.3);
 
@@ -112,13 +110,17 @@
       background-color: var(--button-bg-primary-pressed);
       border-color: var(--button-bg-primary-pressed);
     }
+
+    .@{prefix}-loading {
+      color: var(--button-text-primary-default);
+    }
   }
 
   &_warning {
     color: var(--button-text-error-default);
     background-color: var(--button-bg-error-default);
 
-    &:disabled:not(.@{prefix}-button_loading) {
+    &:disabled:not(.@{prefix}-button_loading){
       color: var(--button-text-error-disable);
     }
 
@@ -126,19 +128,22 @@
     &:active:not(:disabled) {
       background-color: var(--button-bg-error-pressed);
     }
+
+    .@{prefix}-loading {
+      color: var(--button-text-error-default);
+    }
   }
 
-  &_ghost {
-    color: var(--button-text-ghost-default);
-    background-color: var(--button-bg-ghost-default);
-    border-color: var(--button-border-ghost-default);
+  &_gray {
+    background-color: var(--button-bg-gray-default);
+    border-color: transparent;
 
     &:disabled:not(.@{prefix}-button_loading) {
-      color: var(--button-text-ghost-disable);
+      color: var(--button-text-gray-disable);
     }
 
     &:active:not(:disabled) {
-      background-color: var(--button-bg-ghost-pressed);
+      background-color: var(--button-bg-gray-pressed);
     }
   }
 
@@ -159,8 +164,7 @@
   }
 
   .@{prefix}-loading {
-    margin-right: 3px;
-    line-height: 1;
+    margin-right: 6px;
   }
 
   .@{prefix}-loading__icon {

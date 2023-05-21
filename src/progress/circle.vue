@@ -1,8 +1,13 @@
 <template>
   <svg :class="`${name}_circle`" height="56" width="56">
-    <circle cx="28" cy="28" r="25" fill="rgba(0,0,0, 0.65)" stroke="#fff" stroke-width="3" stroke-linecap="round" />
     <circle
-      :class="`${name}_circle-inner`"
+      cx="28"
+      cy="28"
+      r="25"
+      fill="transparent"
+    />
+    <circle
+      :class="`${name}_circle-stroke`"
       cx="28"
       cy="28"
       r="25"
@@ -20,22 +25,24 @@
 import { defineComponent, computed } from 'vue';
 import { prefix } from '../config';
 
-const name = `${prefix}-loading`;
+const name = `${prefix}-progress`;
 
 export default defineComponent({
   props: {
     ratio: {
       type: Number,
       default: 0,
-    }
+    },
   },
   setup(props, ctx) {
-    const loadingRatio = computed(() => (Math.floor(2 * Math.PI * 25) * props.ratio) / 100);
+    const loadingRatio = computed(
+      () => (Math.floor(2 * Math.PI * 25) * props.ratio) / 100
+    );
 
     return {
       name,
       loadingRatio,
     };
-  }
+  },
 });
 </script>

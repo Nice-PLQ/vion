@@ -12,7 +12,7 @@
 <v-infinite-loading @load="handleLoad" bottom-offset="200">
   <ul>
     <li v-for="(item, index) of list" :key="index">
-      {{'{{index + 1\}\}'}}
+      {{index + 1}}
     </li>
   </ul>
 </v-infinite-loading>
@@ -60,7 +60,7 @@ export default defineComponent({
   <v-infinite-loading @load="handleLoad" container="#list_wrapper">
     <ul>
       <li class="list-item" v-for="(item, index) of list" :key="index">
-        {{'{{index + 1\}\}'}}
+        {{index + 1}}
       </li>
     </ul>
   </v-infinite-loading>

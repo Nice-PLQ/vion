@@ -21,19 +21,10 @@
 通过 `v-slot` 可以指定绑定 icon，注意该指令只能作用在 `template` 标签中，如需要将图标更改为自定义图片，参考下方示例
 
 ```html
-<v-notice-bar icon="success-o" icon-color="#00ddc6">自定义icon</v-notice-bar>
-
 <v-notice-bar>
   将icon设置为图片
   <template v-slot:icon>
-    <div
-      :style="{
-          width: '100%',
-          height: '100%',
-          backgroundImage: 'url(https://qzonestyle.gtimg.cn/aoi/sola/20191216110827_dUvRTX1bBy.png)',
-          backgroundSize: '100% 100%'
-        }"
-    ></div>
+    <v-icon name="Mail" color="#8e8e8e" />
   </template>
 </v-notice-bar>
 ```

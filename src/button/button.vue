@@ -11,14 +11,14 @@
     @click="onClick"
   >
     <div :class="`${name}__inner`">
-      <v-loading v-if="loading && showLoadingIcon" :theme="loadingTheme" />
+      <v-loading v-if="loading" />
       <slot></slot>
     </div>
   </button>
 </template>
 
 <script>
-import { defineComponent, computed } from 'vue';
+import { defineComponent } from 'vue';
 import VLoading from '../loading';
 import { prefix } from '../config';
 
@@ -31,13 +31,13 @@ export default defineComponent({
     /**
      * @description 按钮类型
      * @attribute type
-     * @enum ["default", "primary", "warning", "ghost", "link"]
+     * @enum ["default", "primary", "warning", "gray", "link"]
      * @default default
      */
     type: {
       type: String,
       default: 'default',
-      validator: val => ['default', 'primary', 'warning', 'ghost', 'link'].indexOf(val) !== -1
+      validator: val => ['default', 'primary', 'warning', 'gray', 'link'].indexOf(val) !== -1
     },
     /**
      * @description 按钮大小
@@ -59,14 +59,6 @@ export default defineComponent({
       default: false
     },
     /**
-     * @description 是否展示loading图标
-     * @attribute show-loading-icon
-     */
-    showLoadingIcon: {
-      type: Boolean,
-      default: true,
-    },
-    /**
      * @description 是否禁用按钮
      * @attribute disabled
      */
@@ -77,15 +69,8 @@ export default defineComponent({
   },
   emits: ['click'],
   setup(props, ctx) {
-    const loadingTheme = computed(() => {
-      let theme = 'gray';
-      if (props.type === 'primary') theme = 'white';
-      if (props.type === 'warning') theme = 'red';
-      return theme;
-    });
     return {
       name,
-      loadingTheme,
       onClick: e => ctx.emit('click', e),
     };
   }

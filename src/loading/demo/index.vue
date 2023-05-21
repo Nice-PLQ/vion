@@ -1,23 +1,27 @@
 <template>
-  <div class="loading-demo">
-    <div class="p-x-16">
-      <v-button size="large" class="m-t-22" @click="handleShow">豆腐块加载</v-button>
-    </div>
-    <demo-doc title="局部加载">
-      <v-loading>加载中，请稍候...</v-loading>
-      <br />
-      <v-loading class="m-t-46" />
+  <div>
+    <demo-doc title="普通类型的">
+      <v-loading />
+    </demo-doc>
+    <demo-doc title="带文本">
+      <v-loading>正在加载</v-loading>
     </demo-doc>
     <demo-doc title="其他颜色的图标">
-      <v-loading theme="white" class="m-r-16" />
-      <v-loading theme="gray" class="m-r-16" />
-      <v-loading theme="red" />
+      <v-loading color="#67C23A" />
+      <v-loading color="#00CAFC" />
+      <v-loading color="#FF596A" />
     </demo-doc>
-    <demo-doc title="环形进度">
+    <demo-doc title="自定义大小">
+      <v-loading size="24px" />
+    </demo-doc>
+    <demo-doc title="快捷调用">
+      <v-button @click="handleShow" type="primary">显示浮层loading</v-button>
+    </demo-doc>
+    <!-- <demo-doc title="环形进度">
       <div class="circle-loading">
         <v-loading type="circle" :ratio="ratio" />
       </div>
-    </demo-doc>
+    </demo-doc> -->
   </div>
 </template>
 
@@ -54,19 +58,3 @@ export default {
   }
 };
 </script>
-
-<style lang="less">
-.loading-demo {
-  .circle-loading {
-    width: 278px;
-    height: 198px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    background: url('https://nbgroup.cdn-go.cn/url-resource/latest/bg/bg_01.png') no-repeat;
-    background-size: cover;
-  }
-}
-</style>

@@ -1,12 +1,10 @@
-# A Vue.js 3.0 UI Components for Mobile Web
-
-![](https://qzonestyle.gtimg.cn/aoi/sola/20200327152824_OfE2S5Nhrc.png#unite)
+# Vue3 H5 组件库
 
 ## 特性
 
 - 基于 Vue3 构建
 - 88% 的单元测试覆盖
-- 30 个基础组件
+- 30 个组件
 - 完善的示例和文档说明
 - 支持 tree-shaking
 - 支持国际化

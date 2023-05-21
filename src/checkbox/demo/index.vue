@@ -1,67 +1,44 @@
 <template>
-  <div class="checkbox-demo">
-    <demo-document title="普通型" desc="在一组列表或信息中，进行单选/多选操作">
-      <div class="checkbox-normal">
-        <div>
-          <v-checkbox :checked="false" />
-          <p>未选中</p>
-        </div>
-        <div>
-          <v-checkbox checked />
-          <p>已选中</p>
-        </div>
-        <div>
-          <v-checkbox checked :count="1" />
-          <p>已选中_数字</p>
-        </div>
-        <div>
-          <v-checkbox checked disabled="" />
-          <p>不可更改</p>
-        </div>
-        <div>
-          <v-checkbox disabled />
-          <p>禁止态</p>
-        </div>
+  <div style="padding-bottom: 8px;">
+    <demo-doc title="基础用法">
+      <div style="margin-bottom: 10px;">
+        <v-checkbox v-model="checked" />
       </div>
-    </demo-document>
+      <v-checkbox v-model="checked1">带文本</v-checkbox>
+    </demo-doc>
+    <demo-doc title="设置选中背景色">
+      <v-checkbox v-model="checked2" checked-color="#67C23A">自定义背景色</v-checkbox>
+    </demo-doc>
+    <demo-doc title="只读">
+      <v-checkbox checked readonly>选中</v-checkbox>
+      <v-checkbox :checked="false" readonly>未选中</v-checkbox>
+    </demo-doc>
+    <demo-doc title="禁用">
+      <v-checkbox :checked="true" disabled>选中态禁用</v-checkbox>
+      <v-checkbox :checked="false" disabled>未选中禁用</v-checkbox>
+    </demo-doc>
+    <demo-doc title="设置大小">
+      <v-checkbox v-model="checked3" size="26px">26px</v-checkbox>
+      <v-checkbox v-model="checked4" size="32px">32px</v-checkbox>
+    </demo-doc>
 
-    <demo-document title="图片型" desc="覆盖在图片上使用">
-      <div class="checkbox-normal">
-        <div>
-          <v-checkbox shape="circle-filled" :checked="false" />
-          <p>未选中</p>
-        </div>
-        <div>
-          <v-checkbox shape="circle-filled" checked />
-          <p>已选中</p>
-        </div>
-        <div>
-          <v-checkbox shape="circle-filled" checked :count="1" />
-          <p>已选中_数字</p>
-        </div>
-        <div>
-          <v-checkbox shape="circle-filled" checked disabled="" />
-          <p>不可更改</p>
-        </div>
-        <div>
-          <v-checkbox shape="circle-filled" disabled />
-          <p>禁止态</p>
-        </div>
-      </div>
-    </demo-document>
-
-    <demo-document title="大小" desc="不同的尺寸">
-      <div class="checkbox-normal">
-        <div>
-          <v-checkbox size="24px" v-model="checked" />
-          <p>24PX</p>
-        </div>
-        <div>
-          <v-checkbox size="18px" v-model="checked1" />
-          <p>18PX</p>
-        </div>
-      </div>
-    </demo-document>
+    <demo-doc title="设置形状">
+      <v-checkbox v-model="checked5" shape="square">方形多选框</v-checkbox>
+    </demo-doc>
+    <demo-doc title="多选组（横向）">
+      <v-checkbox-group v-model="checkList">
+        <v-checkbox value="a">多选A</v-checkbox>
+        <v-checkbox value="b">多选B</v-checkbox>
+        <v-checkbox value="c">多选C</v-checkbox>
+      </v-checkbox-group>
+    </demo-doc>
+    <demo-doc title="多选组合（纵向）">
+      <v-checkbox-group v-model="checkList1" vertical>
+        <v-checkbox value="month">一个月</v-checkbox>
+        <v-checkbox value="quarter">一个季</v-checkbox>
+        <v-checkbox value="year">一年</v-checkbox>
+      </v-checkbox-group>
+    </demo-doc>
   </div>
 </template>
 <script>
@@ -70,27 +47,21 @@ export default {
     return {
       checked: true,
       checked1: true,
+      checked2: true,
+      checked3: true,
+      checked4: true,
+      checked5: true,
+      checkList: ['b'],
+      checkList1: ['month']
     };
   },
-};
-</script>
-
-<style lang="less">
-.checkbox-demo {
-  .checkbox-normal {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    >div {
-      width: 33.333333%;
-    }
-
-    p {
-      font-size: 14px;
-      margin-top: 12px;
-      margin-bottom: 40px;
-      color: var(--text-secondary);
+  watch: {
+    checkList(val) {
+      console.log(val);
+    },
+    checkList1(val) {
+      console.log(val);
     }
   }
-}
-</style>
+};
+</script>

@@ -2,36 +2,48 @@
   <header class="header">
     <div class="header-left">
       <a href="###">
-        <div class="header-title">
-          <v-icon class="logo" name="Qq" color="#fff" size="36px" />vion
-        </div>
-      </a>
-      <div class="search" v-if="searchVisible">
         <svg
-          t="1576478697705"
-          viewBox="0 0 1029 1024"
+          width="37px"
+          viewBox="0 0 137 121"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          p-id="2149"
-          width="20"
-          height="20"
         >
-          <path
-            d="M763.255227 547.144339l-76.016861-9.24788a279.51809 279.51809 0 0 0 2.021852-33.557963c0-127.580077-90.193755-240.468824-214.483835-268.344067l16.749072-74.700862a351.263938 351.263938 0 0 1 274.325878 343.044929 356.575787 356.575787 0 0 1-2.596106 42.805843z"
-            p-id="2150"
-            fill="#ffffff"
-          />
-          <path
-            d="M463.889486 927.767008a463.985195 463.985195 0 0 1-180.578927-891.289921 463.997159 463.997159 0 0 1 361.157854 854.824798 461.006253 461.006253 0 0 1-180.578927 36.465123z m0-851.19982C250.32685 76.567188 76.543261 250.314886 76.543261 463.889486s173.783589 387.310335 387.346225 387.310335S851.211784 677.452122 851.211784 463.889486 677.452122 76.567188 463.889486 76.567188z"
-            p-id="2151"
-            fill="#ffffff"
-          />
-          <path
-            d="M754.342328 802.672972l54.141376-54.141376 221.327028 221.327028-54.141377 54.141376z"
-            p-id="2152"
-            fill="#ffffff"
-          />
+          <defs>
+            <linearGradient
+              x1="50%"
+              y1="0%"
+              x2="50%"
+              y2="100%"
+              id="linearGradient-1"
+            >
+              <stop stop-color="#65B687" offset="0%"></stop>
+              <stop stop-color="#65B687" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <g
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g transform="translate(0.614194, 0.000000)">
+              <path
+                d="M4.76825426,36.39178 L64.6796577,116.702201 C66.0006013,118.472908 68.5068793,118.837514 70.2775862,117.51657 C70.586905,117.285819 70.8612037,117.01152 71.0919548,116.702201 L131.003358,36.39178 C132.324302,34.621073 131.959697,32.1147951 130.18899,30.7938515 C129.498089,30.2784412 128.659179,30 127.79721,30 L104.122175,30 C103.808512,30 103.513022,30.1471709 103.324045,30.3975147 L68.6852185,76.2845819 C68.3524751,76.7253769 67.7253982,76.81297 67.2846032,76.4802265 C67.2102252,76.4240807 67.1440605,76.3578138 67.0880296,76.2833492 L32.5621193,30.3987473 C32.3732021,30.1476782 32.0772663,30 31.7630603,30 L7.97440281,30 C5.76526381,30 3.97440281,31.790861 3.97440281,34 C3.97440281,34.8619694 4.25284397,35.7008795 4.76825426,36.39178 Z"
+                fill="url(#linearGradient-1)"
+              ></path>
+              <circle
+                fill="#39485C"
+                cx="67.3858063"
+                cy="15"
+                r="15"
+              ></circle>
+            </g>
+          </g>
         </svg>
+        <!-- <div class="header-title">Vion</div> -->
+      </a>
+      <div class="search" v-if="searchVisible">
+        <v-icon name="Search" />
         <input
           type="text"
           placeholder="搜索组件..."
@@ -44,18 +56,24 @@
             v-for="(item, index) in matchedNav"
             :key="index"
             @click="handleClear"
-            :class="{on: index === current}"
+            :class="{ on: index === current }"
           >
-            <router-link :to="item.path">{{item.name}} {{item.label}}</router-link>
+            <router-link :to="item.path"
+              >{{ item.name }} {{ item.label }}</router-link
+            >
           </li>
         </ul>
       </div>
     </div>
     <div class="header-right">
       <div class="version-select">
-        <span class="version"> {{version}} </span>
+        <span class="version"> {{ version }} </span>
       </div>
-      <a class="code-group" href="https://github.com/Nice-PLQ/vion" target="_blank">
+      <a
+        class="code-group"
+        href="https://github.com/Nice-PLQ/vion"
+        target="_blank"
+      >
         <svg
           viewBox="0 0 1024 1024"
           version="1.1"
@@ -88,14 +106,18 @@ export default {
     };
   },
   mounted() {
-    document.addEventListener('click', () => {
-      if (this.matchedNav.length) {
-        this.handleClear();
-      }
-      if (this.showVersionList) {
-        this.showVersionList = false;
-      }
-    }, false);
+    document.addEventListener(
+      'click',
+      () => {
+        if (this.matchedNav.length) {
+          this.handleClear();
+        }
+        if (this.showVersionList) {
+          this.showVersionList = false;
+        }
+      },
+      false
+    );
   },
   methods: {
     handleInput(e) {
@@ -148,11 +170,11 @@ export default {
 
     handleToggleShow() {
       this.$emit('onVisibleChange');
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="less">
-@import './index.less';
+@import "./index.less";
 </style>

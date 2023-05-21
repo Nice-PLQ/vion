@@ -10,11 +10,7 @@
           on: index === currentValue,
         }"
       >
-        <component
-          :is="node"
-          :active-color="activeColor"
-          :inactive-color="inactiveColor"
-        ></component>
+        <component :is="node"></component>
       </li>
     </ul>
   </div>
@@ -59,7 +55,7 @@ export default defineComponent({
       return getChildFromSlot(vnodes, `${name}-item`).map((node, index) => {
         node.props = node.props || {};
         node.props.index = index;
-        if (props.activeColor || props.nactiveColor) {
+        if (props.activeColor || props.inactiveColor) {
           node.props.activeColor = props.activeColor;
           node.props.inactiveColor = props.inactiveColor;
         }
