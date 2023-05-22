@@ -22,7 +22,7 @@ npm install vion --save
 
 #### 方式一: 自动按需引入组件（推荐）
 
-vion 原生支持基于 ES Module 按需引入组件，未使用的组件会自动 Tree Shaking 掉，包括 js 和 css 代码，无需配置任何插件即可实现。
+Vion 原生支持基于 ES Module 按需引入组件，未使用的组件会自动 Tree Shaking 掉，包括 js 和 css 代码，无需配置任何插件即可实现。
 
 以`Button`为例，下面的代码打包后，只会保留 Button 组件的 js 和 css 代码，其他的都会被剔除掉。
 
@@ -56,11 +56,11 @@ app.use(Button);
 ```js
 import { createApp } from "vue";
 
-import vion from "vion/lib";
+import Vion from "vion/lib";
 import "vion/lib/style/index.css";
 
 const app = createApp();
-app.use(vion);
+app.use(Vion);
 ```
 
 通过`app.use`加载的组件，都可以用`<v-xxx />`的标签形式使用，如`<v-button>按钮</v-button>`
