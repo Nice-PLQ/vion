@@ -3,7 +3,6 @@
 ## 特性
 
 - 基于 Vue3 构建
-- 90% 的单元测试覆盖
 - 30 个组件
 - 完善的示例和文档说明
 - 支持 tree-shaking
@@ -16,7 +15,7 @@
 ### 1、安装
 
 ```
-tnpm install vion@next --save
+npm install vion --save
 ```
 
 ### 2、引用组件
@@ -72,4 +71,4 @@ app.use(vion);
 
 如果你使用过程中发现 Bug，请通过 issues 来提交并描述相关的问题，你也可以在这里查看其它的 issue，通过解决这些 issue 来贡献代码
 
-如果你是第一次贡献代码，请阅读 [CONTRIBUTING](./blob/master/CONTRIBUTING.md) 了解我们的贡献流程，并提交 Merge Request 给我们。
+如果你是第一次贡献代码，请阅读 [CONTRIBUTING](./CONTRIBUTING.md) 了解我们的贡献流程，并提交 Merge Request 给我们。
