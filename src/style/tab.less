@@ -7,8 +7,8 @@
   &__nav-wrap {
     display: flex;
     align-items: center;
-    background-color: var(--background-white);
-    padding: 17px 0;
+    // background-color: var(--background-white);
+    // padding: 17px 0;
     user-select: none;
   }
 
@@ -46,14 +46,8 @@
     &.on {
       font-weight: bold;
       color: var(--brand-standard);
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -6px;
-        height: 2px;
-        width: 100%;
-        background-color: var(--brand-standard);
-      }
+      border-bottom: 2px solid var(--brand-standard);
+      padding-bottom: 6px;
     }
   }
 

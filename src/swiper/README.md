@@ -8,7 +8,7 @@
 
 ```html
 <v-swiper>
-  <v-swiper-item v-for="n in 4" :key="n">{{'{{n\}\}'}}</v-swiper-item>
+  <v-swiper-item v-for="n in 4" :key="n">{{ n }}</v-swiper-item>
 </v-swiper>
 ```
 
@@ -18,7 +18,7 @@
 
 ```html
 <v-swiper auto-play>
-  <v-swiper-item v-for="n in 4" :key="n">{{'{{n\}\}'}}</v-swiper-item>
+  <v-swiper-item v-for="n in 4" :key="n">{{ n }}</v-swiper-item>
 </v-swiper>
 ```
 
@@ -28,9 +28,9 @@
 
 ```html
 <v-swiper auto-play @change="change">
-  <v-swiper-item v-for="n in 4" :key="n">{{'{{n\}\}'}}</v-swiper-item>
+  <v-swiper-item v-for="n in 4" :key="n">{{ n }}</v-swiper-item>
   <template v-slot:indicator>
-    <div class="custom-indicator">{{'{{current\}\}'}} / 4</div>
+    <div class="custom-indicator">{{ current }} / 4</div>
   </template>
 </v-swiper>
 ```
@@ -46,30 +46,6 @@ export default {
     change(index) {
       this.current = index;
     }
-  }
-};
-```
-
-#### 4、图片轮播
-
-```html
-<v-swiper>
-  <v-swiper-item v-for="url in imgList" :key="url">
-    <img width="100%" :src="url" />
-  </v-swiper-item>
-</v-swiper>
-```
-
-```js
-export default {
-  data() {
-    return {
-      imgList: [
-        "https://qzonestyle.gtimg.cn/aoi/sola/20200328214934_1PNsjguryC.jpeg",
-        "https://qzonestyle.gtimg.cn/aoi/sola/20200328214934_y2eTy3FEwD.jpeg",
-        "https://qzonestyle.gtimg.cn/aoi/sola/20200328214934_5JmAmO7Irs.jpeg"
-      ]
-    };
   }
 };
 ```

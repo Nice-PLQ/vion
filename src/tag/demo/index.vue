@@ -1,48 +1,30 @@
 <template>
   <div class="tag-demo">
-    <demo-document title="灰色标签">
-      <v-tag>深圳</v-tag>
+    <demo-doc title="默认标签">
+      <v-tag @click="handleClick">深圳</v-tag>
       <v-tag class="m-l-6">水瓶座</v-tag>
-    </demo-document>
-    <demo-document title="线性标签">
+    </demo-doc>
+    <demo-doc title="线性标签">
       <v-tag shape="outline">深圳</v-tag>
       <v-tag shape="outline" class="m-l-6">水瓶座</v-tag>
-    </demo-document>
-    <demo-document title="性别标签">
+    </demo-doc>
+    <demo-doc title="自定义颜色">
+      <v-tag bg-color="#E2F4FF" text-color="#09f">深圳</v-tag>
+      <v-tag bg-color="#f671da" text-color="#fff" class="m-l-6">水瓶座</v-tag>
+    </demo-doc>
+    <demo-doc title="带图标">
       <v-tag>
-        <v-icon name="Male" size="12px" class="m-r-3" color="var(--brand-standard)" />22岁
+        <v-icon name="Male" size="12px" class="m-r-3" color="var(--brand-standard)" />18岁
       </v-tag>
       <v-tag class="m-l-6">
-        <v-icon name="Female" size="12px" class="m-r-3" color="var(--pink-6)" />22岁
+        <v-icon name="Female" size="12px" class="m-r-3" color="#f03cc9" />18岁
       </v-tag>
-      <v-tag color="blue" class="m-l-6">
-        <v-icon name="Male" size="12px" class="m-r-3"/>22岁
-      </v-tag>
-      <v-tag color="pink" class="m-l-6">
-        <v-icon name="Female" size="12px" class="m-r-3"/>22岁
-      </v-tag>
-    </demo-document>
-    <demo-document title="标签尺寸">
-      <demo-doc title="小标签">
-        <v-tag size="small" color="blue">小标签</v-tag>
-        <v-tag size="small" class="m-l-6">
-          <v-icon name="Male" size="10px" color="var(--brand-standard)" class="m-r-3"/>22岁
-        </v-tag>
-      </demo-doc>
-      <demo-doc title="中标签">
-        <div></div>
-        <v-tag color="blue">中标签</v-tag>
-        <v-tag class="m-l-6">
-          <v-icon name="Male" size="12px" color="var(--brand-standard)" class="m-r-3" />22岁
-        </v-tag>
-      </demo-doc>
-      <demo-doc title="大标签">
-        <v-tag size="large" color="blue">大标签</v-tag>
-        <v-tag size="large" class="m-l-6">
-          <v-icon name="Male" size="16px" color="var(--brand-standard)" class="m-r-6" />22岁
-        </v-tag>
-      </demo-doc>
-    </demo-document>
+    </demo-doc>
+    <demo-doc title="小标签">
+      <v-tag size="small" class="m-r-8">小标签</v-tag>
+      <v-tag class="m-r-8">中标签</v-tag>
+      <v-tag size="large" class="m-r-8">大标签</v-tag>
+    </demo-doc>
   </div>
 </template>
 
@@ -52,9 +34,6 @@ export default {
     handleClick() {
       console.log('click-----');
     },
-    handleClose() {
-      console.log('close-----');
-    }
   }
 };
 </script>
@@ -71,14 +50,6 @@ export default {
   }
 }
 .tag-demo {
-  .demo-document__title {
-    padding-bottom: 8px;
-  }
-  .demo-doc {
-    padding: 0;
-    &__title {
-      padding-top: 16px;
-    }
-  }
+  padding-bottom: 32px;
 }
 </style>

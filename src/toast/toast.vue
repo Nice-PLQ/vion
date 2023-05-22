@@ -5,7 +5,7 @@
       :class="name"
     >
       <div :class="`${name}__inner`">
-        <component :is="iconType" :class="`${name}-${type}`" size="27.5px" />
+        <component :is="iconType" :class="`${name}-${type}`" size="24px" />
         <div :class="`${name}__txt`">{{message}}</div>
       </div>
     </div>

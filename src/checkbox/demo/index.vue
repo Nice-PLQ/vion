@@ -10,15 +10,15 @@
       <v-checkbox v-model="checked2" checked-color="#67C23A">自定义背景色</v-checkbox>
     </demo-doc>
     <demo-doc title="只读">
-      <v-checkbox checked readonly>选中</v-checkbox>
+      <v-checkbox checked readonly class="m-r-16">选中</v-checkbox>
       <v-checkbox :checked="false" readonly>未选中</v-checkbox>
     </demo-doc>
     <demo-doc title="禁用">
-      <v-checkbox :checked="true" disabled>选中态禁用</v-checkbox>
+      <v-checkbox :checked="true" disabled class="m-r-16">选中态禁用</v-checkbox>
       <v-checkbox :checked="false" disabled>未选中禁用</v-checkbox>
     </demo-doc>
     <demo-doc title="设置大小">
-      <v-checkbox v-model="checked3" size="26px">26px</v-checkbox>
+      <v-checkbox v-model="checked3" size="26px" class="m-r-16">26px</v-checkbox>
       <v-checkbox v-model="checked4" size="32px">32px</v-checkbox>
     </demo-doc>
 

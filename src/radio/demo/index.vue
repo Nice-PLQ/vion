@@ -18,15 +18,15 @@
       <v-radio v-model="checked2" checked-color="#67C23A">自定义背景色</v-radio>
     </demo-doc>
     <demo-doc title="只读">
-      <v-radio checked readonly>选中</v-radio>
+      <v-radio checked readonly class="m-r-16">选中</v-radio>
       <v-radio :checked="false" readonly>未选中</v-radio>
     </demo-doc>
     <demo-doc title="禁用">
-      <v-radio :checked="true" disabled>选中态禁用</v-radio>
+      <v-radio :checked="true" disabled class="m-r-16">选中态禁用</v-radio>
       <v-radio :checked="false" disabled>未选中禁用</v-radio>
     </demo-doc>
     <demo-doc title="设置大小">
-      <v-radio v-model="checked3" size="26px">26px</v-radio>
+      <v-radio v-model="checked3" size="26px" class="m-r-16">26px</v-radio>
       <v-radio v-model="checked4" size="32px">32px</v-radio>
     </demo-doc>
     <demo-doc title="设置形状">
@@ -41,7 +41,7 @@ export default {
       checked: true,
       checked1: true,
       checked2: true,
-      checked3: false,
+      checked3: true,
       checked4: true,
       checked5: true,
       selected: 'b',

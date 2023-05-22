@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="p-b-32">
     <demo-doc>
-      <v-button @click="visible = true" size="large">基础型</v-button>
+      <v-button @click="visible = true" size="large" type="primary">基础型</v-button>
       <v-picker
         value-key="text"
         ref="picker"
@@ -15,8 +15,8 @@
       />
     </demo-doc>
     <demo-doc title="多列选择">
-      <v-button @click="visible1 = true" size="large" class="m-b-16">两列</v-button>
-      <v-button @click="visible2 = true" size="large">三列</v-button>
+      <v-button @click="visible1 = true" size="large" class="m-b-16" type="primary">两列</v-button>
+      <v-button @click="visible2 = true" size="large" type="primary">三列</v-button>
       <v-picker
         title="选择时间"
         :columns="columns1"
@@ -37,7 +37,7 @@
       />
     </demo-doc>
     <demo-doc title="每列显示的数量">
-      <v-button @click="visible3 = true" size="large">列展示7个选项</v-button>
+      <v-button @click="visible3 = true" size="large" type="primary">列展示7个选项</v-button>
       <v-picker
         :show-item-count="7"
         :columns="columns"
@@ -50,7 +50,7 @@
       />
     </demo-doc>
     <demo-doc title="多级联动">
-      <v-button @click="visible4 = true" size="large">级联</v-button>
+      <v-button @click="visible4 = true" size="large" type="primary">级联</v-button>
       <v-picker
         title="请选择城市"
         :columns="columns3"
@@ -62,8 +62,8 @@
       />
     </demo-doc>
     <demo-doc title="设置选中值">
-      <v-button @click="visible5 = true" size="large" class="m-b-16">单列</v-button>
-      <v-button @click="visible6 = true" size="large">多列</v-button>
+      <v-button @click="visible5 = true" size="large" class="m-b-16" type="primary">单列</v-button>
+      <v-button @click="visible6 = true" size="large" type="primary">多列</v-button>
       <v-picker
         :columns="columns"
         :visible="visible5"

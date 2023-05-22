@@ -34,7 +34,7 @@
       </div>
     </form>
     <div
-      v-if="backBtnVisible || (cancelBtnVisible && isFocus)"
+      v-if="cancelBtnVisible && isFocus"
       :class="`${name}__cancel`"
       @click="onCancel"
     >{{$locale.translate('cancel')}}</div>

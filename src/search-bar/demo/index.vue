@@ -2,7 +2,6 @@
   <div class="search-bar-demo">
     <demo-document title="胶囊型搜索" desc="一级搜索">
       <v-search-bar
-        type="capsule"
         cancel-btn-visible
         @back-btn-click="onBackBtnClick"
         v-model="searchText1"
@@ -13,7 +12,7 @@
       ></v-search-bar>
     </demo-document>
     <demo-document desc="二级搜索">
-      <v-search-bar v-model="searchText2" type="capsule" back-btn-visible></v-search-bar>
+      <v-search-bar v-model="searchText2" back-btn-visible @focus="onFocus"></v-search-bar>
     </demo-document>
     <demo-document title="表单型搜索">
       <v-search-bar v-model="searchText3" type="form"></v-search-bar>

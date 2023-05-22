@@ -4,10 +4,9 @@
       [`${name}`]: true,
       [`${name}_${size}`]: true,
       [`${name}_outline`]: shape === 'outline',
-      [`${name}_${color}`]: color !== 'gray',
     }"
     :style="{
-      backgroundColor,
+      backgroundColor: bgColor,
       color: textColor,
     }"
     @click="onClick"
@@ -28,7 +27,7 @@ export default defineComponent({
      *  @description 背景色
      * @attribute background-color
      */
-    backgroundColor: String,
+    bgColor: String,
     /**
      * @description 文本颜色
      * @attribute text-color
@@ -55,17 +54,6 @@ export default defineComponent({
       type: String,
       default: 'fill',
       validator: val => ['fill', 'outline'].indexOf(val) !== -1
-    },
-    /**
-     * @description 色彩
-     * @attribute color
-     * @enum ["fill", "outline"]
-     * @default medium
-     */
-    color: {
-      type: String,
-      default: 'gray',
-      validator: val => ['gray', 'blue', 'dark-blue', 'indigo', 'green', 'pink', 'red', 'orange', 'yellow'].indexOf(val) !== -1
     },
   },
   emits: ['click'],

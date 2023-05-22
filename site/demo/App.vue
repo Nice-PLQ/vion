@@ -68,26 +68,9 @@ export default {
   }
 }
 
-.q-button_default.q-button_large {
-  background-color: var(--demo-button-bg);
-  border: none
-}
-
 .is-win {
   ::-webkit-scrollbar {
-      width: 6px;
-      height: 6px;
-  }
-
-  ::-webkit-scrollbar-thumb{
-      background-color:#909090;
-      border-radius: 3px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-      background-color:#bababa;
-  }
-  ::-webkit-scrollbar-thumb:active {
-      background-color:#bababa;
+    display: none;
   }
 }
 

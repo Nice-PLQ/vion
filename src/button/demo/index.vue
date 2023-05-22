@@ -1,15 +1,15 @@
 <template>
   <div class="button-demo">
     <demo-doc title="按钮类型">
-      <v-button @click="handleClick">默认按钮</v-button>
+      <v-button @click="handleClick" class="m-r-4">默认按钮</v-button>
       <v-button type="primary" @click="handleClick">主按钮</v-button>
-      <v-button type="warning" @click="handleClick">警示按钮</v-button>
+      <v-button type="warning" @click="handleClick" class="m-r-4">警示按钮</v-button>
       <v-button type="gray" @click="handleClick">灰色按钮</v-button>
       <v-button type="link">文本按钮</v-button>
     </demo-doc>
 
     <demo-doc title="loading状态">
-      <v-button type="primary" loading>主按钮</v-button>
+      <v-button type="primary" loading class="m-r-4">主按钮</v-button>
       <v-button type="warning" loading>警示按钮</v-button>
     </demo-doc>
 
@@ -21,11 +21,11 @@
       <v-button type="gray" size="medium">灰色按钮</v-button>
       <v-button size="large">默认按钮</v-button>
       <v-button type="primary" size="large">主按钮</v-button>
-      <v-button size="small">默认按钮</v-button>
-      <v-button type="primary" size="small">主按钮</v-button>
-      <v-button type="gray" size="small">灰色按钮</v-button>
-      <v-button type="warning" size="small">警示按钮</v-button>
-      <v-button type="primary" size="small" loading>默认按钮</v-button>
+      <v-button size="small" class="m-r-4">默认按钮</v-button>
+      <v-button type="primary" size="small" class="m-r-4">主按钮</v-button>
+      <v-button type="gray" size="small" class="m-r-4">灰色按钮</v-button>
+      <v-button type="warning" size="small" class="m-r-4">警示按钮</v-button>
+      <v-button type="primary" size="small" loading class="m-r-4">默认按钮</v-button>
       <v-button type="link" size="small">文本按钮</v-button>
     </demo-doc>
 

@@ -45,29 +45,27 @@ export default {
 `v-slot:left`、`v-slot:right`插槽可以分别自定义左右两侧的操作项
 
 ```html
-<v-slip-drawer style="height: 56px;">
+<v-slip-drawer>
   <template #left>
     <button class="button reset">撤销</button>
   </template>
-  <v-list title="用户昵称">
+  <v-list title="标题">
     <template v-slot:left>
-      <v-avatar uin="2647439900" style="margin-right: 12px;" />
+      <div class="custom-placholder"></div>
     </template>
     <template v-slot:right>
       <v-button type="gray" size="small">添加</v-button>
     </template>
   </v-list>
   <template #right>
-    <div style="display: flex;">
-      <button class="button like">
-        点赞
-        <v-icon name="like" size="14px" />
-      </button>
-      <button class="button share">
-        分享
-        <v-icon name="share" size="14px" />
-      </button>
-    </div>
+    <button class="button like">
+      点赞
+      <v-icon name="like" size="14px" />
+    </button>
+    <button class="button share">
+      分享
+      <v-icon name="share" size="14px" />
+    </button>
   </template>
 </v-slip-drawer>
 ```
@@ -96,33 +94,26 @@ export default {
 
 ```html
 <v-slip-drawer-group ref="slipDraserGroup">
-  <v-slip-drawer :right-items="rightItems">
-    <v-list title="QQ团队" help="登录操作通知" arrow-direction="right">
-      <template v-slot:left>
-        <v-avatar style="margin-right: 12px;" />
-      </template>
-    </v-list>
-  </v-slip-drawer>
-  <v-slip-drawer :right-items="rightItems">
-    <v-list title="腾讯web技术支持" help="暂无消息" arrow-direction="right">
-      <template v-slot:left>
-        <v-avatar uin="2647439900" style="margin-right: 12px;" />
-      </template>
-    </v-list>
-  </v-slip-drawer>
-  <v-slip-drawer :right-items="rightItems">
+  <v-slip-drawer :left-items="leftItems" :right-items="rightItems">
     <v-list
-      title="QQ问题反馈群"
-      help="该需求排期确认..."
+      title="标题一"
+      help="辅助文本"
       arrow-direction="right"
-    >
-      <template v-slot:left>
-        <v-avatar
-          :uin="[2647439500, 2647439600, 2647439700, 2647439800]"
-          style="margin-right: 12px;"
-        />
-      </template>
-    </v-list>
+    ></v-list>
+  </v-slip-drawer>
+  <v-slip-drawer :left-items="leftItems" :right-items="rightItems">
+    <v-list
+      title="标题二"
+      help="辅助文本"
+      arrow-direction="right"
+    ></v-list>
+  </v-slip-drawer>
+  <v-slip-drawer :left-items="leftItems" :right-items="rightItems">
+    <v-list
+      title="标题三"
+      help="辅助文本"
+      arrow-direction="right"
+    ></v-list>
   </v-slip-drawer>
 </v-slip-drawer-group>
 ```

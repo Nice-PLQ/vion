@@ -7,8 +7,8 @@
       <v-loading>正在加载</v-loading>
     </demo-doc>
     <demo-doc title="其他颜色的图标">
-      <v-loading color="#67C23A" />
-      <v-loading color="#00CAFC" />
+      <v-loading color="#67C23A" class="m-r-8" />
+      <v-loading color="#00CAFC" class="m-r-8" />
       <v-loading color="#FF596A" />
     </demo-doc>
     <demo-doc title="自定义大小">
@@ -17,11 +17,6 @@
     <demo-doc title="快捷调用">
       <v-button @click="handleShow" type="primary">显示浮层loading</v-button>
     </demo-doc>
-    <!-- <demo-doc title="环形进度">
-      <div class="circle-loading">
-        <v-loading type="circle" :ratio="ratio" />
-      </div>
-    </demo-doc> -->
   </div>
 </template>
 

@@ -145,7 +145,6 @@ export default defineComponent({
 
     let startX, startY, startOffset, hasBindPreventEvent, stopMove;
     function onTouchstart(e) {
-      ctx.emit('touchstart', e);
       if (!canSwiper.value) return;
       if (containerWidth === 0) {
         containerWidth = container.value.offsetWidth;
@@ -161,7 +160,6 @@ export default defineComponent({
     }
 
     function onTouchmove(e) {
-      ctx.emit('touchmove', e);
       if (!canSwiper.value) return;
 
       const { clientX, clientY } = e.touches[0];
@@ -185,8 +183,6 @@ export default defineComponent({
     }
 
     function onTouchend(e) {
-      ctx.emit('touchend', e);
-
       document.removeEventListener('touchmove', preventDefault, { passive: true });
       stopMove = false;
       hasBindPreventEvent = false;

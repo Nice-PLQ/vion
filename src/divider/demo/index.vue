@@ -1,14 +1,14 @@
 <template>
   <div class="divider-demo">
-    <demo-document title="分割线" desc="用于分割列表或输入框的不同项。">
+    <demo-doc title="分割线">
       <v-divider />
-    </demo-document>
+    </demo-doc>
 
-    <demo-document title="分割区块" desc="列表或输入框的若干项可以根据含义组成不同的组，这些组之间用分割区块来分割。">
+    <demo-doc title="分割区块">
       <div class="divider-wrap">
         <v-divider type="bold" />
       </div>
-    </demo-document>
+    </demo-doc>
   </div>
 </template>
 

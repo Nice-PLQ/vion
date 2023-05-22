@@ -75,5 +75,5 @@ src
 
 ### 关于相关命名规范
 
-- 样式的 class 必须以`q-`作为前缀，并遵循[BEM](https://github.com/Tencent/tmt-workflow/wiki/%E2%92%9B-%5B%E8%A7%84%E8%8C%83%5D--CSS-BEM-%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83)命名规范
+- 样式的 class 必须以`v-`作为前缀，并遵循[BEM](https://github.com/Tencent/tmt-workflow/wiki/%E2%92%9B-%5B%E8%A7%84%E8%8C%83%5D--CSS-BEM-%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83)命名规范
 - 组件 API 命名尽可能语义简洁，不能带有业务含义
