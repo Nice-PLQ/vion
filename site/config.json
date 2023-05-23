@@ -30,6 +30,11 @@
     "name": "components",
     "children": [
       {
+        "name": "Avatar",
+        "label": "头像",
+        "type": 2
+      },
+      {
         "name": "ActionSheet",
         "label": "动作面板",
         "type": 2

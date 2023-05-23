@@ -1,6 +1,6 @@
 <template>
   <div class="notice-bar-demo">
-    <demo-document title="入口型">
+    <demo-doc title="入口型">
       <v-notice-bar @click="click" right-icon-type="right">这是一段超长的提示文本，超长的部分将会自动隐藏</v-notice-bar>
       <v-notice-bar @click="click" type="warning" right-icon-type="right">网络出现异常，请检查。</v-notice-bar>
       <v-notice-bar @click="click" type="info" right-icon-type="right">
@@ -9,9 +9,9 @@
           <v-icon name="Mail" color="#8e8e8e" />
         </template>
       </v-notice-bar>
-    </demo-document>
+    </demo-doc>
 
-    <demo-document title="可关闭型">
+    <demo-doc title="可关闭型">
       <v-notice-bar @click="click" right-icon-type="close">这是一段超长的提示文本，超长的部分将会自动隐藏</v-notice-bar>
       <v-notice-bar @click="click" type="warning" right-icon-type="close">网络出现异常，请检查。</v-notice-bar>
       <v-notice-bar @click="click" type="info" right-icon-type="close">
@@ -20,9 +20,9 @@
           <v-icon name="Mail" color="#8e8e8e" />
         </template>
       </v-notice-bar>
-    </demo-document>
+    </demo-doc>
 
-    <demo-document title="带操作型">
+    <demo-doc title="带操作型" class="p-b-16">
       <v-notice-bar
         right-icon-type="close"
         right-text="去设置"
@@ -52,7 +52,7 @@
           <v-icon name="Mail" color="#8e8e8e" />
         </template>
       </v-notice-bar>
-    </demo-document>
+    </demo-doc>
   </div>
 </template>
 
@@ -77,6 +77,6 @@ export default {
 <style lang="less">
 @import "../../style/var.less";
 .@{prefix}-notice {
-  margin: 0 -16px 16px;
+  margin: 16px -16px 0;
 }
 </style>

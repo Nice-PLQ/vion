@@ -9,9 +9,9 @@
     </demo-doc>
     <demo-doc title="纵向排列">
       <v-radio-group v-model="privance" vertical>
-        <v-radio value="gd">广东省</v-radio>
-        <v-radio value="zj">浙江省</v-radio>
-        <v-radio value="sd">山东省</v-radio>
+        <v-radio value="aa">选项A</v-radio>
+        <v-radio value="bb">选项B</v-radio>
+        <v-radio value="cc">选项C</v-radio>
       </v-radio-group>
     </demo-doc>
     <demo-doc title="设置选中背景色">
@@ -45,7 +45,7 @@ export default {
       checked4: true,
       checked5: true,
       selected: 'b',
-      privance: 'gd'
+      privance: 'aa'
     };
   },
   watch: {

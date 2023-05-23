@@ -15,7 +15,8 @@
 需要注意的是，若要自定义分割线的高度，需要基于粗分割线基础上自定义
 
 ```html
-<v-divider color="blue" /> <v-divider type="bold" height="24px" />
+<v-divider color="blue" />
+<v-divider type="bold" height="24px" />
 ```
 
 ## Props

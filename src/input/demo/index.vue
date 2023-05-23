@@ -118,7 +118,7 @@
       </v-input-group>
     </demo-doc>
 
-    <demo-doc title="实时报错" class="m-b-16">
+    <demo-doc title="实时报错" class="p-b-16">
       <v-input
         is-error
         show-clear

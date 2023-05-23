@@ -21,13 +21,13 @@
       />
     </demo-doc>
     <demo-doc title="设置菜单项的文本颜色">
-      <v-button @click="visible2 = true" type="primary" style="margin-bottom: 16px;">文本颜色</v-button>
+      <v-button @click="visible2 = true" type="primary" class="m-r-4">文本颜色</v-button>
       <v-button @click="visible3 = true" type="primary">单独项文本颜色</v-button>
       <v-action-sheet v-model="visible2" :items="items2" showCancel @select="handleSelect" />
       <v-action-sheet v-model="visible3" :items="items3" showCancel @select="handleSelect" />
     </demo-doc>
     <demo-doc title="带选择图标">
-      <v-button @click="visible4 = true" type="primary">多选</v-button>
+      <v-button @click="visible4 = true" type="primary" class="m-r-4">多选</v-button>
       <v-button @click="visible5 = true" type="primary">单选</v-button>
       <v-action-sheet
         title="ActionSheet标题"
@@ -47,7 +47,7 @@
       />
     </demo-doc>
      <demo-doc title="自定义插槽">
-      <v-button @click="visible6 = true" type="primary">自定义标题</v-button>
+      <v-button @click="visible6 = true" type="primary" class="m-r-4">自定义标题</v-button>
       <v-button @click="visible7 = true" type="primary">自定义选项</v-button>
       <v-action-sheet
         v-model="visible6"

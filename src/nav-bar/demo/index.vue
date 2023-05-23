@@ -12,19 +12,19 @@
         标题
         <template v-slot:left>
           <button style="display: flex; align-items: center;">
-            <v-icon name="left" size="18px" />
-            <v-badge type="capsule" background-color="rgba(255, 255, 255, .2)">99+</v-badge>
+            <v-icon name="ArrowLeft" />
+            <v-badge type="capsule">99+</v-badge>
           </button>
         </template>
       </v-nav-bar>
       <v-nav-bar style="margin-top: 8px;">
         标题
         <template v-slot:left>
-          <v-avatar uin="595527134" size="14px" />
+          <v-avatar size="14px" />
         </template>
         <template v-slot:right>
           <button title="分享">
-            <v-icon name="share" size="18px" />
+            <v-icon name="Share" size="18px" />
           </button>
         </template>
       </v-nav-bar>

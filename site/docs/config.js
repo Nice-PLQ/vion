@@ -24,11 +24,11 @@ export default [
     label: '贡献代码',
     component: () => import('@docs/contribute.md'),
   },
-  // {
-  //   name: 'Avatar',
-  //   label: '头像',
-  //   component: () => import('@/avatar/README.md'),
-  // },
+  {
+    name: 'Avatar',
+    label: '头像',
+    component: () => import('@/avatar/README.md'),
+  },
   {
     name: 'ActionSheet',
     label: '动作面板',

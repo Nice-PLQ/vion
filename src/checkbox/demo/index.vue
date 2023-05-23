@@ -34,9 +34,9 @@
     </demo-doc>
     <demo-doc title="多选组合（纵向）">
       <v-checkbox-group v-model="checkList1" vertical>
-        <v-checkbox value="month">一个月</v-checkbox>
-        <v-checkbox value="quarter">一个季</v-checkbox>
-        <v-checkbox value="year">一年</v-checkbox>
+        <v-checkbox value="aa">多选A</v-checkbox>
+        <v-checkbox value="bb">多选B</v-checkbox>
+        <v-checkbox value="cc">多选C</v-checkbox>
       </v-checkbox-group>
     </demo-doc>
   </div>
@@ -52,7 +52,7 @@ export default {
       checked4: true,
       checked5: true,
       checkList: ['b'],
-      checkList1: ['month']
+      checkList1: ['aa']
     };
   },
   watch: {
