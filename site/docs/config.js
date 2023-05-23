@@ -4,11 +4,11 @@ export default [
     label: '起步',
     component: () => import('@docs/intro.md'),
   },
-  {
-    name: 'color',
-    label: '色彩',
-    component: () => import('./components/Colors/index.vue'),
-  },
+  // {
+  //   name: 'color',
+  //   label: '色彩',
+  //   component: () => import('./components/Colors/index.vue'),
+  // },
   {
     name: 'i18n',
     label: '国际化',
@@ -24,11 +24,11 @@ export default [
     label: '贡献代码',
     component: () => import('@docs/contribute.md'),
   },
-  {
-    name: 'Avatar',
-    label: '头像',
-    component: () => import('@/avatar/README.md'),
-  },
+  // {
+  //   name: 'Avatar',
+  //   label: '头像',
+  //   component: () => import('@/avatar/README.md'),
+  // },
   {
     name: 'ActionSheet',
     label: '动作面板',

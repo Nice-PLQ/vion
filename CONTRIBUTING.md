@@ -2,8 +2,8 @@
 
 ### 介绍
 
-首先感谢你关注 vion 组件库，并进行代码贡献。
-以下是关于向 vion 提交代码的指南。在向 vion 提交 Issue 或者 MR 之前，请先花几分钟时间阅读以下文字
+首先感谢你关注 Vion 组件库，并进行代码贡献。
+以下是关于向 Vion 提交代码的指南。在向 Vion 提交 Issue 或者 MR 之前，请先花几分钟时间阅读以下文字
 
 ### Issue 规范
 
@@ -33,7 +33,6 @@
    - 新增组件特性，分支命名形式为 **feature/[组件名]\_[功能]**，如：`feature/button_loading`
 3. 在新分支上开发完成后，提 Merge Request 到仓库的 dev 分支
 4. Merge Request 会在 Review 通过后被合并到仓库 Master 分支
-5. 周知负责人发布版本，可以直接联系`linkpan`
 
 ### 目录结构
 
@@ -59,18 +58,19 @@
 ```
 src
 |- button
+|  ├─ __test__         # 单元测试
 |  ├─ demo             # 示例代码
-|  ├─ test             # 单元测试
-|  ├─ button.vue        # 组件源码
+|  ├─ button.vue       # 组件源码
 |  ├─ index.js         # 组件入口
 |  ├─ style.js         # 样式入口
-|  ├─ README.md        # 中文文档
+|  ├─ README.md        # 组件文档
 |
 |- style
 |  ├─ button.less      # 组件样式
 |
 ├─ index.js            # 所有组件入口
-└─ index.less          # 所有组件样式
+├─ index-es.js         # ESM组件入口
+├─ config.js           # 配置文件
 ```
 
 ### 关于相关命名规范

@@ -2,8 +2,8 @@
 
 ### 介绍
 
-首先感谢你关注 vion 组件库，并进行代码贡献。
-以下是关于向 vion 提交代码的指南。在向 vion 提交 Issue 或者 MR 之前，请先花几分钟时间阅读以下文字
+首先感谢你关注 Vion 组件库，并进行代码贡献。
+以下是关于向 Vion 提交代码的指南。在向 Vion 提交 Issue 或者 MR 之前，请先花几分钟时间阅读以下文字
 
 ### Issue 规范
 
@@ -33,27 +33,27 @@
    - 新增组件特性，分支命名形式为 **feature/[组件名]\_[功能]**，如：`feature/button_loading`
 3. 在新分支上开发完成后，提 Merge Request 到仓库的 dev 分支
 4. Merge Request 会在 Review 通过后被合并到仓库 Master 分支
-5. 周知负责人发布版本，可以直接联系`linkpan`
 
 ### 目录结构
 
 - 仓库的组件代码位于 src 下，每个组件一个文件夹
-- site 目录下是文档网站的代码，本地查看网站效果时可以在目录下运行 `npm run dev:docs && npm run dev:demo` 开启文档网站
+- site 目录下是文档网站的代码，本地查看网站效果时可以在目录下运行 `npm run dev` 开启文档网站
 
 项目目录大致如下：
 
 ```
-vion
-├─ build     # 构建
+├─ script    # 构建脚本
 ├─ lib       # 产物
+├─ es        # ESM产物
 ├─ docs      # 文档
 ├─ src       # 组件
 ├─ site      # 网站
+├─ types     # 类型定义
 ```
 
 ### 添加新组件
 
-添加新组件时，请按照下面的目录结构组织文件，并在 site/[demo|docs]/config.js 中配置组件名称及相关信息。运行`npm run dev:demo`即可以打开浏览器查看组件示例了。访问地址[http://localhost:8899/#/button](http://localhost:8899/#/button)
+添加新组件时，请按照下面的目录结构组织文件，并在 site/[demo|docs]/config.js 中配置组件名称及相关信息。运行`npm run dev`即可以打开浏览器查看组件示例了。
 
 ```
 src

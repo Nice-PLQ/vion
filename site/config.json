@@ -9,11 +9,6 @@
         "type": 1
       },
       {
-        "name": "color",
-        "label": "色彩",
-        "type": 1
-      },
-      {
         "name": "i18n",
         "label": "国际化",
         "type": 1
@@ -34,11 +29,6 @@
     "label": "组件",
     "name": "components",
     "children": [
-      {
-        "name": "Avatar",
-        "label": "头像",
-        "type": 2
-      },
       {
         "name": "ActionSheet",
         "label": "动作面板",
