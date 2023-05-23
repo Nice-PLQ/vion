@@ -25,10 +25,10 @@ components.forEach((item) => {
   });
 });
 
-routes.push({
-  path: '/:pathMatch(.*)*',
-  component: Launch
-});
+// routes.push({
+//   path: '/:pathMatch(.*)*',
+//   component: Launch
+// });
 
 const router = createRouter({
   history: createWebHashHistory(),
