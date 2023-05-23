@@ -35,7 +35,7 @@ export default defineConfig({
   server: {
     host: '127.0.0.1',
     port: 8898,
-    open: '/docs.html#button',
+    open: '/index.html#button',
   },
   resolve: {
     alias: {
@@ -49,7 +49,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         demo: resolve(__dirname, './site/demo.html'),
-        docs: resolve(__dirname, './site/docs.html'),
+        docs: resolve(__dirname, './site/index.html'),
       }
     }
   },
