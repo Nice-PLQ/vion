@@ -1,0 +1,1 @@
+.infinite-loading-demo{height:100vh;overflow-y:auto}.infinite-loading-list{padding:16px}.infinite-loading-list .list-item{padding:15px;text-align:center;background-color:var(--brand-standard);color:#fff;margin-bottom:16px;border-radius:4px}@media (prefers-color-scheme: dark){.infinite-loading-list .list-item{background-color:var(--demo-button-bg)}}
