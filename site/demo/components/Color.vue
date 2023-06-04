@@ -68,7 +68,6 @@ export default {
             { var: '--bg-top-light', label: '弹窗、浮层、actionsheet等背景色' },
             { var: '--fill-light-secondary', label: '卡片式列表的背景色' },
             { var: '--overlay-light', label: '置顶背景色' },
-            { var: '--bg-aio-01', label: '聊天页面的背景色' },
             { var: '--fill-standard-primary', label: '搜索框、输入框等输入区的填充色，卡片式列表内的方块、圆形背景等' },
             { var: '--fill-light-primary', label: '通栏列表的背景色' },
             { var: '--overlay-standard-primary', label: '通栏列表的按下态' },

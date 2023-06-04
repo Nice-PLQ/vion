@@ -1,5 +1,16 @@
 @import './var.less';
 
+:root {
+  --toast-bg:rgba(255, 255, 255, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --toast-bg:rgba(0, 0, 0, 0.55);
+  }
+}
+
+
 .@{prefix}-toast {
   position: fixed;
   top: 8px;
@@ -14,7 +25,7 @@
     align-items: center;
     height: 60px;
     padding: 0 16px;
-    background: rgba(255, 255, 255, 0.25);
+    background: var(--toast-bg);
     backdrop-filter: blur(24px);
     box-shadow: 0 3px 12px 0 rgba(4, 10, 26, 0.16);
     border-radius: 8px;

@@ -105,7 +105,7 @@ export default {
 <style lang="less">
 .slip-drawer-demo {
   .button {
-    height: 56px;
+    height: 100%;
     padding: 0 16px;
     border: none;
     color: #fff;

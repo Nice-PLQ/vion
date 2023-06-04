@@ -1,5 +1,4 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import Launch from './components/Launch.vue';
 import Index from './components/Index.vue';
 import Color from './components/Color.vue';
 import { kebabCase } from '../util';
@@ -24,11 +23,6 @@ components.forEach((item) => {
     meta: { title: item.label }
   });
 });
-
-// routes.push({
-//   path: '/:pathMatch(.*)*',
-//   component: Launch
-// });
 
 const router = createRouter({
   history: createWebHashHistory(),

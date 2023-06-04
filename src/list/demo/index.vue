@@ -49,7 +49,7 @@
           </v-list>
           <v-list title="列表标题" @click="handleClick">
             <template v-slot:left>
-              <v-icon name="Qq" class="m-r-10" />
+              <v-icon name="Location" class="m-r-10" />
             </template>
           </v-list>
         </v-list-group>
