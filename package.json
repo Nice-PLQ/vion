@@ -1,7 +1,7 @@
 {
   "name": "vion",
   "version": "1.0.0",
-  "description": "vue3 components for mobile QQ",
+  "description": "A Vue.js 3.0 UI Components for Mobile Web",
   "main": "lib/index.js",
   "module": "es/index-es.js",
   "typings": "types/index.d.ts",
@@ -86,7 +86,7 @@
     "@rollup/plugin-replace": "^2.3.4",
     "@rollup/plugin-url": "^6.0.0",
     "@types/jest": "^26.0.19",
-    "@vitejs/plugin-vue": "^2.3.3",
+    "@vitejs/plugin-vue": "^4.2.3",
     "@vue/compiler-sfc": "^3.3.4",
     "@vue/test-utils": "^2.0.0-beta.13",
     "autoprefixer": "^9.7.1",
