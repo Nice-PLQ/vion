@@ -1,7 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import Markdown from 'vite-plugin-md';
+import Markdown from 'vite-plugin-vue-markdown';
 import hljs from 'highlight.js';
 
 const reg = /<code class="hljs (?:html|css|js|less|json)">([\s\S]*)<\/code>/;
@@ -70,9 +70,9 @@ export default defineConfig({
           return `<pre class="hljs"><code>${str}</code></pre>`;
         }
       },
-      // markdownItSetup(md) {
-      //   md.use(lineNumber);
-      // },
+      markdownItSetup(md) {
+        md.use(lineNumber);
+      },
     }),
   ],
 });
