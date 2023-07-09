@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import Index from './components/Index.vue';
-import Color from './components/Color.vue';
 import { kebabCase } from '../util';
 import components from './config';
 
@@ -8,10 +7,6 @@ const routes = [{
   name: '首页',
   path: '/index',
   component: Index
-}, {
-  name: '色彩',
-  path: '/color',
-  component: Color
 }];
 
 components.forEach((item) => {

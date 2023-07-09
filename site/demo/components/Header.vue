@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     handleClick() {
-      alert('back');
+      this.$router.back();
     }
   }
 };
