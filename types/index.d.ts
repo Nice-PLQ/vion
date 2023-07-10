@@ -1,5 +1,4 @@
-
-import Vue from 'vue';
+import { App } from 'vue';
 
 import { VComponent } from './component';
 import { Dialog } from './dialog';
@@ -11,7 +10,7 @@ import { Theme } from './theme';
 
 export const version: string;
 
-export function install(vue: typeof Vue): void;
+export function install(app: App): void;
 
 declare class ActionSheet extends VComponent { }
 declare class Avatar extends VComponent { }

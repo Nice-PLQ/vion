@@ -1,6 +1,6 @@
-import Vue from 'vue';
+import { App } from 'vue';
 
 export class VComponent {
   static name: string;
-  static install(vue: typeof Vue): void;
+  static install(app: App): void;
 }
