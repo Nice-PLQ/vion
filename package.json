@@ -1,6 +1,6 @@
 {
   "name": "vion",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Vue.js 3.0 UI Components for Mobile Web",
   "main": "lib/index.js",
   "module": "es/index-es.js",
