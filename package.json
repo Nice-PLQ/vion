@@ -1,6 +1,6 @@
 {
   "name": "vion",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "A Vue.js 3.0 UI Components for Mobile Web",
   "main": "lib/index.js",
   "module": "es/index-es.js",
@@ -16,10 +16,10 @@
     "lint": "npm run lint:js && npm run lint:css",
     "test": "cross-env NODE_ENV=test jest"
   },
-  "homepage": "https://nice-plq.github.io/vion/",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nice-PLQ/vion"
+    "url": ""
   },
   "engines": {
     "node": ">=12.0.0"
@@ -49,7 +49,11 @@
     "lib/*",
     "es/*/style.js"
   ],
-  "author": "Nice-PLQ",
+  "vetur": {
+    "tags": "vetur/tags.json",
+    "attributes": "vetur/attributes.json"
+  },
+  "author": "yangling",
   "license": "MIT",
   "browserslist": [
     "iOS >= 10.0",
@@ -64,7 +68,7 @@
     "clipboard": "^2.0.6",
     "highlight.js": "^9.15.10",
     "qrcode.vue": "^3.3.3",
-    "vion-svg-icon": "^1.0.0",
+    "vion-svg-icon": "^1.0.1",
     "vue": "^3.3.4",
     "vue-router": "^4.0.12"
   },
@@ -81,13 +85,13 @@
     "@rollup/plugin-node-resolve": "^13.1.1",
     "@rollup/plugin-replace": "^2.3.4",
     "@rollup/plugin-url": "^6.0.0",
-    "@types/jest": "^26.0.19",
+    "@types/jest": "^29.5.3",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/compiler-sfc": "^3.3.4",
-    "@vue/test-utils": "^2.0.0-beta.13",
+    "@vue/test-utils": "^2.4.1",
     "autoprefixer": "^9.7.1",
     "babel-eslint": "^10.0.2",
-    "babel-jest": "^25.4.0",
+    "babel-jest": "^25.5.1",
     "cross-env": "^7.0.2",
     "esbuild": "^0.14.8",
     "eslint": "^6.6.0",
@@ -100,8 +104,8 @@
     "extract-comments": "^1.1.0",
     "fs-extra": "^8.1.0",
     "husky": "^3.0.1",
-    "jest": "^25.4.0",
-    "jest-serializer-vue": "^2.0.2",
+    "jest": "^25.5.4",
+    "jest-serializer-vue": "^3.1.0",
     "less": "^3.13.1",
     "lint-staged": "^9.4.2",
     "postcss": "^8.4.5",
