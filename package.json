@@ -1,6 +1,6 @@
 {
   "name": "vion",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Vue.js 3.0 UI Components for Mobile Web",
   "main": "lib/index.js",
   "module": "es/index-es.js",
@@ -39,8 +39,7 @@
     "lib/",
     "es/",
     "types/",
-    "vetur/",
-    "notice.js",
+    "logo.svg",
     "README.md"
   ],
   "sideEffects": [
