@@ -1,5 +1,7 @@
 # Checkbox
 
+![](https://img.shields.io/badge/coverage-100%25-green)
+
 ---
 
 #### 1、基础用法

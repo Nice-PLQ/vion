@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading 悬浮的loading 1`] = `
+<div
+  class="v-loading v-loading_float"
+>
+  <div
+    class="v-loading__inner"
+  >
+    <div
+      class="v-loading__icon"
+    />
+    <span
+      class="v-loading__txt-tips"
+    >
+      正在加载
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Loading 普通的loading 1`] = `
+<div
+  class="v-loading v-loading_normal"
+>
+  <div
+    class="v-loading__inner"
+  >
+    <div
+      class="v-loading__icon"
+    />
+    <span
+      class="v-loading__txt-tips"
+    >
+      
+      正在加载..
+      
+    </span>
+  </div>
+</div>
+`;

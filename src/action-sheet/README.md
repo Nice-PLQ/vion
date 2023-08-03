@@ -1,4 +1,6 @@
-# ActionSheet
+# ActionSheet 
+
+![](https://img.shields.io/badge/coverage-95.74%25-green)
 
 ---
 

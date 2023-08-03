@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row 渲染 1`] = `
+<div
+  class="v-row v-row_justify-center v-row_align-center v-row_no-wrap"
+>
+  
+  <div
+    class="v-col v-col_span-6"
+  >
+    
+    span: 6
+    
+  </div>
+  <div
+    class="v-col v-col_span-6 v-col_offset-16"
+    style="padding-left: 8px;"
+  >
+    
+    span: 6
+    
+  </div>
+  <div
+    class="v-col v-col_span-6"
+    style="padding-left: 8px;"
+  >
+    
+    span: 6
+    
+  </div>
+  
+</div>
+`;

@@ -1,5 +1,7 @@
 # Tabbar
 
+![](https://img.shields.io/badge/coverage-100%25-green)
+
 ---
 
 `Tabbar` 组件必须结合`TabbarItem`组件一起使用

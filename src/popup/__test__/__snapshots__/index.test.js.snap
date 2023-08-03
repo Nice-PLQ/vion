@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popup 渲染 1`] = `
+<div
+  class="v-popup"
+>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="fade"
+    persisted="true"
+  >
+    <div
+      aria-label="关闭"
+      class="v-popup__mask"
+      role="button"
+      style=""
+    />
+  </transition-stub>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="fade"
+    persisted="false"
+  >
+    <!--v-if-->
+  </transition-stub>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="slide-bottom"
+    persisted="true"
+  >
+    <div
+      class="v-popup__content v-popup__content_bottom"
+      style=""
+    >
+      
+      <div
+        style="height: 200px; background: rgb(255, 255, 255);"
+      />
+      
+    </div>
+  </transition-stub>
+</div>
+`;

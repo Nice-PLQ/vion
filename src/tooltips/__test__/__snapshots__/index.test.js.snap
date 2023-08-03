@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltips 改变位置 1`] = `
+<div
+  class="v-tooltips v-tooltips__bottom-left"
+>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="tooltips-top"
+    persisted="true"
+  >
+    <div
+      class="v-tooltips__inner"
+      style="left: 0px; top: 0px;"
+    >
+      
+      <div
+        class="v-tooltips__txt-tips"
+      >
+        气泡提示的内容
+      </div>
+      
+    </div>
+  </transition-stub>
+  <span>
+    
+    <button>
+      按钮
+    </button>
+    
+  </span>
+</div>
+`;
+
+exports[`Tooltips 改变位置 2`] = `
+<div
+  class="v-tooltips v-tooltips__bottom-right"
+>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="tooltips-top"
+    persisted="true"
+  >
+    <div
+      class="v-tooltips__inner"
+      style="left: 0px; top: 0px;"
+    >
+      
+      <div
+        class="v-tooltips__txt-tips"
+      >
+        气泡提示的内容
+      </div>
+      
+    </div>
+  </transition-stub>
+  <span>
+    
+    <button>
+      按钮
+    </button>
+    
+  </span>
+</div>
+`;
+
+exports[`Tooltips 改变位置 3`] = `
+<div
+  class="v-tooltips v-tooltips__top-center"
+>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="tooltips-bottom"
+    persisted="true"
+  >
+    <div
+      class="v-tooltips__inner"
+      style="left: 0px; top: 0px;"
+    >
+      
+      <div
+        class="v-tooltips__txt-tips"
+      >
+        气泡提示的内容
+      </div>
+      
+    </div>
+  </transition-stub>
+  <span>
+    
+    <button>
+      按钮
+    </button>
+    
+  </span>
+</div>
+`;
+
+exports[`Tooltips 改变位置 4`] = `
+<div
+  class="v-tooltips v-tooltips__top-left"
+>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="tooltips-bottom"
+    persisted="true"
+  >
+    <div
+      class="v-tooltips__inner"
+      style="left: 0px; top: 0px;"
+    >
+      
+      <div
+        class="v-tooltips__txt-tips"
+      >
+        气泡提示的内容
+      </div>
+      
+    </div>
+  </transition-stub>
+  <span>
+    
+    <button>
+      按钮
+    </button>
+    
+  </span>
+</div>
+`;
+
+exports[`Tooltips 改变位置 5`] = `
+<div
+  class="v-tooltips v-tooltips__top-right"
+>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="tooltips-bottom"
+    persisted="true"
+  >
+    <div
+      class="v-tooltips__inner"
+      style="left: 0px; top: 0px;"
+    >
+      
+      <div
+        class="v-tooltips__txt-tips"
+      >
+        气泡提示的内容
+      </div>
+      
+    </div>
+  </transition-stub>
+  <span>
+    
+    <button>
+      按钮
+    </button>
+    
+  </span>
+</div>
+`;
+
+exports[`Tooltips 渲染 1`] = `
+<div
+  class="v-tooltips v-tooltips__bottom-center"
+>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="tooltips-top"
+    persisted="true"
+  >
+    <div
+      class="v-tooltips__inner"
+      style="left: 0px; top: 0px; display: none;"
+    >
+      
+      <div
+        class="v-tooltips__txt-tips"
+      >
+        气泡提示的内容
+      </div>
+      
+    </div>
+  </transition-stub>
+  <span>
+    
+    <button>
+      按钮
+    </button>
+    
+  </span>
+</div>
+`;

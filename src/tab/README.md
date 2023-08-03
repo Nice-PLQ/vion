@@ -1,5 +1,7 @@
 # Tab
 
+![](https://img.shields.io/badge/coverage-96.26%25-green)
+
 ---
 
 `Tab` 组件必须结合 `TabPanel` 组件一起使用

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge 类型 1`] = `
+<div
+  class="v-badge v-badge_dot"
+  style="background-color: rgb(176, 179, 191); color: rgb(0, 0, 0); font-size: 16px;"
+>
+  <span
+    class="v-badge__number"
+  >
+    
+    99+
+    
+  </span>
+</div>
+`;
+
+exports[`Badge 类型 2`] = `
+<div
+  class="v-badge v-badge_capsule"
+  style="background-color: rgb(176, 179, 191); color: rgb(0, 0, 0); font-size: 16px;"
+>
+  <span
+    class="v-badge__number"
+  >
+    
+    99+
+    
+  </span>
+</div>
+`;

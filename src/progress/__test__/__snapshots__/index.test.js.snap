@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress 渲染 1`] = `
+<div
+  class="v-progress"
+>
+  
+  <div
+    class="v-progress__outer"
+  >
+    <div
+      class="v-progress__inner"
+      style="width: 50%;"
+    />
+  </div>
+  
+  <div
+    class="v-progress__text"
+  >
+    50%
+  </div>
+  
+  
+</div>
+`;

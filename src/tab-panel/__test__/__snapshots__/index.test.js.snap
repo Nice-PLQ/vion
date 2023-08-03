@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabPanel 渲染 1`] = `
+<div
+  class="v-tab"
+>
+  <div
+    class="v-tab__nav-wrap"
+  >
+    <ul
+      class="v-tab__nav"
+      role="tablist"
+      style="transform: translate3d(0px, 0, 0);"
+    >
+      
+      
+    </ul>
+  </div>
+  <div
+    class="v-tab__content"
+    style="transform: translate3d(0px, 0, 0); transition: all 400ms ease;"
+  >
+    
+    
+    <div
+      class="v-tab__panel"
+    >
+      
+      热门赛事
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      QQ飞车手游
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      英雄联盟
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      王者荣耀
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      和平精英
+      
+    </div>
+    
+    
+  </div>
+</div>
+`;

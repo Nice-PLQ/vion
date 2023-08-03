@@ -28,11 +28,6 @@ export default defineComponent({
      * @attribute size
      */
     size: String,
-    /**
-     * @description 旋转角度
-     * @attribute rotate
-     */
-    rotate: Number
   },
   emits: ['click'],
   setup(props, ctx) {

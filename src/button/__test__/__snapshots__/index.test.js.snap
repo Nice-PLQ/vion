@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button 按钮类型 1`] = `
+<button
+  class="v-button v-button_primary v-button_medium"
+>
+  <div
+    class="v-button__inner"
+  >
+    <!--v-if-->
+    
+    按钮
+    
+  </div>
+</button>
+`;

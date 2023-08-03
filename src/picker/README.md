@@ -1,5 +1,7 @@
 # Picker
 
+![](https://img.shields.io/badge/coverage-97.23%25-green)
+
 ---
 
 #### 1、基础用法

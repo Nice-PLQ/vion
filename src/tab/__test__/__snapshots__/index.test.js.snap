@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab name属性重复校验 1`] = `
+<div
+  class="v-tab"
+>
+  <div
+    class="v-tab__nav-wrap"
+  >
+    <ul
+      class="v-tab__nav"
+      role="tablist"
+      style="transform: translate3d(0px, 0, 0);"
+    >
+      
+      
+    </ul>
+  </div>
+  <div
+    class="v-tab__content"
+    style="transform: translate3d(0px, 0, 0); transition: all 400ms ease;"
+  >
+    
+    
+    <div
+      class="v-tab__panel"
+    >
+      
+      好友
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      分组
+      
+    </div>
+    
+    
+  </div>
+</div>
+`;
+
+exports[`Tab tab数据格式 1`] = `
+<div
+  class="v-tab"
+>
+  <div
+    class="v-tab__nav-wrap"
+  >
+    <ul
+      class="v-tab__nav"
+      role="tablist"
+      style="transform: translate3d(0px, 0, 0);"
+    >
+      
+      <li
+        class="v-tab__item"
+        role="tab"
+      >
+        好友
+      </li>
+      <li
+        class="v-tab__item"
+        role="tab"
+      >
+        分组
+      </li>
+      <li
+        aria-selected="true"
+        class="v-tab__item on"
+        role="tab"
+      >
+        群聊
+      </li>
+      
+    </ul>
+  </div>
+  <div
+    class="v-tab__content"
+    style="transform: translate3d(0px, 0, 0); transition: all 400ms ease;"
+  >
+    
+    
+    <div
+      class="v-tab__panel"
+    >
+      
+      好友
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      分组
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      群聊
+      
+    </div>
+    
+    
+  </div>
+</div>
+`;
+
+exports[`Tab 渲染 1`] = `
+<div
+  class="v-tab"
+>
+  <div
+    class="v-tab__nav-wrap"
+  >
+    <ul
+      class="v-tab__nav v-tab__nav_scrollable"
+      role="tablist"
+      style="transform: translate3d(0px, 0, 0); webkit-transition: all 400ms ease;"
+    >
+      
+      <li
+        class="v-tab__item"
+        role="tab"
+      >
+        热门赛事
+      </li>
+      <li
+        class="v-tab__item"
+        role="tab"
+      >
+        QQ飞车手游
+      </li>
+      <li
+        aria-selected="true"
+        class="v-tab__item on"
+        role="tab"
+      >
+        英雄联盟
+      </li>
+      <li
+        class="v-tab__item"
+        role="tab"
+      >
+        王者荣耀
+      </li>
+      <li
+        class="v-tab__item"
+        role="tab"
+      >
+        和平精英
+      </li>
+      
+    </ul>
+  </div>
+  <div
+    class="v-tab__content"
+    style="transform: translate3d(0px, 0, 0); transition: all 400ms ease;"
+  >
+    
+    
+    <div
+      class="v-tab__panel"
+    >
+      
+      热门赛事
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      QQ飞车手游
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      英雄联盟
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      王者荣耀
+      
+    </div>
+    <div
+      class="v-tab__panel"
+    >
+      
+      和平精英
+      
+    </div>
+    
+    
+  </div>
+</div>
+`;

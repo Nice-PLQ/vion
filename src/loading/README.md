@@ -1,5 +1,7 @@
 # Loading
 
+![](https://img.shields.io/badge/coverage-87.5%25-green)
+
 ---
 
 #### 1、普通类型的 loading
