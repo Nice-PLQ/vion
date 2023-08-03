@@ -1,8 +1,22 @@
+<p>
+  <a href="https://nice-plq.github.io/vion/" target="_blank" rel="noopener noreferrer">
+    <img width="200" src="../logo.svg" alt="Vion logo">
+  </a>
+</p>
+<br/>
+<p>
+  <a href="https://npmjs.com/package/vion"><img src="https://badgen.net/npm/v/vion"></a>
+  <img src="https://img.shields.io/badge/coverage-88.15%25-green">
+  <img src="https://img.shields.io/badge/PR-welcome-brightgreen">
+</p>
+<br/>
+
 ## 特性
 
 - 基于 Vue3 构建
 - 30 个组件
 - 完善的示例和文档说明
+- 单元测试覆盖 88%
 - 支持 tree-shaking
 - 支持国际化
 - 支持服务端渲染
