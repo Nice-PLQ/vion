@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://nice-plq.github.io/vion/" target="_blank" rel="noopener noreferrer">
-    <img width="200" src="./logo.svg" alt="Vion logo">
+    <img width="200" src="https://raw.githubusercontent.com/Nice-PLQ/vion/master/logo.svg" alt="Vion logo">
   </a>
 </p>
 <br/>
