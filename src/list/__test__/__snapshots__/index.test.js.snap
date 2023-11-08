@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List 渲染 1`] = `
+<div
+  class="v-list v-list_multiple v-list_click"
+  role="button"
+>
+  <div
+    class="v-list__title-wrap"
+  >
+    
+    
+    <div
+      class="v-list__title"
+    >
+      
+      <div
+        class="v-list__title-txt"
+      >
+        标题
+      </div>
+      
+      
+      <div
+        class="v-list__desc-txt v-list__desc-txt_single"
+      >
+        详细说明
+      </div>
+      
+    </div>
+  </div>
+  <div
+    class="v-list__content"
+  >
+    
+    <span
+      class="v-list__help"
+    >
+      辅助标题
+    </span>
+    
+    <i
+      class="v-icon"
+      style="display: inline-block; width: 1em; height: 1em; line-height: 1em;"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        viewBox="0 0 48 48"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M34.9627 24.0099L34.9741 23.9985L18.0035 7.02795L15.1751 9.85638L29.3377 24.019L15.1842 38.1725L18.0126 41.0009L34.9831 24.0303L34.9627 24.0099Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </i>
+    
+    
+  </div>
+</div>
+`;

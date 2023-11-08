@@ -1,5 +1,7 @@
 # Icon
 
+![](https://img.shields.io/badge/coverage-46.51%25-yellow)
+
 ---
 
 vion 的图标库依赖`vion-svg-icon`，你可以单独引入这个图标库来使用，这种方式是支持 tree-shaking 的，按需使用svg图标，所以优先考虑这种方式使用图标

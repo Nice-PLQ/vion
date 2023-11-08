@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabbar 渲染 1`] = `
+<div
+  class="v-tabbar"
+>
+  <ul
+    class="v-tabbar__list"
+  >
+    
+    <li
+      class="v-tabbar-item"
+    >
+      <div
+        class="v-tabbar-item__content"
+        style="color: rgb(3, 8, 26);"
+      >
+        <div
+          class="v-tabbar-item__icon"
+        >
+          
+          <!---->
+          
+          <!--v-if-->
+        </div>
+        <div
+          class="v-tabbar-item__text"
+        >
+          
+           QQ
+          
+        </div>
+      </div>
+    </li>
+    <li
+      class="v-tabbar-item on"
+    >
+      <div
+        class="v-tabbar-item__content"
+        style="color: rgb(0, 202, 252);"
+      >
+        <div
+          class="v-tabbar-item__icon"
+        >
+          
+          <!---->
+          
+          <!--v-if-->
+        </div>
+        <div
+          class="v-tabbar-item__text"
+        >
+          
+           QZone
+          
+        </div>
+      </div>
+    </li>
+    <li
+      class="v-tabbar-item"
+    >
+      <div
+        class="v-tabbar-item__content"
+        style="color: rgb(3, 8, 26);"
+      >
+        <div
+          class="v-tabbar-item__icon"
+        >
+          
+          <!---->
+          
+          <!--v-if-->
+        </div>
+        <div
+          class="v-tabbar-item__text"
+        >
+          
+           Wechat
+          
+        </div>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+`;

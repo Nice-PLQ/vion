@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonGroup 按钮组 1`] = `
+<div
+  class="v-button-group"
+>
+  
+  <button
+    class="v-button v-button_primary v-button_large"
+  >
+    <div
+      class="v-button__inner"
+    >
+      <!--v-if-->
+      
+      主按钮
+      
+    </div>
+  </button>
+  <button
+    class="v-button v-button_default v-button_large"
+  >
+    <div
+      class="v-button__inner"
+    >
+      <!--v-if-->
+      
+      默认按钮
+      
+    </div>
+  </button>
+  
+</div>
+`;

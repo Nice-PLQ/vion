@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SlipDrawer 滑动展开 1`] = `
+<div
+  class="v-slip-drawer"
+>
+  <div
+    class="v-slip-drawer__wrapper"
+    style="transform: translate3d(100px, 0, 0); transition: transform .4s;"
+  >
+    <div
+      class="v-slip-drawer__action v-slip-drawer__action-left"
+    >
+      
+      
+      <button
+        class="v-slip-drawer__action-btn"
+      >
+        置顶
+      </button>
+      
+      
+    </div>
+    <div
+      class="v-slip-drawer__content"
+    >
+      
+      
+    </div>
+    <div
+      class="v-slip-drawer__action v-slip-drawer__action-right"
+    >
+      
+      
+      <button
+        class="v-slip-drawer__action-btn"
+      >
+        标记为已读
+      </button>
+      <button
+        class="v-slip-drawer__action-btn"
+      >
+        删除
+      </button>
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SlipDrawer 组合 1`] = `
+<div
+  class="v-slip-drawer-group"
+>
+  
+  <div
+    class="v-slip-drawer"
+  >
+    <div
+      class="v-slip-drawer__wrapper"
+      style="transform: translate3d(0px, 0, 0); transition: transform .4s;"
+    >
+      <div
+        class="v-slip-drawer__action v-slip-drawer__action-left"
+      >
+        
+        
+        
+        
+      </div>
+      <div
+        class="v-slip-drawer__content"
+      >
+        
+        test
+        
+      </div>
+      <div
+        class="v-slip-drawer__action v-slip-drawer__action-right"
+      >
+        
+        
+        <button
+          class="v-slip-drawer__action-btn"
+        >
+          删除
+        </button>
+        
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="v-slip-drawer"
+  >
+    <div
+      class="v-slip-drawer__wrapper"
+      style="transform: translate3d(-100px, 0, 0); transition: transform .4s;"
+    >
+      <div
+        class="v-slip-drawer__action v-slip-drawer__action-left"
+      >
+        
+        
+        
+        
+      </div>
+      <div
+        class="v-slip-drawer__content"
+      >
+        
+        test
+        
+      </div>
+      <div
+        class="v-slip-drawer__action v-slip-drawer__action-right"
+      >
+        
+        
+        <button
+          class="v-slip-drawer__action-btn"
+        >
+          删除
+        </button>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;

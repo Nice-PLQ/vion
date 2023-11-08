@@ -1,5 +1,7 @@
 # Dialog
 
+![](https://img.shields.io/badge/coverage-98.14%25-green)
+
 ---
 
 #### 1、基础用法

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog 弹窗渲染 1`] = `
+<div
+  class="v-popup v-dialog"
+>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="fade"
+    persisted="true"
+  >
+    <div
+      aria-label="关闭"
+      class="v-popup__mask"
+      role="button"
+      style=""
+    />
+  </transition-stub>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="fade"
+    persisted="false"
+  >
+    <!--v-if-->
+  </transition-stub>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="fade-zoom"
+    persisted="true"
+  >
+    <div
+      class="v-popup__content v-popup__content_center"
+      style=""
+    >
+      
+      <div
+        class="v-dialog__box"
+      >
+        <div
+          class="v-dialog__content"
+        >
+          <div
+            class="v-dialog__title"
+          >
+            标题
+          </div>
+          <div
+            class="v-dialog__description"
+          >
+            
+            <div>
+              内容
+            </div>
+            
+          </div>
+        </div>
+        <div
+          class="v-dialog__footer"
+        >
+          <button
+            class="v-dialog__btn"
+          >
+            取消
+          </button>
+          <button
+            class="v-dialog__btn"
+          >
+            确定
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </transition-stub>
+</div>
+`;

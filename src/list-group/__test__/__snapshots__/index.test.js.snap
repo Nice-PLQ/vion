@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListGroup 渲染 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!--v-if-->
+  <div
+    class="v-list-group v-list_border_none"
+  >
+    
+    <div
+      class="v-list v-list_multiple"
+    >
+      <div
+        class="v-list__title-wrap"
+      >
+        
+        
+        <div
+          class="v-list__title"
+        >
+          
+          <div
+            class="v-list__title-txt"
+          >
+            列表标题
+          </div>
+          
+          
+          <div
+            class="v-list__desc-txt v-list__desc-txt_single"
+          >
+            详细说明
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="v-list__content"
+      >
+        
+        <span
+          class="v-list__help"
+        >
+          辅助标题
+        </span>
+        
+        <!---->
+        
+        
+      </div>
+    </div>
+    <div
+      class="v-list v-list_multiple"
+    >
+      <div
+        class="v-list__title-wrap"
+      >
+        
+        
+        <div
+          class="v-list__title"
+        >
+          
+          <div
+            class="v-list__title-txt"
+          >
+            列表标题
+          </div>
+          
+          
+          <div
+            class="v-list__desc-txt v-list__desc-txt_single"
+          >
+            详细说明
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="v-list__content"
+      >
+        
+        <span
+          class="v-list__help"
+        >
+          辅助标题
+        </span>
+        
+        <!---->
+        
+        
+      </div>
+    </div>
+    
+  </div>
+  <!--v-if-->
+  
+</div>
+`;

@@ -1,5 +1,7 @@
 # List
 
+![](https://img.shields.io/badge/coverage-94.44%25-green)
+
 ---
 
 #### 1、基础用法

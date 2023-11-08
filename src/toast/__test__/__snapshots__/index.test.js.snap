@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast error 1`] = `
+<div
+  class="v-toast toast-enter-from toast-enter-active"
+  style=""
+>
+  <div
+    class="v-toast__inner"
+  >
+    <i
+      class="v-icon v-toast-error"
+      style="display: inline-block; font-size: 24px; width: 1em; height: 1em; line-height: 1em;"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        viewBox="0 0 48 48"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24ZM22 31V35H26V31H22ZM22 13V29H26V13H22Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </i>
+    <div
+      class="v-toast__txt"
+    >
+      error
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toast info 1`] = `
+<div
+  class="v-toast toast-enter-from toast-enter-active"
+  style=""
+>
+  <div
+    class="v-toast__inner"
+  >
+    <i
+      class="v-icon v-toast-info"
+      style="display: inline-block; font-size: 24px; width: 1em; height: 1em; line-height: 1em;"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        viewBox="0 0 48 48"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24ZM22 17V13H26V17H22ZM22 35V19H26V35H22Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </i>
+    <div
+      class="v-toast__txt"
+    >
+      info
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toast success 1`] = `
+<div
+  class="v-toast toast-enter-from toast-enter-active"
+  style=""
+>
+  <div
+    class="v-toast__inner"
+  >
+    <i
+      class="v-icon v-toast-success"
+      style="display: inline-block; font-size: 24px; width: 1em; height: 1em; line-height: 1em;"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        viewBox="0 0 48 48"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24ZM31.392 16.2143L34.2204 19.0427L24.3209 28.9422L21.4925 31.7706L18.664 28.9422L13.7143 23.9925L16.5427 21.164L21.4925 26.1138L31.392 16.2143Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </i>
+    <div
+      class="v-toast__txt"
+    >
+      success
+    </div>
+  </div>
+</div>
+`;

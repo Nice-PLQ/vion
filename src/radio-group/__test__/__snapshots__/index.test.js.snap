@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup 单选框组渲染 1`] = `
+<div
+  class="v-radio-group"
+>
+  
+  <div
+    class="v-radio"
+  >
+    <div
+      class="v-radio__icon"
+    >
+      <input
+        class="v-radio__input"
+        type="radio"
+      />
+      <!--v-if-->
+    </div>
+    <span
+      class="v-radio__label"
+    >
+      
+      单选A
+      
+    </span>
+  </div>
+  <div
+    class="v-radio"
+  >
+    <div
+      class="v-radio__icon"
+    >
+      <input
+        class="v-radio__input"
+        type="radio"
+      />
+      <!--v-if-->
+    </div>
+    <span
+      class="v-radio__label"
+    >
+      
+      单选B
+      
+    </span>
+  </div>
+  
+</div>
+`;

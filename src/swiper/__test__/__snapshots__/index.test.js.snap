@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Swiper 渲染 1`] = `
+<div
+  class="v-swiper"
+>
+  <ul
+    class="v-swiper__list"
+    style="transform: translate3d(-686px, 0, 0); transition: transform 500ms;"
+  >
+    
+    <li
+      class="v-swiper__item"
+    >
+      <div
+        class="v-swiper__item-inner"
+        style="height: 150px;"
+      >
+        
+        4
+        
+      </div>
+    </li>
+    <li
+      class="v-swiper__item"
+    >
+      <div
+        class="v-swiper__item-inner"
+        style="height: 150px;"
+      >
+        
+        1
+        
+      </div>
+    </li>
+    <li
+      class="v-swiper__item"
+    >
+      <div
+        class="v-swiper__item-inner"
+        style="height: 150px;"
+      >
+        
+        2
+        
+      </div>
+    </li>
+    <li
+      class="v-swiper__item"
+    >
+      <div
+        class="v-swiper__item-inner"
+        style="height: 150px;"
+      >
+        
+        3
+        
+      </div>
+    </li>
+    <li
+      class="v-swiper__item"
+    >
+      <div
+        class="v-swiper__item-inner"
+        style="height: 150px;"
+      >
+        
+        4
+        
+      </div>
+    </li>
+    <li
+      class="v-swiper__item"
+    >
+      <div
+        class="v-swiper__item-inner"
+        style="height: 150px;"
+      >
+        
+        1
+        
+      </div>
+    </li>
+    
+  </ul>
+  <!--v-if-->
+</div>
+`;

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxGroup 多选组渲染 1`] = `
+<div
+  class="v-checkbox-group"
+>
+  
+  <div
+    class="v-checkbox"
+  >
+    <div
+      class="v-checkbox__icon"
+    >
+      <input
+        class="v-checkbox__input"
+        type="checkbox"
+      />
+      <!--v-if-->
+    </div>
+    <span
+      class="v-checkbox__label"
+    >
+      
+      多选A
+      
+    </span>
+  </div>
+  <div
+    class="v-checkbox"
+  >
+    <div
+      class="v-checkbox__icon"
+    >
+      <input
+        class="v-checkbox__input"
+        type="checkbox"
+      />
+      <!--v-if-->
+    </div>
+    <span
+      class="v-checkbox__label"
+    >
+      
+      多选B
+      
+    </span>
+  </div>
+  
+</div>
+`;

@@ -1,5 +1,7 @@
 # Row、Col
 
+![](https://img.shields.io/badge/coverage-100%25-green)
+
 ---
 
 `Row` 组件必须结合`Col`组件一起使用

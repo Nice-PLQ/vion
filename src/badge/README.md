@@ -1,5 +1,7 @@
 # Badge
 
+![](https://img.shields.io/badge/coverage-100%25-green)
+
 ---
 
 #### 1、红点

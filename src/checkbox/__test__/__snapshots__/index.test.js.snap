@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox 选中 1`] = `
+<div
+  class="v-checkbox"
+>
+  <div
+    class="v-checkbox__icon v-checkbox_checked"
+    style="font-size: 26px; border-color: #67c23a; background-color: rgb(103, 194, 58);"
+  >
+    <input
+      class="v-checkbox__input"
+      type="checkbox"
+    />
+    <svg
+      fill="currentColor"
+      height="0.4166666666666667em"
+      viewBox="0 0 28 20"
+      width="0.5833333333333334em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <!-- eslint-disable max-len -->
+      <path
+        d="M27.5794 2.82843L24.751 0L9.90069 14.8503L2.82835 7.77794L-8.07047e-05 10.6064L8.4852 19.0916C8.82393 19.4304 9.25393 19.6222 9.69603 19.6671C10.2741 19.7265 10.873 19.5348 11.3159 19.0919L27.5794 2.82843Z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <span
+    class="v-checkbox__label"
+  >
+    
+    <span>
+      多选框
+    </span>
+    
+  </span>
+</div>
+`;

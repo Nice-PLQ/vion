@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider 类型 1`] = `
+<div
+  class="v-divider v-divider_bold"
+/>
+`;

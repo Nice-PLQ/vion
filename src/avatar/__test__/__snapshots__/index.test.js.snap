@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar 单一头像 1`] = `
+<div
+  class="v-avatar"
+  style="font-size: 36px;"
+>
+  
+  
+  <img
+    src="https://path/to/avatar/image.jpg"
+  />
+  
+  
+  
+  
+</div>
+`;
+
+exports[`Avatar 头像组合 1`] = `
+<div
+  class="v-avatar v-avatar_3"
+  style="font-size: 36px;"
+>
+  
+  
+  <img
+    src="https://path/to/avatar/image_1.jpg"
+  />
+  <img
+    src="https://path/to/avatar/image_2.jpg"
+  />
+  <img
+    src="https://path/to/avatar/image_3.jpg"
+  />
+  
+  
+  
+  
+</div>
+`;
+
+exports[`Avatar 轮播头像 1`] = `
+<div
+  class="v-avatar v-avatar_carousel"
+  style="font-size: 36px;"
+>
+  <transition-group-stub
+    appear="false"
+    css="true"
+    name="horizon-fade-zoom"
+    persisted="false"
+  >
+    
+    <img
+      src="https://path/to/avatar/image_1.jpg"
+    />
+    <img
+      src="https://path/to/avatar/image_2.jpg"
+      style="display: none;"
+    />
+    <img
+      src="https://path/to/avatar/image_3.jpg"
+      style="display: none;"
+    />
+    
+  </transition-group-stub>
+  
+  
+</div>
+`;

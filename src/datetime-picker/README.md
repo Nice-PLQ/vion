@@ -1,5 +1,7 @@
 # DatetimePicker
 
+![](https://img.shields.io/badge/coverage-98.29%25-green)
+
 ---
 
 #### 1、基础用法

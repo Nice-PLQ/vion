@@ -1,5 +1,5 @@
 <template>
-  <svg :class="`${name}_circle`" height="56" width="56">
+  <svg :class="`${name}__circle`" height="56" width="56">
     <circle
       cx="28"
       cy="28"
@@ -7,7 +7,7 @@
       fill="transparent"
     />
     <circle
-      :class="`${name}_circle-stroke`"
+      :class="`${name}__circle-stroke`"
       cx="28"
       cy="28"
       r="25"
@@ -17,7 +17,7 @@
       :stroke-linecap="ratio > 0 ? 'round' : 'butt'"
       :stroke-dasharray="`${loadingRatio},10000`"
     />
-    <text x="50%" y="52%" :class="`${name}_circle-text`">{{ ratio }}%</text>
+    <text x="50%" y="52%" :class="`${name}__circle-text`">{{ ratio }}%</text>
   </svg>
 </template>
 

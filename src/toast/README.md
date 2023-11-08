@@ -1,5 +1,7 @@
 # Toast
 
+![](https://img.shields.io/badge/coverage-93.75%25-green)
+
 ---
 
 #### 1、基础用法

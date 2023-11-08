@@ -1,5 +1,7 @@
 # Swiper
 
+![](https://img.shields.io/badge/coverage-86.44%25-green)
+
 ---
 
 `Swiper` 组件必须结合`SwiperItem`组件一起使用

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input input渲染 1`] = `
+<div
+  class="v-input"
+>
+  <div
+    class="v-input__inner"
+  >
+    <div
+      class="v-input__label"
+      style="text-align: center; width: 100px;"
+    >
+      
+      <span>
+        标题
+      </span>
+      
+    </div>
+    <div
+      class="v-input__wrap"
+    >
+      <input
+        maxlength="10"
+        placeholder=""
+        type="text"
+      />
+      <!--v-if-->
+    </div>
+    <!--v-if-->
+  </div>
+  <div
+    class="v-input__help"
+  >
+    <!--v-if-->
+    <div
+      class="v-input__indicator"
+    >
+      10字
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input textarea文本框 1`] = `
+<div
+  class="v-input v-input__textarea"
+>
+  <div
+    class="v-input__inner"
+  >
+    <!--v-if-->
+    <div
+      class="v-input__wrap"
+    >
+      <textarea
+        placeholder=""
+        rows="3"
+      />
+      <!--v-if-->
+    </div>
+    <!--v-if-->
+  </div>
+  <!--v-if-->
+</div>
+`;

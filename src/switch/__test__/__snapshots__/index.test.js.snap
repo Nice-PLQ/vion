@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch 渲染 1`] = `
+<div
+  aria-checked="false"
+  class="v-switch"
+  role="switch"
+  style="font-size: 36px; background-color: rgb(255, 89, 106);"
+/>
+`;

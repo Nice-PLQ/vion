@@ -1,10 +1,24 @@
+<p align="center">
+  <a href="https://nice-plq.github.io/vion/" target="_blank" rel="noopener noreferrer">
+    <img width="200" src="https://raw.githubusercontent.com/Nice-PLQ/vion/master/logo.svg" alt="Vion logo">
+  </a>
+</p>
+<br/>
+<p align="center">
+  <a href="https://npmjs.com/package/vion"><img src="https://badgen.net/npm/v/vion"></a>
+  <img src="https://img.shields.io/badge/coverage-88.15%25-green">
+  <img src="https://img.shields.io/badge/PR-welcome-brightgreen">
+</p>
+<br/>
+
 # Vion 组件库
 
-## 特性
+## 🎉 特性
 
 - 基于 Vue3 构建
 - 30 个组件
 - 完善的示例和文档说明
+- 单元测试覆盖 88%
 - 支持 tree-shaking
 - 支持主题定制
 - 支持国际化

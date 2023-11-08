@@ -1,5 +1,7 @@
 # Input
 
+![](https://img.shields.io/badge/coverage-91.89%25-green)
+
 ---
 
 #### 1、基础用法

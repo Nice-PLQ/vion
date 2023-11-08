@@ -1,5 +1,7 @@
 # Avatar
 
+![](https://img.shields.io/badge/coverage-93.33%25-green)
+
 ---
 
 #### 1、单一头像

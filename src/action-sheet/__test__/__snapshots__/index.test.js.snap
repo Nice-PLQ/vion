@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionSheet 选项数量 1`] = `
+<div
+  aria-modal="true"
+  class="v-action-sheet"
+>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="fade"
+    persisted="true"
+  >
+    <div
+      aria-label="关闭"
+      class="v-popup__mask"
+      role="button"
+      style="display: none;"
+    />
+  </transition-stub>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="fade"
+    persisted="false"
+  >
+    <!--v-if-->
+  </transition-stub>
+  <transition-stub
+    appear="false"
+    css="true"
+    name="slide-bottom"
+    persisted="true"
+  >
+    <div
+      class="v-popup__content v-popup__content_bottom"
+      style="display: none;"
+    >
+      
+      <div
+        class="v-action-sheet__panel"
+      >
+        <div
+          class="v-action-sheet__title"
+        >
+          
+          <p
+            class="v-action-sheet__title-text"
+          >
+            标题
+          </p>
+          
+        </div>
+        
+        <div
+          aria-label=""
+          class="v-action-sheet__menu"
+          role="button"
+        >
+          <div
+            aria-hidden="false"
+            class="v-action-sheet__cell"
+          >
+            
+            <div
+              class="v-action-sheet__cell-text"
+            >
+              选项一
+            </div>
+            
+            <!--v-if-->
+          </div>
+        </div>
+        <div
+          aria-label=""
+          class="v-action-sheet__menu"
+          role="button"
+        >
+          <div
+            aria-hidden="false"
+            class="v-action-sheet__cell"
+          >
+            
+            <div
+              class="v-action-sheet__cell-text"
+            >
+              选项二
+            </div>
+            
+            <!--v-if-->
+          </div>
+        </div>
+        <div
+          aria-label=""
+          class="v-action-sheet__menu"
+          role="button"
+        >
+          <div
+            aria-hidden="false"
+            class="v-action-sheet__cell"
+          >
+            
+            <div
+              class="v-action-sheet__cell-text"
+              style="color: red;"
+            >
+              删除
+            </div>
+            
+            <!--v-if-->
+          </div>
+        </div>
+        
+        <div
+          class="v-action-sheet__action v-action-sheet__safe-area"
+          role="button"
+        >
+          <div
+            class="v-action-sheet__cell"
+          >
+            cancel
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </transition-stub>
+</div>
+`;

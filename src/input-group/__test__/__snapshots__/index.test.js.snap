@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputGroup 渲染 1`] = `
+<div
+  class="v-input-group"
+  space="16px"
+>
+  
+  <div
+    class="v-input"
+  >
+    <div
+      class="v-input__inner"
+    >
+      <div
+        class="v-input__label"
+        style="text-align: center; width: 70px;"
+      >
+        
+        <span>
+          公司
+        </span>
+        
+      </div>
+      <div
+        class="v-input__wrap"
+      >
+        <input
+          placeholder="请输入公司"
+          type="text"
+        />
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+    </div>
+    <!--v-if-->
+  </div>
+  <div
+    class="v-input"
+  >
+    <div
+      class="v-input__inner"
+    >
+      <div
+        class="v-input__label"
+        style="text-align: center; width: 70px;"
+      >
+        
+        <span>
+          职业
+        </span>
+        
+      </div>
+      <div
+        class="v-input__wrap"
+      >
+        <input
+          placeholder="请输入职业"
+          type="text"
+        />
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+    </div>
+    <!--v-if-->
+  </div>
+  <div
+    class="v-input"
+  >
+    <div
+      class="v-input__inner"
+    >
+      <div
+        class="v-input__label"
+        style="text-align: center; width: 70px;"
+      >
+        
+        <span>
+          邮箱
+        </span>
+        
+      </div>
+      <div
+        class="v-input__wrap"
+      >
+        <input
+          placeholder="请输入邮箱"
+          type="text"
+        />
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+    </div>
+    <!--v-if-->
+  </div>
+  
+</div>
+`;

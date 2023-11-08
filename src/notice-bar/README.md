@@ -1,5 +1,7 @@
 # NoticeBar
 
+![](https://img.shields.io/badge/coverage-93.33%25-green)
+
 ---
 
 #### 1、基础用法

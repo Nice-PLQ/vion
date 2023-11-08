@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag 渲染 1`] = `
+<div
+  backgroundcolor="#07C160"
+  class="v-tag v-tag_medium"
+  style="color: rgb(0, 0, 0);"
+>
+  
+  标签
+  
+</div>
+`;

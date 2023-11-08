@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar slots 1`] = `
+<div
+  class="v-navbar v-navbar_white"
+  righticon="share"
+>
+  <div
+    class="v-navbar__status"
+  />
+  <div
+    class="v-navbar__wrap"
+  >
+    <div
+      class="v-navbar__left"
+    >
+      
+      <span>
+        left
+      </span>
+      
+    </div>
+    <div
+      class="v-navbar__title"
+    >
+      
+      <span>
+        title
+      </span>
+      
+    </div>
+    <div
+      class="v-navbar__right"
+    >
+      
+      <span>
+        right
+      </span>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NavBar 渲染 1`] = `
+<div
+  class="v-navbar v-navbar_black"
+  righticon="share"
+>
+  <div
+    class="v-navbar__status"
+  />
+  <div
+    class="v-navbar__wrap"
+  >
+    <div
+      class="v-navbar__left"
+    >
+      
+      <button
+        class="v-navbar__back"
+        title="返回"
+      >
+        <i
+          class="v-icon"
+          style="display: inline-block; font-size: 24px; width: 1em; height: 1em; line-height: 1em;"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M37.4767 13.435L34.6482 10.6066L24.0416 21.2132L13.435 10.6066L10.6066 13.435L21.2132 24.0416L10.6066 34.6482L13.435 37.4767L24.0416 26.8701L34.6482 37.4767L37.4767 34.6482L26.8701 24.0416L37.4767 13.435Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </i>
+        <span
+          class="v-navbar__back-text"
+        >
+          返回
+        </span>
+      </button>
+      
+    </div>
+    <div
+      class="v-navbar__title"
+    >
+      
+      
+      
+      
+    </div>
+    <div
+      class="v-navbar__right"
+    >
+      
+      <button
+        class="v-navbar__right-btn"
+      >
+        <span
+          class="v-navbar__right-text"
+        >
+          设置
+        </span>
+      </button>
+      
+    </div>
+  </div>
+</div>
+`;

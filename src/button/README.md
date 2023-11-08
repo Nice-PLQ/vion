@@ -1,5 +1,7 @@
 # Button
 
+![](https://img.shields.io/badge/coverage-90.9%25-green)
+
 ---
 
 #### 1、按钮类型
