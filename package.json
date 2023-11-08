@@ -16,10 +16,10 @@
     "lint": "npm run lint:js && npm run lint:css",
     "test": "cross-env NODE_ENV=test jest"
   },
-  "homepage": "",
+  "homepage": "https://nice-plq.github.io/vion/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Nice-PLQ/vion"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -39,8 +39,7 @@
     "lib/",
     "es/",
     "types/",
-    "vetur/",
-    "notice.js",
+    "LICENSE",
     "README.md"
   ],
   "sideEffects": [
@@ -49,11 +48,7 @@
     "lib/*",
     "es/*/style.js"
   ],
-  "vetur": {
-    "tags": "vetur/tags.json",
-    "attributes": "vetur/attributes.json"
-  },
-  "author": "yangling",
+  "author": "plq",
   "license": "MIT",
   "browserslist": [
     "iOS >= 10.0",
